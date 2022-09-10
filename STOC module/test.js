@@ -1,0 +1,11 @@
+let a;
+console.log(a);
+let b=10, d=3.9;
+console.log(b,d);
+console.log(typeof(b));
+let c='a';
+console.log(c);
+console.log(typeof(c));
+let aa = "a", bb="b";
+console.log(aa,bb);
+console.log(typeof(aa,bb));
