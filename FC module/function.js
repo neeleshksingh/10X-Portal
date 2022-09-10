@@ -8,7 +8,41 @@ function readLine() {
     return data[idx - 1].trim();
 }
  //-----------------------------------
+// With using Function
 
+function searchVoterId(array, length, voterID)
+{
+    let i;
+    for(i=0;i<length;i++)
+    {
+        if(array[i] === voterID)
+        {
+            return 1;
+        }
+    }
+    return 0;
+}
+
+
+let electricityOffice = [ 3157 , 7764 , 4054 , 3305 ];
+let govtHighSchool = [1038, 7576, 1718, 5658];
+let waterWorksOffice = [1726, 4260, 8200, 1489];
+
+let voterID = parseInt(readLine());
+
+let arrayLengthelectricityOffice = electricityOffice.length;
+let arrayLengthgovthighschool = govtHighSchool.length;
+let arrayLengthwaterworkoffice = waterWorksOffice.length;
+
+let result = searchVoterId(electricityOffice, arrayLengthelectricityOffice, voterID);
+let resultGovtHighSchool = searchVoterId(govtHighSchool, arrayLengthgovthighschool, voterID);
+let resultWaterWorks = searchVoterId(waterWorksOffice, arrayLengthwaterworkoffice, voterID);
+
+console.log(result);
+console.log(resultGovtHighSchool);
+console.log(resultWaterWorks);
+
+ /* Without using function
  let electricityOffice = [ 3157 , 7764 , 4054 , 3305 ];
  let govtHighSchool = [1038, 7576, 1718, 5658];
  let waterWorksOffice = [1726, 4260, 8200, 1489];
@@ -50,4 +84,5 @@ function readLine() {
  if(count === 0)
  {
     console.log("ID not found");
- }
+ }*/
+
