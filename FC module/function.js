@@ -7,7 +7,7 @@ function readLine() {
     idx++;
     return data[idx - 1].trim();
 }
- //-----------------------------------
+//-----------------------------------
 // With using Function
 
 function searchVoterId(array, length, voterID)
