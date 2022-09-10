@@ -50,7 +50,9 @@ else
 {
     console.log("Voter ID Not found");
 }
- /* Without using function
+ 
+
+/* Without using function
  let electricityOffice = [ 3157 , 7764 , 4054 , 3305 ];
  let govtHighSchool = [1038, 7576, 1718, 5658];
  let waterWorksOffice = [1726, 4260, 8200, 1489];
