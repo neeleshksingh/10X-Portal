@@ -38,10 +38,18 @@ let result = searchVoterId(electricityOffice, arrayLengthelectricityOffice, vote
 let resultGovtHighSchool = searchVoterId(govtHighSchool, arrayLengthgovthighschool, voterID);
 let resultWaterWorks = searchVoterId(waterWorksOffice, arrayLengthwaterworkoffice, voterID);
 
-console.log(result);
+/*console.log(result);
 console.log(resultGovtHighSchool);
-console.log(resultWaterWorks);
+console.log(resultWaterWorks);*/
 
+if(result == 1 || resultGovtHighSchool == 1 || resultWaterWorks == 1)
+{
+    console.log("Voter ID Found");
+}
+else
+{
+    console.log("Voter ID Not found");
+}
  /* Without using function
  let electricityOffice = [ 3157 , 7764 , 4054 , 3305 ];
  let govtHighSchool = [1038, 7576, 1718, 5658];
