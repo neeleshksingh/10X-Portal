@@ -16,31 +16,29 @@ for(let i=0; i<n; i++)
 {
     arr[i] = parseInt(readLine());
 }
-//console.log(arr);
-//arr = arr.sort();
-let ct = 1;
+let count = 1;
 let num =1;
 let k = 0;
 let temp = 0;
 let arr2 = [];
 for(i=0; i<n; i++)
 {
-    ct = 0;
+    count = 0;
     for(j=i; j<n; j++)
     {
         if(arr[i]==arr[j])
         {
-            ct++;
+            count++;
         }
     }
-    if(ct==1)
+    if(count==1)
     {
         continue;
     }
-    else if(ct>=num)
+    else if(count>=num)
     {
-        temp = ct;
-        ct = num;
+        temp = count;
+        count = num;
         num = temp;
         arr2[k] = arr[i];
         k++;
