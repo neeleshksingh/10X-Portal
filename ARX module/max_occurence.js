@@ -44,7 +44,6 @@ for(i=0; i<n; i++)
         k++;
     }
 }
-//console.log(arr2);
 temp = 0;
 for(i=0; i<arr2.length; i++)
 {
@@ -58,7 +57,6 @@ for(i=0; i<arr2.length; i++)
         }
     }
 }
-//console.log(arr2);
 if(arr2.length === 0)
 {
     console.log(-1);
