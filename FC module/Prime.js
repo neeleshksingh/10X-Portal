@@ -13,7 +13,6 @@ function readLine() {
 function isPrime(inputNumber){
     // You can start below this
     let sqrtnum=Math.floor(Math.sqrt(inputNumber));
-    let prime = inputNumber != 1;
     if(inputNumber == 1)
     {
         return("False");
