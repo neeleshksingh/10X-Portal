@@ -45,7 +45,8 @@ console.log(Math.abs(ans));
 
 // Alternate Method
 
-/*let m = parseInt(readLine());
+/*
+let m = parseInt(readLine());
 let n = parseInt(readLine());
 let arr1 = readLine().split(" ").map(Number);
 let arr2 = readLine().split(" ").map(Number);
@@ -67,4 +68,6 @@ for (let i = 1; i < arr2.length; i++) {
     maxx = arr2[i];
   }
 }
-console.log(max * maxx);*/
+console.log(max * maxx);
+
+*/
