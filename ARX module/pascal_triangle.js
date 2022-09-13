@@ -11,12 +11,30 @@ function readLine() {
 //-----------------------------------
 
 let n = parseInt(readLine());
-let i;
-let c=1;
-for(i=1;i<=n;i++)
+let arr = [];
+for (let i = 0; i < n; i++) 
 {
-    let curr = (c*(n-i+1))/i;
-    console.log(curr);
-    c = curr;
+  arr[i] = [];
+  for (let j = 0; j < n; j++) 
+  {
+    if (j == 0) 
+    {
+      arr[i][j] = 1;
+    } 
+    else if (i == j) 
+    {
+      arr[i][j] = 1;
+    } 
+    else if (i > 1 && j > 0 && i > j) 
+    {
+      arr[i][j] = arr[i - 1][j - 1] + arr[i - 1][j];
+    }
+  }
 }
-console.log(c);
+for (let i = n - 1; i < n; i++) 
+{
+  for (let j = 0; j < n; j++) 
+  {
+    console.log(arr[i][j]);
+  }
+}
