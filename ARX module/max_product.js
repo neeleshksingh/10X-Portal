@@ -25,7 +25,7 @@ for(let i=0;i<b;i++)
 let res = c[0];
 for(let j=0;j<a;j++)
 {
-   c[j]=Math.abs(c[j])
+   c[j] = Math.abs(c[j])
     res = Math.max(res, c[j]);
 }
 let res2 = d[0];
