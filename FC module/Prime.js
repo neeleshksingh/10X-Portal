@@ -9,7 +9,33 @@ function readLine() {
 }
 
 //-----------------------------------
+function isPrime(number){
+    // You can start below this
+    if(number===1)
+    {
+        return ("False");
+    }
+    else if(number===2)
+    {
+        return ("True");
+    }
+    else
+    {
+    for(let i=2;i<number;i++){
+    if(number%i===0)
+    {
+        return ("False");
+    }
+}
+return ("True");
+}
+}
+//Please don't change anything below this line.
+let number=parseInt(readLine());
+console.log(isPrime(number));
 
+//Alternative Method
+/*
 function isPrime(inputNumber){
     // You can start below this
     let sqrtnum=Math.floor(Math.sqrt(inputNumber));
@@ -27,3 +53,5 @@ function isPrime(inputNumber){
 //Please don't change anything below this line.
 let number=parseInt(readLine());
 console.log(isPrime(number));
+
+*/
