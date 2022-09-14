@@ -9,8 +9,43 @@ function readLine() {
 }
 
 //-----------------------------------
+let n = parseInt(readLine())
+let arr = [];
+for(let i=0;i<n;i++)
+{
+    arr = parseInt(readLine())
+    console.log(arr);
+}
+let item;
+let mf = 1;
+let m = 0;
+for (let k=0; k<arr.length; k++)
+{
+    for (let j=k; j<arr.length; j++)
+        {
+            if (arr[k] == arr[j])
+                 m++;
+                if (mf<m)
+                {
+                    mf=m; 
+                    item = arr[k];
+                }
+        }
+        m=0;
+}
+console.log(item)
 
-let n = parseInt(readLine());
+
+
+
+
+
+
+
+
+
+
+/*let n = parseInt(readLine());
 let arr = [];
 for(let i=0; i<n; i++)
 {
@@ -67,4 +102,4 @@ else
     {
         console.log(arr2[i]);
     }
-}
+}*/
