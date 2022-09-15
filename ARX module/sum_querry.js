@@ -32,5 +32,6 @@ for(let j=0;j<y;j++)
         for(let i=a;i<=b;i++)
         {
             sum += arr[i]
-        } console.log(sum)
+        } 
+        console.log(sum)
     }
