@@ -32,3 +32,29 @@ let res=replaceElements(arr);
 for(elem of res){
   console.log(elem);
 }
+
+// Alternate Method
+
+/*
+function replaceElements(arr)
+{
+    let ar = []
+    ar[arr.length-1] = -1
+for (let i = arr.length-2; i>=0; i--) 
+{
+    ar[i] = Math.max(ar[i+1], arr[i+1])
+}
+return ar
+}
+
+// Do not edit anything below
+let numElems = parseInt(readLine());
+let arr = [];
+for (let index=0;index<numElems;index++){
+        arr.push(parseInt(readLine()));
+}
+let res=replaceElements(arr);
+for(elem of res){
+  console.log(elem);
+}
+*/

@@ -9,28 +9,21 @@ function readLine() {
 }
 
 //-----------------------------------
-
-function replaceElements(arr, numElems)
-{
-    let array=[]
-    for (let i = 0; i < numElems; i++)
-    {
-        let j;
-        for (j = i+1; j < numElems; j++)
-        {
-            if (array[i] <=array[j])
-                break;
-        }    
-        if (j == numElems) // the loop didn't break
-            return(array[i]);
-  }
-}
-let numElems = parseInt(readLine());
+let n = parseInt(readLine());//6
 let arr = [];
-for (let index=0;index<numElems;index++){
-        arr.push(parseInt(readLine()));
+for(let i=0 ; i<n ; i++){
+    arr.push(parseInt(readLine()));//[16,17,4,3,5,2]   
 }
-let res=replaceElements(arr);
-for(elem of res){
-  console.log(elem);
+let new1 = [];
+let last = arr.pop();
+new1.unshift(last);
+while(arr.length>=1){
+    let temp = arr.pop();
+    last = Math.max(last,temp);
+    new1.push(last);
+}
+for(let i=0 ; i<new1.length ; i++){
+    if(new1[i]===new1[i+1])
+        continue
+    console.log(new1[i]);
 }
