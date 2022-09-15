@@ -9,97 +9,45 @@ function readLine() {
 }
 
 //-----------------------------------
-let n = parseInt(readLine())
-let arr = [];
-for(let i=0;i<n;i++)
-{
-    arr = parseInt(readLine())
-    console.log(arr);
+let sz = parseInt(readLine()); // 5
+let arr = []; // [1,2,2,3,3]
+for(let i=0; i<sz; i++){ // i=0, 1 2 3
+   arr.push(parseInt(readLine()))
 }
-let item;
-let mf = 1;
-let m = 0;
-for (let k=0; k<arr.length; k++)
-{
-    for (let j=k; j<arr.length; j++)
-        {
-            if (arr[k] == arr[j])
-                 m++;
-                if (mf<m)
-                {
-                    mf=m; 
-                    item = arr[k];
-                }
-        }
-        m=0;
+if(sz == 0) {
+   console.log(-1)
+} else {
+   let maxCount = 0; // 2
+let currCount = 1; // 1
+for(let i=1; i<sz; i++) {  // i=1 2 3 4
+   if(arr[i] == arr[i-1]) { //true
+       currCount ++; //
+   } else {
+       if(maxCount < currCount) { // 1 < 2
+           maxCount = currCount; // 2
+       }
+       currCount = 1;
+   }
 }
-console.log(item)
-
-
-
-
-
-
-
-
-
-
-
-/*let n = parseInt(readLine());
-let arr = [];
-for(let i=0; i<n; i++)
-{
-    arr[i] = parseInt(readLine());
+if(currCount > maxCount) {
+   maxCount = currCount;
 }
-let count = 1;
-let num =1;
-let k = 0;
-let temp = 0;
-let arr2 = [];
-for(i=0; i<n; i++)
-{
-    count = 0;
-    for(j=i; j<n; j++)
-    {
-        if(arr[i]==arr[j])
-        {
-            count++;
-        }
-    }
-    if(count==1)
-    {
-        continue;
-    }
-    else if(count>=num)
-    {
-        temp = count;
-        count = num;
-        num = temp;
-        arr2[k] = arr[i];
-        k++;
-    }
+let res = [];
+currCount = 1;
+for(let i=1; i<sz;i ++){
+       if(arr[i] == arr[i-1]) { //true //false
+           currCount ++; //3
+       } else {
+           if(maxCount == currCount) { // 3 < 2 //false
+               res.push(arr[i-1]);
+           }
+           currCount = 1;
+       }
+   }
+   if(currCount == 4) {
+       res.push(arr[sz-1]);
+   }
+   for(let i=0; i<res.length; i++) {
+       console.log(res[i])
+   }
 }
-temp = 0;
-for(i=0; i<arr2.length; i++)
-{
-    for(j=i; j<arr2.length; j++)
-    {
-        if(arr2[i]>arr2[j])
-        {
-            temp = arr2[i];
-            arr2[i] = arr2[j];
-            arr2[j] = temp;
-        }
-    }
-}
-if(arr2.length === 0)
-{
-    console.log(-1);
-}
-else
-{
-    for(i=0; i<arr2.length; i++)
-    {
-        console.log(arr2[i]);
-    }
-}*/
