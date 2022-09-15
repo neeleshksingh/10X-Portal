@@ -14,7 +14,7 @@ let n = readLine().split(' ')
 let x = parseInt(n[0]) //array size
 let y = parseInt(n[1])   //query size
 let arr = readLine().split(" ")
-for(let i = 0;i<x;i++)
+for(let i=0;i<x;i++)
 {                      
     arr[i] = parseInt(arr[i])
     
