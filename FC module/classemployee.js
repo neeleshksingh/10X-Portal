@@ -44,6 +44,6 @@ class Company
     }
 }
 
-let salaries = [23000, 30000, 40000, 50000]
+let salaries = [23000, 30000,28000, 40000, 10000]
 const Infosys = new Company(salaries,5000,50000,30000,200000,100000)
 console.log(Infosys.TotalCost)
