@@ -16,7 +16,8 @@ class Refrigerator
     }
     completePrice()
     {
-        return this.basePrice + this.additionalPrice
+        let discount = ((this.basePrice/100)*5)
+        return this.basePrice + this.additionalPrice - discount
     }
 }
 
