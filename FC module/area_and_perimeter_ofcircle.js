@@ -11,37 +11,30 @@ function readLine() {
 
 //-----------------------------------
 
-// -------- Do NOT edit anything above this line ----------
-
-
-
-// Your class should be named `Circle`.
-// Method to get area should be named `getArea`
-// Method to get circumference should be named `getCircumference`.
-// Your class should take radius `r` as input when creating an object.
-class Circle
-{
-    constructor(radius)
-    {
-        this.radius = radius
+class Circle {
+    constructor(radius) {
+      this.radius = radius;
     }
-    radius()
-    {
-        return this.radius
+    getArea() {
+      let x;
+      if (this.radius < 0) {
+        return 0;
+      }
+      x = 3.14 * this.radius * this.radius;
+      x = Math.ceil(x);
+      return x;
     }
-    getArea()
-    {
-        return (Math.ceil(Math.PI * this.radius * this.radius))
+    getCircumference() {
+      if (this.radius < 0) {
+        return 0;
+      }
+      let x;
+      x = 2 * 3.14 * this.radius;
+      x = Math.ceil(x);
+      return x;
     }
-    getCircumference()
-    {
-        return (Math.ceil(2 * Math.PI * this.radius))
-    }
-}
-
-
-// -------- Do NOT edit anything below this line ----------
-
-let oneCircle = new Circle(parseInt(readLine()));
-console.log(oneCircle.getArea());
-console.log(oneCircle.getCircumference());
+  }
+  // -------- Do NOT edit anything below this line ----------
+  let oneCircle = new Circle(parseInt(readLine()));
+  console.log(oneCircle.getArea());
+  console.log(oneCircle.getCircumference());
