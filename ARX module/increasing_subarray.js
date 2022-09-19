@@ -29,47 +29,27 @@ function readLine() {
 
 let n = parseInt(readLine())
 let arr = readLine().split(' ')
-for(let i = 0; i<n;i++)
-{
+for (let i = 0; i < n; i++) {
     arr[i] = parseInt(arr[i])
-}console.log(arr)
+}
 let max = 1
 let len = 1
-for(let i =1;i<n;i++)
-{
-    if(arr[i]>arr[i-1])
-    {
+let end
+for (let i = 1; i < n; i++) {
+    if (arr[i] > arr[i - 1]) {
         len++
     }
-    else
-    {
-        if(max < len)
-        {
+    else {
+        if (max < len) {
             max = len
         }
-        len =1
+        len = 1
+    }
+
+    if (max < len) {
+        max = len
+        end = i
     }
 }
-if(max<len)
-{
-    max =len
-}
-let max_ending_here = 0;
-let max_so_far = 0;
-let start = 0;
-let _start = 0;
-let end = -1;
-
-    for(let i=0; i<arr.length; i++) {
-        max_ending_here = max_ending_here + arr[i];
-        if (max_ending_here < 0) {
-            max_ending_here = 0;
-            _start = i+1;
-        }
-
-        if (max_ending_here > max_so_far) {
-            max_so_far = max_ending_here;
-            start = _start;
-            end = i;
-        }
-    }console.log(max, _start,end)
+let start = end - max + 1
+console.log(max, start, end)
