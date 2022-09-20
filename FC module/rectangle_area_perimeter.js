@@ -5,47 +5,37 @@ let idx = 0;
 data = data.split('\n');
 
 function readLine() {
-    idx++;
-    return data[idx - 1].trim();
+  idx++;
+  return data[idx - 1].trim();
 }
 
 //-----------------------------------
 
 class Rectangle {
-    constructor(length,width) {
-      this.length = length;
-	  this.width = width;
+  constructor(length, width) {
+    this.length = length;
+    this.width = width;
+  }
+  rectangleArea() {
+    if (this.length <= 0 || this.width <= 0) {
+      return 0;
     }
-    rectangleArea() {
-      let x;
-      if (this.length < 0) {
-        return 0;
-      }
-      else if(this.width < 0)
-      {
-        return 0;
-      }
-      x = Math.ceil(x);
-      x = this.length * this.width;
-      return x;
-    }
-    rectanglePerimeter() {
-      if (this.length < 0) {
-        return 0;
-      }
-      else if(this.width < 0)
-      {
-        return 0;
-      }
-      let x;
-      x = Math.ceil(x);
-      x = 2 *(this.length + this.width);
-      return x;
+    else {
+      return this.length * this.width;
     }
   }
+  rectanglePerimeter() {
+    if (this.length <= 0 || this.width <= 0) {
+      return 0;
+    }
+    else {
+      return 2 * (this.length + this.width);
+    }
+  }
+}
 
 let length = parseInt(readLine());
-let width  = parseInt(readLine());
-let newRectangle =new Rectangle(length,width);
+let width = parseInt(readLine());
+let newRectangle = new Rectangle(length, width);
 console.log(newRectangle.rectangleArea());
 console.log(newRectangle.rectanglePerimeter());
