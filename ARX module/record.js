@@ -37,10 +37,21 @@ function readLine() {
 // 2 4
 
 let n = parseInt(readLine())
-let arr = readLine().split(' ')
-for(let i =0;i<n;i++)
+let arr = readLine().split(' ').map(Number)
+let max = arr[0]
+let min = arr[0]
+let cmax = 0, cmin = 0
+for(let i=1;i<arr.length;i++)
 {
-    arr[i] = parseInt(arr[i])
+    if(arr[i]>max)
+    {
+        max = arr[i]
+        cmax++
+    }
+    else if(arr[i]<min)
+    {
+        min = arr[i]
+        cmin++
+    }
 }
-//console.log(arr)
-
+console.log(cmax,cmin)
