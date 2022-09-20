@@ -39,12 +39,28 @@ function readLine() {
 // In the second test case, element on index 5 is the first peak element. As it is a corner element, it has only one neighbour 4 which is smaller than 5.
 // In the third test case, we have two peak elements at index 1 and at index 4. As 1<4 so element at index 1 is first peak element.
 
-let n = parseInt(readLine());
-for (j = 0; j < n; j++) {
-    let arr_size = parseInt(readLine());
-    let arr = readLine().split(" ").map(Number);
-    let mult = 1;
-    for (let i = 0; i < arr_size; i++) {
-        mult = mult * arr[i];
-    }console.log(arr)
+let m = parseInt(readLine());
+for (let j = 0; j < m; j++) {
+  let peak = 0;
+  let n = parseInt(readLine());
+  let arr = readLine().split(" ").map(Number);
+  if (arr[0] > arr[1] || arr.length == 1) {
+    peak = 1;
+    console.log(peak);
+  } else {
+    for (let i = 1; i < arr.length - 1; i++) {
+      if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1]) {
+        peak = i + 1;
+        console.log(peak);
+        break;
+      }
+    }
+    if (peak == 0 && arr[arr.length - 1] > arr[arr.length - 2]) {
+      peak = arr.length;
+      console.log(peak);
+    }
+  }
+  if (peak == 0) {
+    console.log(-1);
+  }
 }
