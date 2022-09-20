@@ -1,3 +1,6 @@
-French
-4
-200
+5
+up
+down
+right
+right
+left
