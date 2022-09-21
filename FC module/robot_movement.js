@@ -50,7 +50,6 @@ function readLine() {
 // The final location of the robot is (1,0) so the output is 1 specifying the X coordinate and the next line is 0 specifying the Y coordinate.
 
 
-
 class RobotMovement{
     constructor(){
         this.xCoordinate=0;
@@ -63,7 +62,7 @@ class RobotMovement{
         return this.yCoordinate=this.yCoordinate-1;
     }
     moveRight(){
-         this.xCoordinate=this.xCoordinate+1;
+        return this.xCoordinate=this.xCoordinate+1;
     }
     moveLeft(){
         return this.xCoordinate=this.xCoordinate-1;
