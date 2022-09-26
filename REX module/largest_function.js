@@ -10,23 +10,23 @@ function readLine() {
 
 // -------- Do NOT edit anything above this line ----------
 
-function largestElement(A){
+function largestElement(A) {
     // Code here
-	  let max = A[0];
-  for(let i =0;i<n;i++){
-    if(max < A[i]){
-      max = A[i];
-    }
-  }return max;
+    let max = A[0];
+    for (let i = 0; i < n; i++) {
+        if (max < A[i]) {
+            max = A[i];
+        }
+    } return max;
 }
 // --------- Do NOT edit Below this line -----------
-function ConvertToNumber(list){
-  for(let each in list){
-      list[each]=Number(list[each]);
-  } 
+function ConvertToNumber(list) {
+    for (let each in list) {
+        list[each] = Number(list[each]);
+    }
 }
 
 let n = parseInt(readLine());
-let A=readLine().split(" ");
+let A = readLine().split(" ");
 ConvertToNumber(A);
 console.log(largestElement(A));
