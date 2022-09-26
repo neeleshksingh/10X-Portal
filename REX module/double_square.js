@@ -9,6 +9,7 @@ function readLine() {
 }
 
 // -------- Do NOT edit anything above this line ----------
+
 function doubleOFsquare(n)
 {
     if(n>0){
@@ -18,3 +19,16 @@ function doubleOFsquare(n)
 }
 let n = parseInt(readLine())
 console.log(doubleOFsquare(n))
+
+//Alternative way--------------------------------------------
+/*
+function doubleOrSquare(n){
+    if(n<0){
+        return n*n
+    }
+    return 2*n          
+}           
+                
+let n = parseInt(readLine())
+console.log(doubleOrSquare(n))
+*/
