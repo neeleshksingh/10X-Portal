@@ -9,3 +9,16 @@ function readLine() {
 }
 
 // -------- Do NOT edit anything above this line ----------
+
+function sumofFirstn(n)
+{
+        if (n != 0)
+          return n + sumofFirstn(n - 1);
+        else
+          return n;
+      
+}
+
+
+let n = parseInt(readLine())
+console.log(sumofFirstn(n))
