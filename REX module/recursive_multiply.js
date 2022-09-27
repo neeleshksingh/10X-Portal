@@ -7,23 +7,16 @@ function readLine() {
     idx++;
     return data[idx - 1].trim();
 }
-
 // -------- Do NOT edit anything above this line ----------
 
-
-function sumofFirstn(n)
+function multiply(n)
 {
-  let sum
-  if(n==0)
-  {
-    return 0
-  }
-  else
-  {
-    sum = n+sumofFirstn(n-1)
-    console.log(n,sum)
-    return sum
-  }
+        if (n != 0)
+          return n + multiply(n(n - 1));
+        else
+          return n;
       
 }
-sumofFirstn(parseInt(readLine()))
+
+let n = readLine().split(' ')
+console.log(multiply(n))
