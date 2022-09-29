@@ -10,28 +10,17 @@ function readLine() {
 
 // -------- Do NOT edit anything above this line ----------
 
-function checkPalindrome(s1){
-    if(s1.length === 1) 
-    {
-        return true;
-    }
-    if(s1.length === 2) 
-    {
-        return s1[0] === s1[1];
-    }
-    if(s1[0] === s1.slice(-1)) 
-    {
-        return checkPalindrome(s1.slice(1,-1))
-    }
-    return false;
-}
-
-let n = parseInt(readLine())
-let s1 = []
-//let s2 = String(readLine())
-//console.log(n)
-for(let i=0;i<n;i++){
-   s1[i] = String(readLine())
-}console.log(s1)
-let checkPalindrome = s1
-console.log(checkPalindrome(s1))
+function isPalindrome(s,i){
+    if(i > s.length/2)
+            {return true;}
+        return s[i] == s[s.length-i-1] && isPalindrome(s, i+1)
+    } 
+         
+    let str = readLine();
+    let ans = isPalindrome(str, 0);
+    if (ans == true)
+        {
+            console.log("True");}
+    else
+        {
+            console.log("False");}
