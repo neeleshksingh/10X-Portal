@@ -14,16 +14,17 @@ function readLine() {
 function sumofFirstn(n)
 {
   let sum
-  if(n==0)
+  if(n===1)
   {
-    return 0
+    sum = 1
   }
   else
   {
-    sum = n+sumofFirstn(n-1)
-    console.log(n,sum)
-    return sum
+   sum = n + sumofFirstn(n-1)
   }
+  console.log(n, sum)
+  return sum
       
 }
-sumofFirstn(parseInt(readLine()))
+let n = parseInt(readLine())
+sumofFirstn(n)
