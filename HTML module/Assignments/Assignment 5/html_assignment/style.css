@@ -1,0 +1,16 @@
+table,th,td {
+  border: 1px solid;
+}
+th {
+  color: white;
+  background-color: black;
+}
+td {
+  color: yellow;
+  background-color: red;
+}
+
+h1 {
+  color: black;
+  text-decoration-line: underline;
+}
