@@ -16,11 +16,15 @@ function isPalindrome(s,i){
         return s[i] == s[s.length-i-1] && isPalindrome(s, i+1)
     } 
          
-    let str = readLine();
-    let ans = isPalindrome(str, 0);
-    if (ans == true)
-        {
-            console.log("True");}
-    else
-        {
-            console.log("False");}
+    let n = parseInt(readLine())
+    for(let i=0;i<n;i++){
+        let s = readLine()
+        let ans = isPalindrome(s, 0);
+        if (ans == true)
+            {
+                console.log("True");}
+        else
+            {
+                console.log("False");}
+    }
+   
