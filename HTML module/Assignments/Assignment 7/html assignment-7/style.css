@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+.column1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; 
+  }
+  .column2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; 
+  }
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .row2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  img{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; 
+  }

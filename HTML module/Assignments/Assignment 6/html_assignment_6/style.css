@@ -1,0 +1,86 @@
+h1 {
+    text-align: center;
+    color: red;
+    text-decoration: underline;
+  }
+  a:hover {
+    color: blueviolet;
+  }
+  a {
+    text-decoration: none;
+  }
+  #summary {
+    color: black;
+    text-decoration: underline;
+  }
+
+  
+  nav {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  main {
+    margin: 10px 0px;
+  }
+  p,h2 {
+    padding: 10px;
+    margin: 10px 100px;
+    font-size: 20px;
+    color: darkblue;
+  }
+  ul {
+    text-align: center;
+  }
+  li {
+    display: inline;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 0px 15px;
+  }
+  
+  #actor {
+    display: inline-block;
+    width: 50%;
+
+  }
+  #actor p{
+    font-style: italic;
+  }
+  #actor h1{
+    color: darkmagenta;
+  }
+  #quote h1{
+    color: darkmagenta;
+  }
+  #quote {
+    width: 50%;
+    float: right;
+  }
+  #quote p{
+    font-style: italic;
+  }
+  section > p {
+    color: darkcyan;
+  }
+  #quote > p {
+    margin-top: 0px;
+  }
+  aside section {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    font-style: italic;
+    background-color: lightgray;
+  }
+  aside {
+    padding: 5px 55px;
+    color: black;
+  }
+  footer {
+    text-align: center;
+    margin: 5px 0px;
+    padding: 25px;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+  }
