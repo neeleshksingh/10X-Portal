@@ -1,3 +1,6 @@
+5
+1
 2
-tenet
-ayashdashd
+10
+25
+200
