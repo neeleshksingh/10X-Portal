@@ -9,7 +9,7 @@ function readLine() {
 }
 
 // -------- Do NOT edit anything above this line ----------
-
+/*
 function hack(r,target){
     if(r==target){
         return true
@@ -30,4 +30,22 @@ while(n--){
     else{
         console.log("No")
     }
+}*/
+
+function hackMoney(r,n){
+    if(n==r)
+        return true
+    if(r>n)
+        return false
+    return hackMoney(r*10,n) || hackMoney(r*20,n)
+}
+
+let t = parseInt(readLine());
+for(let i=1 ; i<=t ; i++){
+    let r = 1;
+    let n = parseInt(readLine());
+    if(hackMoney(r,n))
+        console.log("Yes");
+    else
+        console.log("No")
 }
