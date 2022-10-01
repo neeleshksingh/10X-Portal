@@ -4,28 +4,53 @@
 .column1 {
     float: left;
     width: 50%;
-    padding: 10px;
-    height: 300px; 
+    padding: 1px;
+    height: 380px; 
+    background-color: black;
+    color: white;
   }
   .column2 {
     float: left;
     width: 50%;
-    padding: 10px;
-    height: 300px; 
+    padding: 1px;
+    height: 380px; 
+    background-color: black;
+    color: white;
+  }
+  .column2 h1{
+    text-align: center;
+    padding-top: 150px;
   }
   .row1:after {
     content: "";
     display: table;
     clear: both;
+    width: 50%;
+    height: 50%;
   }
   .row2:after {
     content: "";
     display: table;
     clear: both;
   }
-  img{
+  .column1 img{
     float: left;
-    width: 50%;
-    padding: 10px;
-    height: 300px; 
+    width: 100%;
+    padding: 1px;
+    height: 380px; 
   }
+  .column2 img{
+    float: left;
+    width: 100%;
+    padding: 1px;
+    height: 380px; 
+  }
+  .sec1{
+    height: 50%;
+    padding-bottom: 10px;
+  }
+  .sec2{
+    height: 50%;
+  }
+
+  
