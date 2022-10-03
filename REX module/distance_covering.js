@@ -9,17 +9,18 @@ function readLine() {
 }
 
 // -------- Do NOT edit anything above this line ----------
-
-function printCountRec(dist)
+function distanceCover(dist)
 {
-    
+    if (dist<0)
+        return 0  
+    if (dist==0)
+        return 1 
+    return distanceCover(dist-1)+distanceCover(dist-2)
 }
- 
-// driver program
 let t = parseInt(readLine())
-while(t--){
-let dist = readLine()
-let a = parseInt(dist[0])
-let b = parseInt(dist[1])
-console.log(printCountRec(dist))
+let dist =[]
+for(let i=0;i<t;i++){
+    dist[i] = parseInt(readLine())
+    console.log(distanceCover(dist[i]))
 }
+
