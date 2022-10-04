@@ -1,0 +1,19 @@
+h2{
+    margin: 30px;
+    color: black;
+}
+.nav{
+    padding: 50px;
+    text-decoration: none;
+    
+}
+.audios{
+    padding: 15px;
+    margin: 15px;
+}
+a{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+}
