@@ -10,20 +10,31 @@ function readLine() {
 
 // -------- Do NOT edit anything above this line ----------
 
-function addSub(n,i,target,arr,sum){
-    if(sum===target && i===n){
-        return 1
+function addSum(arr,target,pos,length,empty){
+    
+    if(target==0 && pos==length)
+    {
+        empty[0]++
     }
-    if(i >= n){
-        return 0
+   else if(pos>length)
+    {
+        return 
     }
-    return (addSub(n,i+1,target,arr,sum + arr[i])
-    + addSub(n,i+1,target,arr,sum - arr[i])
-    + addSub(n,i+1,target,arr,sum + arr[i]))
+    
+    else
+    {
+     
+        addSum(arr,target-arr[pos],pos+1,length,empty)
+        addSum(arr,target+arr[pos],pos+1,length,empty)
+           addSum(arr,target,pos+1,length,empty)
+           
+        
+         
+    }
+    return empty[0]
 }
-
-let target = parseInt(readLine())
-let n = parseInt(readLine())
-let arr = readLine().split(' ').map(Number)
-
-console.log(addSub(n,0,target,arr,0))
+let target=parseInt(readLine())
+let length=parseInt(readLine())
+let arr=readLine().split(' ').map(Number)
+let pos=0,empty=[0]
+console.log(addSum(arr,target,pos,length,empty))
