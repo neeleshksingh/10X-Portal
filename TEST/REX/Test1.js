@@ -9,3 +9,13 @@ function readLine() {
 }
 
 //--------------------------------------------------------
+
+let n = readLine()
+function valueOfCoin(n,i){
+    if(i==n.length -1){
+        return n[i]
+    }
+    return parseInt(n[i]) + parseInt(valueOfCoin(n,i+1))
+}
+console.log(valueOfCoin(n,0))
+
