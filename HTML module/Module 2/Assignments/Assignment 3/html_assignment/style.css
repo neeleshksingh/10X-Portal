@@ -1,0 +1,39 @@
+table,
+th,
+td {
+  width: 50vw;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table {
+  height: 10vh;
+}
+thead {
+  background-color: rgba(181, 59, 59, 0.84);
+  color: whitesmoke;
+}
+th {
+  text-align: left;
+}
+tbody {
+  text-align: right;
+}
+td:first-child {
+  text-align: left;
+}
+#tr1 {
+  background-color: rgba(165, 42, 42, 0.364);
+  color: whitesmoke;
+}
+#tr2 {
+  background-color: rgba(165, 42, 42, 0.125);
+}
+#tr3 {
+  background-color: rgba(128, 128, 128, 0.326);
+}
+section {
+  margin-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+}
