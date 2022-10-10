@@ -1,0 +1,76 @@
+body{
+    background-color: #EEEDDE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    border-radius: 50%;
+    filter: saturate(70%);
+}
+
+header{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.4em;
+}
+
+header h1{
+    font-size: 3rem;
+    color: #203239;
+    border-bottom: 2px solid #203239;
+    width: 60%;
+    text-align: center;
+    margin: 0;
+}
+
+header a{
+     text-decoration: none;
+     margin-top: 0.5em;
+     font-size: 1.4rem;
+     color: #203239;
+}
+
+header a:hover{
+    color: #E0DDAA;
+}
+
+.skill-project-container{
+    width: 100%;
+    margin-top: 1.4em;
+    display: flex;
+    justify-content: space-around;
+    background-color: #E0DDAA;
+    padding-bottom: 1.4em;
+}
+.design-skill-project{
+    
+    margin-top: 1.4em;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.design-skill-project header{
+    width: 100%;
+}
+
+.design-skill-project h3{
+    margin: 0;
+    font-size: 2.5rem;
+    width: 70%;
+    text-align: center;
+    color: #203239;
+    border-bottom: 2px solid #203239;
+}
+
+.design-skill-project li{
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 0.2em;
+}
+

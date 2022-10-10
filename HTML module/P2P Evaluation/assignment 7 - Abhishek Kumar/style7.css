@@ -1,0 +1,16 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+
+}
+div{
+    height: 50%;
+    width: 50%;
+    float: left;
+}
+.Text{
+    padding-top: 150px;
+    text-align: center;
+}
