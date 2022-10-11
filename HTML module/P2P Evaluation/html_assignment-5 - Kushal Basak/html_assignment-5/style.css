@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parent {
+  width: 80%;
+  height: 80%;
+  background-color: #e1e1e1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.child {
+  height: 150px;
+  width: calc(33% - 10px);
+  background-color: darkblue;
+  margin-left: 10px;
+}
+
+@media (min-width: 640px) {
+  .child {
+    width: calc(25% - 10px);
+  }
+}
+
+@media (min-width: 960px) {
+  .child {
+    width: calc(20% - 10px);
+  }
+}
