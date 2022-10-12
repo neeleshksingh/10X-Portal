@@ -3,25 +3,48 @@
 <head>
     <title>Document</title>
     <style>
-        nav{
+        .nav-normal{
             border: 1px solid black;
+            height: 400px;
+            text-align: center;
         }
-        li{
+        .normal-item{
             border: 1px solid red;
             display: inline;
             margin-right: 10px;
         }
-        ul{
+        .normal{
             position: relative;
             top: 50%;
-            height: 200px
-            
+        }
+        .nav{
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+            padding: 0px;
+        }
+        .nav-item{
+
+        }
+        .flex{
+            border: 1px solid gray;
+        }
+        li{
+            margin-right: 12rem;
         }
     </style>
 </head>
 <body>
-    <nav>
-        <ul>
+    <nav class="nav-normal">Normal Navbar
+        <ul class="normal">
+            <li class="normal-item">Home</li>
+            <li class="normal-item">About</li>
+            <li class="normal-item">Career</li>
+            <li class="normal-item">Service</li>
+        </ul>
+    </nav>
+    <nav class="flex">Flex Navbar
+        <ul class="nav">
             <li>Home</li>
             <li>About</li>
             <li>Career</li>
