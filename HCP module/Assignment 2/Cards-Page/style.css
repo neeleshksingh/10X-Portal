@@ -36,7 +36,7 @@ opacity: 1;
     opacity: 1;
 }
 .para1{
-    top: 352px;
+    margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
     width: 292px;
@@ -48,7 +48,7 @@ opacity: 1;
     opacity: 1;
 }
 .card {
-    top: 443px;
+    margin-top: 36px;
     margin-left: auto;
     margin-right: auto;
     width: 313px;
@@ -57,6 +57,7 @@ opacity: 1;
     box-shadow: 0px 3px 6px #EB6875;
     border-radius: 4px;
     opacity: 1;
+    transition:0.3s;
   }
   
   .card:hover {
@@ -78,7 +79,7 @@ opacity: 1;
     opacity: 1;
   }
   .card1 {
-    top: 688px;
+    margin-top: 19px;
     margin-left: auto;
     margin-right: auto;
     width: 313px;
@@ -108,7 +109,7 @@ opacity: 1;
     opacity: 1;
   }
   .card2 {
-    top: 933px;
+    margin-top: 19px;
     margin-left: auto;
     margin-right: auto;
     width: 313px;
@@ -138,7 +139,7 @@ opacity: 1;
     opacity: 1;
   }
   .card3 {
-    top: 1178px;
+    margin-top: 19px;
     margin-left: auto;
     margin-right: auto;
     width: 313px;
