@@ -28,7 +28,7 @@ body {
   nav li {
     display: inline-block;
   }
-  header h1 {
+  header img {
     float: left;
     text-indent: -9999px;
     background: url('./photo/Picture1.jpg') no-repeat;
@@ -161,4 +161,15 @@ footer ul {
     display: inline-block;
     margin: 0 25px;
   }
-  
+  .logo1 img{
+    height: 35px;
+    width: 60px;
+  }
+  .logo2 img{
+    height: 30px;
+    width: 30px;
+  }
+  .logo3 img{
+    height: 30px;
+    width: 30px;
+  }
