@@ -22,11 +22,11 @@ img {
     text-align: center;
     color: brown;
   }
-  section#projects{
+  #projects{
     text-align: center;
     text-decoration: underline;
   }
-  ul.ulli {
+  .ulli {
     display: inline-block;
     text-align: left;
   }
