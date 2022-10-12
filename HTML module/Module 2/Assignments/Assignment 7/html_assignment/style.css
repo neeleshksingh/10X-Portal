@@ -1,0 +1,167 @@
+body {
+    font-family: 'Raleway', sans-serif;
+  }
+  header {
+    background: #92E0E5;
+    color: white;
+    height: 50px;
+    padding: 0 25px;
+  }
+  header nav {
+    float: right;
+  }
+  header h1 {
+    float: left;
+  }
+   
+  header nav {
+    float: right;
+  }
+  header h1 {
+    float: left;
+  }
+   
+  header nav {
+    float: right;
+  }
+   
+  nav li {
+    display: inline-block;
+  }
+  header h1 {
+    float: left;
+    text-indent: -9999px;
+    background: url('./photo/Picture1.jpg') no-repeat;
+    height: 35px;
+    width: 35px;
+    margin-top: 8px;
+  }
+  nav li {
+    display: inline-block;
+    padding: 17px 10px;
+  }
+  nav li {
+    display: inline-block;
+    padding: 17px 10px;
+  }
+   
+  nav li:hover {
+    background: #3F8DA7;
+    color: white;
+    cursor: pointer;
+  }
+  #hero {
+    background: url('./photo/Picture6.jpg') no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 50px;
+  }
+  #hero img {
+    display: block;
+  }
+  #hero img {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    border: 5px solid #3F8DA7;
+  }
+  #hero h2 {
+    font-size: 30px;
+  }
+  #hero img {
+    display: block;
+    margin: auto;
+    margin-bottom: 25px;
+    border-radius: 50%;
+    border: 5px solid #3F8DA7;
+  }
+   
+  #hero h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+  #hero a {
+    background: white;
+    border: 5px solid #3F8DA7;
+    color: #3F8DA7;
+    padding: 5px 10px;
+    text-decoration: none;
+  }
+  .three-col a {
+    background: white;
+    border: 5px solid #3F8DA7;
+    color: #3F8DA7;
+    padding: 5px 10px;
+    text-decoration: none;
+  }
+   
+  #hero a:hover {
+    padding: 5px 10px;
+    background: #3F8DA7;
+    color: white;
+  }
+  .three-col {
+    width: 30%;
+    display: inline-block;
+  }
+  .three-col {
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin: 0 10px;
+  }
+  .three-col img {
+    border-radius: 50%;
+    border: 3px solid #3F8DA7;
+    height: 200px;
+    width: 200px;
+    margin: 25px 0;
+  }
+  #hero a {
+    background: white;
+    border: 5px solid #3F8DA7;
+    color: #3F8DA7;
+    padding: 5px 10px;
+    text-decoration: none;
+  }
+   
+  #hero a:hover {
+    padding: 5px 10px;
+    background: #3F8DA7;
+    color: white;
+  }
+  .btn {
+    background: white;
+    border: 5px solid #3F8DA7;
+    color: #3F8DA7;
+    padding: 5px 10px;
+    text-decoration: none;
+  }
+   
+  .btn:hover {
+    background: #3F8DA7;
+    color: white;
+    padding: 5px 10px;
+  }
+  
+  .three-col p {
+    margin-bottom: 40px;
+  }
+  footer {
+    background: #3F8DA7;
+    color: white;
+    margin-top: 40px;
+    padding: 20px 0;
+    text-align: center;
+}
+footer ul {
+    margin: 40px 0;
+  }
+   
+  footer li {
+    display: inline-block;
+    margin: 0 25px;
+  }
+  
