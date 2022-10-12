@@ -1,0 +1,213 @@
+/* {
+    top: 0px;
+left: 0px;
+width: 360px;
+height: 755px;
+
+background: #FFFFFF 0% 0% no-repeat padding-box;
+opacity: 1;
+}  */
+:root{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+.text1{
+    top: 59px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 74px;
+    text-align: center;
+    font: normal normal normal 30px/37px Montserrat;
+    letter-spacing: 0px;
+    color: #BEBEC0;
+    opacity: 1;
+}
+.text2{
+    top: 167px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 140px;
+    text-align: center;
+    font: normal normal bold 33px/50px Montserrat;
+    letter-spacing: 0px;
+    color: #464451;
+    opacity: 1;
+}
+.para1{
+    top: 352px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 292px;
+    height: 60px;
+    text-align: center;
+    font: normal normal 600 13px/21px Open Sans;
+    letter-spacing: 0px;
+    color: #ABABAD;
+    opacity: 1;
+}
+.card {
+    top: 443px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 313px;
+    height: 226px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #EB6875;
+    border-radius: 4px;
+    opacity: 1;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+  .cardpara1{
+    top: 508px;
+    left: 49px;
+    width: 189px;
+    height: 33px;
+    text-align: left;
+    font: normal normal 600 11px/18px Open Sans;
+    letter-spacing: 0px;
+    color: #ABABAD;
+    opacity: 1;
+  }
+  .card1 {
+    top: 688px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 313px;
+    height: 227px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #EAC357;
+    border-radius: 4px;
+    opacity: 1;
+  }
+  
+  .card1:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container1{
+    padding: 2px 16px;
+  }
+  .cardpara2{
+    top: 508px;
+    left: 49px;
+    width: 189px;
+    height: 33px;
+    text-align: left;
+    font: normal normal 600 11px/18px Open Sans;
+    letter-spacing: 0px;
+    color: #ABABAD;
+    opacity: 1;
+  }
+  .card2 {
+    top: 933px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 313px;
+    height: 227px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #5FD5CD;
+    border-radius: 4px;
+    opacity: 1;
+  }
+  
+  .card2:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container2{
+    padding: 2px 16px;
+  }
+  .cardpara3{
+    top: 508px;
+    left: 49px;
+    width: 189px;
+    height: 33px;
+    text-align: left;
+    font: normal normal 600 11px/18px Open Sans;
+    letter-spacing: 0px;
+    color: #ABABAD;
+    opacity: 1;
+  }
+  .card3 {
+    top: 1178px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 313px;
+    height: 227px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #199FB2;
+    border-radius: 4px;
+    opacity: 1;
+  }
+  
+  .card3:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container3{
+    padding: 2px 16px;
+  }
+  .cardpara4{
+    top: 508px;
+    left: 49px;
+    width: 189px;
+    height: 33px;
+    text-align: left;
+    font: normal normal 600 11px/18px Open Sans;
+    letter-spacing: 0px;
+    color: #ABABAD;
+    opacity: 1;
+  }
+  .hc1{
+    top: 476px;
+    left: 49px;
+    width: 111px;
+    height: 19px;
+    text-align: left;
+    font: normal normal bold 16px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #464451;
+    opacity: 1;
+  }
+  .hc2{
+    top: 722px;
+    left: 49px;
+    width: 58px;
+    height: 20px;
+    text-align: left;
+    font: normal normal bold 17px/20px Montserrat;
+    letter-spacing: 0px;
+    color: #464451;
+    opacity: 1;
+    }
+    .hc3{
+        top: 722px;
+        left: 49px;
+        width: 58px;
+        height: 20px;
+        text-align: left;
+        font: normal normal bold 17px/20px Montserrat;
+        letter-spacing: 0px;
+        color: #464451;
+        opacity: 1;
+    }
+    .hc4{
+        top: 722px;
+        left: 49px;
+        width: 58px;
+        height: 20px;
+        text-align: left;
+        font: normal normal bold 17px/20px Montserrat;
+        letter-spacing: 0px;
+        color: #464451;
+        opacity: 1;
+    }
