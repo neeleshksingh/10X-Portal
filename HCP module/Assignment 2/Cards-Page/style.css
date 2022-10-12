@@ -1,12 +1,4 @@
-/* {
-    top: 0px;
-left: 0px;
-width: 360px;
-height: 755px;
 
-background: #FFFFFF 0% 0% no-repeat padding-box;
-opacity: 1;
-}  */
 :root{
     font-family: 'Open Sans', sans-serif;
     font-family: 'Montserrat', sans-serif;
@@ -58,6 +50,7 @@ opacity: 1;
     border-radius: 4px;
     opacity: 1;
     transition:0.3s;
+    border-top: 4px solid red;
   }
   
   .card:hover {
@@ -88,6 +81,7 @@ opacity: 1;
     box-shadow: 0px 3px 6px #EAC357;
     border-radius: 4px;
     opacity: 1;
+    border-top: 4px solid #EAC357;
   }
   
   .card1:hover {
@@ -118,6 +112,7 @@ opacity: 1;
     box-shadow: 0px 3px 6px #5FD5CD;
     border-radius: 4px;
     opacity: 1;
+    border-top: 4px solid #5FD5CD;
   }
   
   .card2:hover {
@@ -148,6 +143,7 @@ opacity: 1;
     box-shadow: 0px 3px 6px #199FB2;
     border-radius: 4px;
     opacity: 1;
+    border-top: 4px solid #199FB2;
   }
   
   .card3:hover {
@@ -211,4 +207,11 @@ opacity: 1;
         letter-spacing: 0px;
         color: #464451;
         opacity: 1;
+    }
+    img {
+      width: 11.2vw;
+      height: 3vh;
+      position: relative;
+      left: 9em;
+      top: 4em;
     }
