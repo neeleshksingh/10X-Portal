@@ -3,10 +3,16 @@
 <head>
     <title>Document</title>
     <style>
-        div{
+        .div1{
             display: grid;
             grid-template-columns: repeat(4,100px);
             gap: 10px;
+        }
+        .div2{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 10px;
+            padding-top: 50px;
         }
         section{
             height: 100px;
@@ -16,7 +22,13 @@
     </style>
 </head>
 <body>
-    <div>
+    <div class="div1">
+        <section>Header</section>
+        <section>Sidebar</section>
+        <section>Content</section>
+        <section>Footer</section>
+    </div>
+    <div class="div2">
         <section>Header</section>
         <section>Sidebar</section>
         <section>Content</section>
