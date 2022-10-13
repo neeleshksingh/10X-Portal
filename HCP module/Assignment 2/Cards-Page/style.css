@@ -7,10 +7,10 @@
     top: 59px;
     margin-left: auto;
     margin-right: auto;
-    width: 250px;
-    height: 74px;
-    text-align: center;
-    font: normal normal normal 30px/37px Montserrat;
+    width: 422px;
+    height: 40px;
+    text-align: left;
+    font: normal normal normal 33px/40px Montserrat;
     letter-spacing: 0px;
     color: #BEBEC0;
     opacity: 1;
@@ -19,10 +19,10 @@
     top: 167px;
     margin-left: auto;
     margin-right: auto;
-    width: 200px;
-    height: 140px;
-    text-align: center;
-    font: normal normal bold 33px/50px Montserrat;
+    width: 415px;
+    height: 40px;
+    text-align: left;
+    font: normal normal bold 33px/40px Montserrat;
     letter-spacing: 0px;
     color: #464451;
     opacity: 1;
@@ -31,8 +31,8 @@
     margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
-    width: 292px;
-    height: 60px;
+    width: 474px;
+    height: 39px;
     text-align: center;
     font: normal normal 600 13px/21px Open Sans;
     letter-spacing: 0px;
@@ -40,17 +40,17 @@
     opacity: 1;
 }
 .card {
-    margin-top: 36px;
+    margin-top: 63px;
     margin-left: auto;
     margin-right: auto;
-    width: 313px;
-    height: 226px;
+    width: 329px;
+    height: 239px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #EB6875;
     border-radius: 4px;
     opacity: 1;
     transition:0.3s;
     border-top: 4px solid red;
+    box-shadow: 0px 3px 6px #EB6875;
   }
   
   .card:hover {
@@ -72,16 +72,16 @@
     opacity: 1;
   }
   .card1 {
-    margin-top: 19px;
+    margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
-    width: 313px;
-    height: 227px;
+    width: 329px;
+    height: 239px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #EAC357;
     border-radius: 4px;
     opacity: 1;
     border-top: 4px solid #EAC357;
+    box-shadow: 0px 3px 6px #EAC357;
   }
   
   .card1:hover {
@@ -103,16 +103,17 @@
     opacity: 1;
   }
   .card2 {
-    margin-top: 19px;
-    margin-left: auto;
+    margin-top: -350px;
+    margin-left: 625px;
     margin-right: auto;
-    width: 313px;
-    height: 227px;
+    width: 328px;
+    height: 240px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #5FD5CD;
+    box-shadow: 0px 3px 6px #00000029;
     border-radius: 4px;
     opacity: 1;
     border-top: 4px solid #5FD5CD;
+    box-shadow: 0px 3px 6px #5FD5CD;
   }
   
   .card2:hover {
@@ -134,15 +135,16 @@
     opacity: 1;
   }
   .card3 {
-    margin-top: 19px;
-    margin-left: auto;
+    margin-top: -250px;
+    margin-left: 1340px;
     margin-right: auto;
-    width: 313px;
-    height: 227px;
+    width: 328px;
+    height: 240px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #199FB2;
+    box-shadow: 0px 3px 6px #00000029;
     border-radius: 4px;
     opacity: 1;
+    box-shadow: 0px 3px 6px #199FB2;
     border-top: 4px solid #199FB2;
   }
   
@@ -209,9 +211,9 @@
         opacity: 1;
     }
     img {
-      width: 11.2vw;
-      height: 3vh;
+      width: 48px;
+      height: 24px;
       position: relative;
-      left: 9em;
+      left: 15em;
       top: 4em;
     }
