@@ -1,63 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cards</title>
+    <title>Card-Page</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap"
+      rel="stylesheet" />
 </head>
-<body style="height: 100%; width: 100%;">
-    <section class="padding">
-        <div>
-            <h1 class="text1">Reliable, efficient delivery</h1>
-            <h1 class="text2">Powered by Technology</h1>
-            <p class="para1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem psum has been the industry’s standard dummy</p>
-        </div>
-    </section>
-    <section>
-        <div class="card">
-            <div class="container">
-                
-              <h4 class="hc1">Team Builder</h4> 
-              <p class="cardpara1">Lorem Ipsum is simply dummy text of the printing</p> 
-              <img src="./Image/groups.svg" alt="">
+<body>
+    <div class="container">
+        <section id="header">
+            <h1 class="head1">Reliable, efficient delivery</h1>
+            <h1 class="head2">Powered by Technology</h1>
+            <p class="p1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br/>Lorem psum has been the industry’s standard dummy</p>
+        <section/>
+        <section id="grid">
+            <div id="box">
+                <div class="card" id="box1">
+                    <h3>Supervisor</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing</p>
+                    <span class="icon"><img src="./Image/person.svg" alt=""></span>
+                </div>
+                <div class="card" id="box2">
+                    <h3>Team Builder</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing</p>
+                    <span class="icon"><img src="./Image/groups.svg" alt=""></span>
+                </div>
+                <div class="card" id="box3">
+                    <h3>Karma</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing</p>
+                    <span class="icon"><img src="./Image/tips.svg" alt=""></span>
+                </div>
+                <div class="card" id="box4">
+                    <h3>Calculator</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing</p>
+                    <span class="icon"><img src="./Image/calculate.svg" alt=""></span>
+                </div>
             </div>
-          </div>
-    </section>
-    <section>
-        <div class="card1">
-            <div class="container1">
-                
-              <h4 class="hc2">Karma</h4> 
-              <p class="cardpara2">Lorem Ipsum is simply dummy text of the printing</p> 
-              <img src="./Image/tips.svg" alt="">
-            </div>
-          </div>
-    </section>
-    <section>
-        <div class="card2">
-            <div class="container2">
-              <h4 class="hc3">Supervisor</h4> 
-              <p class="cardpara3">Lorem Ipsum is simply dummy text of the printing</p> 
-              <img src="./Image/person.svg" alt="">
-            </div>
-          </div>
-    </section>
-    <section>
-        <div class="card3">
-            <div class="container3">
-              <h4 class="hc4">Calculater</h4> 
-              <p class="cardpara4">Lorem Ipsum is simply dummy text of the printing</p> 
-              <img src="./Image/calculate.svg" alt="">
-            </div>
-          </div>
-    </section>
+        </section>  
+    </div>
 </body>
 </html>

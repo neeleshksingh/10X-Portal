@@ -1,219 +1,100 @@
-
 :root{
-    font-family: 'Open Sans', sans-serif;
     font-family: 'Montserrat', sans-serif;
 }
-.text1{
-    top: 59px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 422px;
-    height: 40px;
-    text-align: left;
-    font: normal normal normal 33px/40px Montserrat;
-    letter-spacing: 0px;
-    color: #BEBEC0;
-    opacity: 1;
+.body{
+    margin: 0;
 }
-.text2{
-    top: 167px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 415px;
-    height: 40px;
-    text-align: left;
-    font: normal normal bold 33px/40px Montserrat;
-    letter-spacing: 0px;
-    color: #464451;
-    opacity: 1;
+.container{
+    padding: 0 218px;
 }
-.para1{
-    margin-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 474px;
-    height: 39px;
+#header{
     text-align: center;
-    font: normal normal 600 13px/21px Open Sans;
-    letter-spacing: 0px;
-    color: #ABABAD;
-    opacity: 1;
+    padding: 30px 0;
 }
-.card {
-    margin-top: 63px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 329px;
-    height: 239px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border-radius: 4px;
-    opacity: 1;
-    transition:0.3s;
-    border-top: 4px solid red;
-    box-shadow: 0px 3px 6px #EB6875;
-  }
-  
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  .container {
-    padding: 2px 16px;
-  }
-  .cardpara1{
-    top: 508px;
-    left: 49px;
-    width: 189px;
-    height: 33px;
-    text-align: left;
-    font: normal normal 600 11px/18px Open Sans;
-    letter-spacing: 0px;
+.head1{
+    color: #BEBEC0;
+    font-size: 33px;
+    font-weight: 300;
+    margin-top: 42px;
+    margin-bottom: 6px;
+}
+.head2{
+    color: #464451;
+    font-size: 33px;
+    font-weight: 700;
+    margin-top: 6px;
+    margin-bottom: 16px
+}
+.p1{
+    margin: 8px auto;
+    width: 500px;
+}
+p{
     color: #ABABAD;
-    opacity: 1;
-  }
-  .card1 {
-    margin-top: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 329px;
-    height: 239px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border-radius: 4px;
-    opacity: 1;
-    border-top: 4px solid #EAC357;
-    box-shadow: 0px 3px 6px #EAC357;
-  }
-  
-  .card1:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  .container1{
-    padding: 2px 16px;
-  }
-  .cardpara2{
-    top: 508px;
-    left: 49px;
-    width: 189px;
-    height: 33px;
+    font-size: 13px;
+    font-weight: 300;
+}
+#grid{
+    padding: 25px 0;
     text-align: left;
-    font: normal normal 600 11px/18px Open Sans;
-    letter-spacing: 0px;
-    color: #ABABAD;
-    opacity: 1;
-  }
-  .card2 {
-    margin-top: -350px;
-    margin-left: 635px;
-    margin-right: auto;
-    width: 328px;
-    height: 240px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+h3{
+    font-size: 18px;
+}
+#box{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    /* grid-template-rows: 160px 50px 160px 160px; */
+    grid-column-gap: 30px;
+    grid-row-gap: 25px;
+} 
+#box > .card{
+    border: 1px solid #00000029;
+    width: 100%;
+    height: 239px;
+    box-sizing: border-box;
+    padding: 26px;
+    position: relative;
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 4px;
-    opacity: 1;
+}
+#box > .card > .icon{
+    position: absolute;
+    right: 24px;
+    bottom: 44px;
+}
+#box > #box1{
     border-top: 4px solid #5FD5CD;
-    box-shadow: 0px 3px 6px #5FD5CD;
-  }
-  
-  .card2:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  .container2{
-    padding: 2px 16px;
-  }
-  .cardpara3{
-    top: 508px;
-    left: 49px;
-    width: 189px;
-    height: 33px;
-    text-align: left;
-    font: normal normal 600 11px/18px Open Sans;
-    letter-spacing: 0px;
-    color: #ABABAD;
-    opacity: 1;
-  }
-  .card3 {
-    margin-top: -255px;
-    margin-left: 1340px;
-    margin-right: auto;
-    width: 328px;
-    height: 240px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #00000029;
-    border-radius: 4px;
-    opacity: 1;
-    box-shadow: 0px 3px 6px #199FB2;
+    grid-row: 2 / span 2;
+}
+#box >#box2{
+    grid-row: 1 / span 2;
+    grid-column-start: 2;
+    border-top: 4px solid #EB6875;
+}
+#box >#box3{
+    grid-row: 3 / span 2;
+    grid-column-start: 2;
+    border-top: 4px solid #EAC357;
+}
+#box >#box4{
+    grid-row: 2 / span 2;
+    grid-column-start: 3;
     border-top: 4px solid #199FB2;
-  }
-  
-  .card3:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  .container3{
-    padding: 2px 16px;
-  }
-  .cardpara4{
-    top: 508px;
-    left: 49px;
-    width: 189px;
-    height: 33px;
-    text-align: left;
-    font: normal normal 600 11px/18px Open Sans;
-    letter-spacing: 0px;
-    color: #ABABAD;
-    opacity: 1;
-  }
-  .hc1{
-    top: 476px;
-    left: 49px;
-    width: 111px;
-    height: 19px;
-    text-align: left;
-    font: normal normal bold 16px/19px Montserrat;
-    letter-spacing: 0px;
-    color: #464451;
-    opacity: 1;
-  }
-  .hc2{
-    top: 722px;
-    left: 49px;
-    width: 58px;
-    height: 20px;
-    text-align: left;
-    font: normal normal bold 17px/20px Montserrat;
-    letter-spacing: 0px;
-    color: #464451;
-    opacity: 1;
+}
+
+@media screen and (max-width:576px){
+   
+    .container{
+        padding: 0 24px;
     }
-    .hc3{
-        top: 722px;
-        left: 49px;
-        width: 58px;
-        height: 20px;
-        text-align: left;
-        font: normal normal bold 17px/20px Montserrat;
-        letter-spacing: 0px;
-        color: #464451;
-        opacity: 1;
+    .p1{
+        width: 100%;
     }
-    .hc4{
-        top: 722px;
-        left: 49px;
-        width: 58px;
-        height: 20px;
-        text-align: left;
-        font: normal normal bold 17px/20px Montserrat;
-        letter-spacing: 0px;
-        color: #464451;
-        opacity: 1;
+    #box{
+        display: block;
+    } 
+    .card{
+        margin-bottom: 30px;
     }
-    img {
-      width: 48px;
-      height: 24px;
-      position: relative;
-      left: 15em;
-      top: 4em;
-    }
+}
