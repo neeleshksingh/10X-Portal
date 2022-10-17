@@ -1,11 +1,11 @@
-@media screen and (max-width:1241px) {
+
     *{
         margin: 0;
         padding: 0;
+        
     }
     body{
-        background: transparent linear-gradient(156deg, #FCF3F3 0%, #FFFFFF 49%, #FAF1F0 100%) 0% 0% no-repeat padding-box;
-        opacity: 1;
+        background-image: linear-gradient(#FCF3F3, #FFFFFF, #FAF1F0);
     }
     .head{
         padding: 31px 27px;
@@ -24,16 +24,27 @@
     .h3-base{
         height: 19px;
         width: 44px;
+        font: normal normal medium 20px/28px Avenir;
+        letter-spacing: 6px;
+        color: #5F5A5A;
+        opacity: 1;
     }
     .h3-apparel{
         width: 86px;
         height: 20px;
         margin-top: 10%;
         margin-left: -30%;
+        font: normal normal medium 20px/28px Avenir;
+        letter-spacing: 6px;
+        color: #5F5A5A;
+        opacity: 1;
     }
     .img{
         width: 100%;
-        height: 29.8em;
+        /* height: 21.8em; */
+    }
+    .bottom{
+        text-align: center;
     }
     .bottom .h1{
         text-align: center;
@@ -50,23 +61,50 @@
         opacity: 1;
     }
     .bottom p{
-        text-align: center;
         font: normal normal 600 12px/20px Open Sans;
         letter-spacing: 0px;
         color: #9A6B69;
         opacity: 1;
         padding: 18px 15px;
+        width: 315px;
+        height: 110px;
+        margin-left: auto;
+    margin-right: auto;
+}
     }
-    form{
+    .container{
         padding: 29px 27px;
+        position: relative;
+        text-align: center;
     }
     #email{
-        width: 302px;
+        width: 30%;
         height: 50px;
         border: 1px solid #9A6B69;
         border-radius: 29px;
         opacity: 1;
         text-align: left;
         padding: 0 0 0 10%;
-    }
+        /* position: absolute; */
+    } 
+.but{
+    top: 606px;
+width: 95px;
+height: 57px;
+background: #E7A09E 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #00000029;
+border-radius: 29px;
+opacity: 1;
+/* position: absolute; */
 }
+
+    /* @media only screen and (min-width:35em){
+
+
+    *{
+        margin: 0;
+        padding: 0;
+        background: transparent linear-gradient(136deg, #FCF3F3 0%, #FFFFFF 49%, #FAF1F0 100%) 0% 0% no-repeat padding-box;
+        opacity: 1;
+    }
+} */
