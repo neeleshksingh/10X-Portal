@@ -91,3 +91,52 @@ li{
     color: #FAFAFA;
     opacity: 1;
 }
+@media only screen and (max-width: 40em){
+   .grid{
+    display: block;
+   }
+    
+   .card1{
+    text-align: center;
+    padding: 0;
+   }
+   .font-small{
+    font-size:1em;
+   }
+   .font-m{
+     font-size: 1.62em;
+   }
+   .font-l{
+    font-size: 2.8em;
+   }
+   .h3{
+    padding-left: 3rem;
+    padding-right: 2.5rem;
+    margin-left: 1.5em;
+    margin-right: 1em;
+    margin-bottom: 2.5rem;
+  
+   }
+   .h1{
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+   }
+   .p1{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+   }
+   /* .card1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+   }
+   .card2{
+    grid-column: 1/2;
+    grid-row: 2/3;
+   }
+   .card3{
+    grid-column: 1/2;
+    grid-row: 3/4;
+   } */
+}

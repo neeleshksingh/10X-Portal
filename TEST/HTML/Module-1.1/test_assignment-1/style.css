@@ -1,0 +1,21 @@
+body{
+    background-color: lightblue;
+}
+table, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 20vw;
+    height: 2vw;
+}
+td{
+    text-align: center;
+    background-color: darkgoldenrod;
+    color: black;
+}
+th{
+    background-color: gray;
+}
+video{
+    width: 600px;
+    height: 480px;
+}
