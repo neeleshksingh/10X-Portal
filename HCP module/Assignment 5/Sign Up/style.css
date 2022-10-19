@@ -1,0 +1,176 @@
+:root{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background-color: #FF7978;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: block;
+}
+.box1{
+    text-align: center;
+}
+.font-l{
+    margin-top: 2.25em;
+    font-size: 2rem;
+    margin-bottom: 0.688em;
+    margin-left: 1.906em;
+    margin-right: 1.906em;
+    color: white;
+}
+.m-x-2{
+    color: white;
+}
+.font-s{
+    font-size: 0.75rem;
+    margin-left: 5.906em;
+    margin-right: 5.906em;
+    margin-bottom: 2em;
+}
+.box2{
+    text-align: center;
+}
+.rec{
+    width: 80%;
+    height: 57px;
+    border: 1px solid #5D55A1;
+    color: white;
+    background-color: #5D55A1;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 4px;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+}
+.form{
+    width: 80%;
+    border: 1px solid white;
+    background-color: white;
+    margin-left: 10%;
+    border-radius: 4px;
+    opacity: 1;
+}
+#name{
+    width: 72%;
+    height: 40px;
+    margin-bottom: 15px;
+    margin-top: 23px;
+    padding-left: 2em;
+    border: 1px solid #5C54A1;
+    border-radius: 4px;
+    opacity: 1;
+}
+#lastname{
+    width: 72%;
+    height: 40px;
+    margin-bottom: 15px;
+    padding-left: 2em;
+    border: 1px solid #C9C9C9;
+    border-radius: 4px;
+    opacity: 1;
+}
+#email{
+    width: 72%;
+    height: 40px;
+    margin-bottom: 15px;
+    padding-left: 2em;
+    border: 1px solid #C9C9C9;
+    border-radius: 4px;
+    opacity: 1;
+}
+#password{
+    width: 72%;
+    height: 40px;
+    margin-bottom: 15px;
+    padding-left: 2em;
+    border: 1px solid #C9C9C9;
+    border-radius: 4px;
+    opacity: 1;
+}
+button{
+    width: 80%;
+    height: 40px;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 4px;
+    opacity: 1;
+    background-color: #37CC89;
+    color: white;
+    border: 1px solid #37CC89;
+    margin-bottom: 14px;
+}
+
+@media only screen and (min-width:35em){
+    .container{
+        display: flex;
+    }
+    .font-l{
+        font-size: 3.375rem;
+        text-align: left;
+        margin-top: 300px;
+        width: 8.25em;
+        margin-left: 22%;
+    }
+    .rec{
+        margin-top: 136px;
+    }
+    .m-x-2{
+        text-align: left;
+        width: 40%;
+        margin-left: 22%;
+    }
+    #name{
+        width: 72%;
+        height: 56px;
+        margin-bottom: 15px;
+        margin-top: 23px;
+        padding-left: 2em;
+        border: 1px solid #5C54A1;
+        border-radius: 4px;
+        opacity: 1;
+    }
+    #lastname{
+        width: 72%;
+        height: 56px;
+        margin-bottom: 15px;
+        padding-left: 2em;
+        border: 1px solid #C9C9C9;
+        border-radius: 4px;
+        opacity: 1;
+    }
+    #email{
+        width: 72%;
+        height: 56px;
+        margin-bottom: 15px;
+        padding-left: 2em;
+        border: 1px solid #C9C9C9;
+        border-radius: 4px;
+        opacity: 1;
+    }
+    #password{
+        width: 72%;
+        height: 56px;
+        margin-bottom: 15px;
+        padding-left: 2em;
+        border: 1px solid #C9C9C9;
+        border-radius: 4px;
+        opacity: 1;
+    }
+    button{
+        width: 80%;
+        height: 56px;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 4px;
+        opacity: 1;
+        background-color: #37CC89;
+        color: white;
+        border: 1px solid #37CC89;
+        margin-bottom: 14px;
+    }
+}
