@@ -20,6 +20,6 @@ function checkPalindrome(string) {
     }
     return 'YES';
 }
-let string = readLine()
-let ans = checkPalindrome(string.toLowerCase());
+let string = readLine().toLowerCase()
+let ans = checkPalindrome(string);
 console.log(ans);
