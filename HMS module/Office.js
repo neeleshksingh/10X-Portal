@@ -9,19 +9,12 @@ function readLine() {
 }
 
 // -------- Do NOT edit anything above this line ----------
-function job(n) {
-    let rating = readLine().split(' ').map(Number);
-    let result = 0;
-    for (let i = 0; i < n; i++) {
-        result += rating[i];
-    }
-    let finalrating = result / n;
-    if (finalrating <= 5) {
-        return 'They fired me'
-    } else {
-        return 'I still have a job'
-    }
+let people = readLine().split(" ").map((value) => value.toLowerCase());
+let rating = readLine().split(" ").map(Number);
+let sum = 0;
+for (let i = 0; i < people.length; i++) {
+  people[i] === "boss" ? (sum += rating[i] * 2) : (sum += rating[i]);
 }
-let teamMembers = readLine().split(' ');
-let n = teamMembers.length;
-console.log(job(n));
+let avrg = sum / people.length;
+
+avrg > 5 ? console.log("I still have a job") : console.log("They fired me");
