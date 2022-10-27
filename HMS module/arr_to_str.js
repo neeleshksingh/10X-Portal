@@ -9,3 +9,4 @@ let str1 = "abc, bcd, def"
 let arr1 = str1.split(",")
 console.log(arr1)
 console.log(typeof(arr1))
+console.log(typeof(arr))
