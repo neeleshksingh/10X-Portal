@@ -1,2 +1,2 @@
-1 
-aabccc
+ABABCD
+AABBCD
