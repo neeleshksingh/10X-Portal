@@ -16,5 +16,7 @@ for(let i=0;i<test;i++){
     console.log(marks)
 }
 let querry = parseInt(readLine())
-
+for(let i=0;i<querry;i++){
+    let 
+}
 
