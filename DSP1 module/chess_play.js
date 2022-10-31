@@ -38,5 +38,6 @@ function followKnight(x,y,move) {
       return total;
     }
   }
-  let x,y,move = parseInt(readLine().split())
+  let x = readLine()
+  console.log(x)
   followKnight(x,y,move)
