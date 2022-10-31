@@ -44,117 +44,82 @@ board[i][j] is a digit 1-9 or '.'.
 	
 // Checks whether there is any duplicate
 // in current row or not
-function notInRow(arr,row)
-{
-    // Set to store characters seen so far.
-    let st = new Set();
+let fs = require("fs");
+let data = fs.readFileSync('./in.txt', 'utf-8');
+let idx = 0;
+data = data.split('\n');
 
-    for(let i = 0; i < 9; i++)
-    {
-    
-        // If already encountered before,
-        // return false
-        if (st.has(arr[row][i]))
+function readLine() {
+    idx++;
+    return data[idx - 1].trim();
+}
+
+// -------- Do NOT edit anything above this line ----------
+function validateRow(board, row) {
+    let set = new Set();
+    for (let i = 0; i < 9; i++) {
+        if (set.has(board[row][i]))
             return false;
-
-        // If it is not an empty cell, insert value
-        // at the current cell in the set
-        if (arr[row][i] != '.')
-            st.add(arr[row][i]);
+        if (board[row][i] != '.')
+            set.add(board[row][i]);
     }
     return true;
 }
-
-// Checks whether there is any duplicate
-// in current column or not.
-function notInCol(arr,col)
-{
-    let st = new Set();
-
-    for(let i = 0; i < 9; i++)
-    {
-    
-        // If already encountered before,
-        // return false
-        if (st.has(arr[i][col]))
+/**
+ * isValid(board, 7, 5)
+ * validateRow(board, 7)
+ * set = {4, 1, 9, 5}
+ */
+function validateCol(board, col) {
+    let set = new Set();
+    for (let i = 0; i < 9; i++) {
+        if (set.has(board[i][col]))
             return false;
-
-        // If it is not an empty cell,
-        // insert value at the current
-        // cell in the set
-        if (arr[i][col] != '.')
-            st.add(arr[i][col]);
+        if (board[i][col] != '.')
+            set.add(board[i][col]);
     }
     return true;
 }
-
-// Checks whether there is any duplicate
-// in current 3x3 box or not.
-function notInBox(arr,startRow,startCol)
-{
-    let st = new Set();
-
-    for(let row = 0; row < 3; row++)
-    {
-    for(let col = 0; col < 3; col++)
-    {
-        let curr = arr[row + startRow][col + startCol];
-
-        // If already encountered before, return
-        // false
-        if (st.has(curr))
-            return false;
-
-        // If it is not an empty cell,
-        // insert value at current cell in set
-        if (curr != '.')
-            st.add(curr);
+function validateBox(board, startRow, startCol) {
+    let set = new Set();
+    for (let i = 0; i < 3; i++) {
+        for (let j = 0; j < 3; j++) {
+            let val = board[i + startRow][j + startCol];
+            if (set.has(val))
+                return false;
+            if (val != '.')
+                set.add(val);
+        }
     }
+    return true;
 }
-return true;
+/**
+ * [7, 5]
+ * startRow -> 7 - 7 % 3 = 7 - 1 = 6
+ * startCol -> 5 - 5 % 3 = 5 - 2 = 3
+ * [6, 3][6, 4][6, 5]
+ * [7, 3][7, 4][7, 5]
+ * [8, 3][8, 4][8, 5]
+ * set = {4, 1, 9, 8}
+ */
+function isValid(board, row, col) {
+    return validateRow(board, row) && validateCol(board, col)
+        && validateBox(board, row - row % 3, col - col % 3);
 }
-
-
-// Checks whether current row and current column and
-// current 3x3 box is valid or not
-function isValid(arr,row,col)
-{
-    return notInRow(arr, row) && notInCol(arr, col) &&
-    notInBox(arr, row - row % 3, col - col % 3);
-}
-
-
-function isValidConfig(arr,n)
-{
-    for(let i = 0; i < n; i++)
-{
-    for(let j = 0; j < n; j++)
-    {
-        
-        // If current row or current column or
-        // current 3x3 box is not valid, return
-        // false
-        if (!isValid(arr, i, j))
-            return false;
+function isValidSudoku(board) {
+    for (let i = 0; i < 9; i++) {
+        for (let j = 0; j < 9; j++) {
+            if (!isValid(board, i, j))
+                return "False";
+        }
     }
+    return "True";
 }
-return true;
-}
-
-// Driver's code
-let board = [[ '5', '3', '.', '.', '7', '.', '.', '.', '.' ],
-        [ '6', '.', '.', '1', '9', '5', '.', '.', '.' ],
-        [ '.', '9', '8', '.', '.', '.', '.', '6', '.' ],
-        [ '8', '.', '.', '.', '6', '.', '.', '.', '3' ],
-        [ '4', '.', '.', '8', '.', '3', '.', '.', '1' ],
-        [ '7', '.', '.', '.', '2', '.', '.', '.', '6' ],
-        [ '.', '6', '.', '.', '.', '.', '2', '8', '.' ],
-        [ '.', '.', '.', '4', '1', '9', '.', '.', '5' ],
-        [ '.', '.', '.', '.', '8', '.', '.', '7', '9' ]];
-
-// Function call
-console.log((isValidConfig(board, 9) ?
-                "YES" : "NO"));
-
-
-// This code is contributed by rag2127
+let board1 = []
+for(let i=0;i<9;i++)
+{
+    
+    board1[i]=readLine().split('')
+};
+ 
+console.log(isValidSudoku(board1));
