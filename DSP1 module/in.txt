@@ -1,1 +1,15 @@
-3 3 1
+Harry
+5
+80
+75
+35
+100
+80
+4
+get_marks 
+2
+average
+get_marks 
+3
+get_marks 
+10
