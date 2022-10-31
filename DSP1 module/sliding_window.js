@@ -29,9 +29,7 @@ function countWindowDistinct(win, k) {
 }
 function countDistinct(arr, N, K) {
     for (let i = 0; i <= N - K; i++)
-        document.write(countWindowDistinct(arr.slice(i, arr.length), K) + "<br/>");
+        console.log(countWindowDistinct(arr.slice(i, arr.length), K));
 }
-
 let arr = [1, 2, 1, 3, 4, 2, 3], K = 4;
-
 countDistinct(arr, arr.length, K);
