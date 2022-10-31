@@ -12,28 +12,37 @@ function readLine() {
 // -------- Do NOT edit anything above this line ----------
 
 function vowels(str){
-    let set = new Set()
-    set.add('a')
-    set.add('e')
-    set.add('i')
-    set.add('o')
-    set.add('u')
+    let vovo = new Set()
+    vovo.add('a')
+    vovo.add('e')
+    vovo.add('i')
+    vovo.add('o')
+    vovo.add('u')
     for(let i=0;i<str.length;i++)
     {
-        if(set.has(str[i]))
+        if(vovo.has(str[i]))
         {
-            set.delete(str[i])
+            vovo.delete(str[i])
         }
     }
-  
-    if(set.size===0) 
+    if(vovo.size===0) 
     {
         return 'YES'
     } 
-     return 'NO'
-    
-    
+     return 'NO'   
 }
 let length=parseInt(readLine())
 let str=readLine()
-console.log(vowels(str))  
+console.log(vowels(str))
+
+// // atuongihe
+// //NO
+// a e i o u
+// a = a
+// t = 
+// u = u
+// o=o
+// n
+
+// setsize = 5
+// setsize = 1

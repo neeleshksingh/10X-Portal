@@ -15,6 +15,7 @@ for(let i=0;i<arr.length;i++)
 {
     map.set(String.fromCharCode(97+i),arr[i])
 }
+
 function MorsalCode(str){
 let c=0
 
@@ -29,11 +30,13 @@ for(let i=0;i<str.length;i++)
     str[c]=empty
     c++
 }
+
 let count=new Set()
 for(let i=0;i<str.length;i++)
 {
     count.add(str[i])
 }
+
 return count.size
 }
 let testCases=parseInt(readLine())
