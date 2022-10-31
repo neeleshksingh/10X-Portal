@@ -38,4 +38,5 @@ function followKnight(x,y,move) {
       return total;
     }
   }
-  followKnight(3,3,1)
+  let x,y,move = parseInt(readLine().split())
+  followKnight(x,y,move)
