@@ -38,6 +38,4 @@ function followKnight(x,y,move) {
       return total;
     }
   }
-  let x = readLine().split()
-  console.log(x)
-  followKnight(x)
+  followKnight(3,3,1)
