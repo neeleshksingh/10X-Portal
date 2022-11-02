@@ -22,7 +22,7 @@ console.log(Math.max(max))
 
 function second_highest(arr)
 {
-  var second_highest = arr.sort(function(a, b) { return b - a; })[1];
+  let second_highest = arr.sort(function(a, b) { return b - a; })[1];
   return second_highest;
 }
 let n = parseInt(readLine())
