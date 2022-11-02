@@ -8,26 +8,21 @@ function readLine() {
     return data[idx - 1].trim();
 }
 // -------- Do NOT edit anything above this line ----------
-/*
-let n = parseInt(readLine())
-let arr = []
-let max = 0
-for(let i=0;i<n;i++){
-    arr[i] = parseInt(readLine())
-    max = arr[i]
-}
-console.log(arr)
-console.log(Math.max(max))
-*/
 
-function second_highest(arr)
+let n=parseInt(readLine())
+let max=Number.NEGATIVE_INFINITY;
+let arr=[]
+for(let i=0;i<n;i++)
 {
-  let second_highest = arr.sort(function(a, b) { return b - a; })[1];
-  return second_highest;
+    arr.push(parseInt(readLine()))
+    max=Math.max(max,arr[i])
 }
-let n = parseInt(readLine())
-let arr = []
-for(let i=0;i<n;i++){
-    arr[i] = parseInt(readLine())
+let secondmax=Number.NEGATIVE_INFINITY;
+for(let i=0;i<arr.length;i++)
+{
+    if(arr[i]>secondmax && arr[i]!=max)
+    {
+        secondmax=Math.max(secondmax,arr[i])
+    }
 }
-console.log(second_highest(arr))
+console.log(secondmax)
