@@ -9,20 +9,17 @@ function readLine() {
 }
 // -------- Do NOT edit anything above this line ----------
 
-let n=parseInt(readLine())
-let max=Number.NEGATIVE_INFINITY;
-let arr=[]
-for(let i=0;i<n;i++)
-{
-    arr.push(parseInt(readLine()))
-    max=Math.max(max,arr[i])
+let n = parseInt(readLine())
+let arr = []
+let max = 0
+for (let i = 0; i < n; i++) {
+    arr[i] = parseInt(readLine())
+    max = Math.max(max, arr[i])
 }
-let secondmax=Number.NEGATIVE_INFINITY;
-for(let i=0;i<arr.length;i++)
-{
-    if(arr[i]>secondmax && arr[i]!=max)
-    {
-        secondmax=Math.max(secondmax,arr[i])
+let secondmax = 0
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > secondmax && arr[i] != max) {
+        secondmax = Math.max(secondmax, arr[i])
     }
 }
 console.log(secondmax)
