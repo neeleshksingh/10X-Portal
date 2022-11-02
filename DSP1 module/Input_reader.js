@@ -12,37 +12,37 @@ function readLine() {
 class InputReader {
     constructor() {
     }
-    readStrings(noOfInputs) {
-        for (let i = 0; i < noOfInputs; i++) {
-            let n = readLine()   
-            console.log(i, n)
+    readStrings(n) {
+        for (let i = 0; i < n; i++) {
+            let value = readLine()   
+            console.log(i, value)
         }
     }
-    readIntegers(noOfInputs) {
-        for (let i = 0; i < noOfInputs; i++) {
-            let n = parseInt(readLine())
-            console.log(i, n)
+    readIntegers(n) {
+        for (let i = 0; i < n; i++) {
+            let value = parseInt(readLine())
+            console.log(i, value)
         }
     }
-    readFloats(noOfInputs) {
-        for (let i = 0; i < noOfInputs; i++) {
-            let n = parseFloat(readLine())
-            n = n.toFixed(2)
-            console.log(i, n)
+    readFloats(n) {
+        for (let i = 0; i < n; i++) {
+            let value = parseFloat(readLine())
+            value = value.toFixed(2)
+            console.log(i, value)
         }
     }
 }
-let reading = new InputReader()
 let n = parseInt(readLine())
 let type = readLine()
+let reader = new InputReader()
 {
     if (type == 'string') {
-        reading.readStrings(n)
+        reader.readStrings(n)
     }
     else if (type == 'integer') {
-        reading.readIntegers(n)
+        reader.readIntegers(n)
     }
     else if (type == 'float') {
-        reading.readFloats(n)
+        reader.readFloats(n)
     }
 }
