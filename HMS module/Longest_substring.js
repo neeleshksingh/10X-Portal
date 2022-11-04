@@ -8,21 +8,21 @@ function readLine() {
     return data[idx - 1].trim();
 }
 // -------- Do NOT edit anything above this line ----------
-function longestSubs(str){
-let substr = new Set();
-let count = 0;
-let ans = 0;
-for (let j = 0; j < str.length; ++j) {
-    while (substr.has(str[j])) {
-        substr.delete(str[count++]);
+function longestSubs(str) {
+    let substr = new Set();
+    let count = 0;
+    let ans = 0;
+    for (let j = 0; j < str.length; ++j) {
+        while (substr.has(str[j])) {
+            substr.delete(str[count++]);
+        }
+        substr.add(str[j]);
+        ans = Math.max(ans, j - count + 1);
     }
-    substr.add(str[j]);
-    ans = Math.max(ans, j - count + 1);
-}
-return ans;
+    return ans;
 }
 let n = parseInt(readLine());
 for (let i = 0; i < n; i++) {
-  let str = readLine();
-  console.log(longestSubs(str));
+    let str = readLine();
+    console.log(longestSubs(str));
 }
