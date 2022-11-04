@@ -10,14 +10,14 @@ function readLine() {
 // -------- Do NOT edit anything above this line ----------
 function longestSubs(str){
 let substr = new Set();
-let i = 0;
+let count = 0;
 let ans = 0;
 for (let j = 0; j < str.length; ++j) {
     while (substr.has(str[j])) {
-        substr.delete(str[i++]);
+        substr.delete(str[count++]);
     }
     substr.add(str[j]);
-    ans = Math.max(ans, j - i + 1);
+    ans = Math.max(ans, j - count + 1);
 }
 return ans;
 }
