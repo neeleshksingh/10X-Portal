@@ -7,7 +7,7 @@ function lucky_sevens(arr) {
     }
     return false;
 }
-let arr = [2, 1, 5, 1, 0]
+let arr1 = [2, 1, 5, 1, 0]
 let arr2 = [1, 6]
-console.log(lucky_sevens(arr))
+console.log(lucky_sevens(arr1))
 console.log(lucky_sevens(arr2))
