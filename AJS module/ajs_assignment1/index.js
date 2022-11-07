@@ -1,7 +1,7 @@
 function lucky_sevens(arr) {
     let len = arr.length;
-    for (let i = 2; i < len; i++) {
-        if (arr[i] + arr[i - 1] + arr[i - 2] === 7) {
+    for (let i = 0; i < len; i++) {
+        if (arr[i] + arr[i + 1] + arr[i + 2] === 7) {
             return true;
         }
     }
