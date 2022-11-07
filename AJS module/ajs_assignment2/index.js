@@ -2,7 +2,7 @@ function dupli(arr) {
     let ans = []
     for (i = 0; i < arr.length; i++) {
         if (ans.indexOf(arr[i]) === -1) {
-            ans.push(arr[i]);
+            ans.push(arr[i])
         }
     }
     return ans;
