@@ -19,3 +19,42 @@ for (let i = 0; i < n; i++) {
     }
     console.log(...arr1.sort((a, b) => a - b))
 }
+
+
+console.log(A);
+let n = A.length;
+for(let steps=0;steps < n-1;steps++) {
+    let flag = false;
+    for(let i = 0; i < n - steps - 1; i++) {
+        if(A[i] > A[i+1]) {
+            // swap
+            flag = true;
+            let temp = A[i];
+            A[i] = A[i+1];
+            A[i+1] = temp;
+        }
+    }
+    if(flag == false) {
+        break;
+    }
+}
+/*
+console.log(A);console.log(A);
+let n = A.length;
+for(let steps=0;steps < n-1;steps++) {
+    let flag = false;
+    for(let i = 0; i < n - steps - 1; i++) {
+        if(A[i] > A[i+1]) {
+            // swap
+            flag = true;
+            let temp = A[i];
+            A[i] = A[i+1];
+            A[i+1] = temp;
+        }
+    }
+    if(flag == false) {
+        break;
+    }
+}
+
+console.log(A);*/
