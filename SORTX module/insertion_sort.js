@@ -20,7 +20,7 @@ for (let i = 0; i < n; i++) {
     console.log(...arr1.sort((a, b) => a - b))
 }
 
-
+/*
 console.log(A);
 let n = A.length;
 for(let steps=0;steps < n-1;steps++) {
