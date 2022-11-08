@@ -7,19 +7,17 @@ function readLine() {
     return data[idx - 1].trim();
 }
 // -------- Do NOT edit anything above this line ----------
-function insertionSort(arr) {
-    let str=arr.split('')
-    for (let i = 1; i < str.length; i++) {
-        let temp = str[i]
-        let j = i - 1
-        while (str[j] > temp) {
-            str[j + 1] = str[j]
-            j--
-        }
-        j++
-        str[j] = temp
+let arr=readLine().split('')
+length=parseInt(arr.length/2)
+for(let i=length+1;i<arr.length;i++)
+{
+    let key=arr[i]
+    let j=i-1
+    while(j>=length && key<arr[j])
+    {
+        arr[j+1]=arr[j]
+        j--
     }
-    return str
+    arr[j+1]=key
 }
-let arr = readLine()
-console.log(insertionSort(arr).join(''))
+console.log(arr.join(''))
