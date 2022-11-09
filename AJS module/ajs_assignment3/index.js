@@ -1,4 +1,4 @@
-function reverse(str) {
+function reverseStr(str) {
     let words = str.split(' ')
     let ans = []
     for (let i = 0; i < words.length; i++) {
@@ -7,4 +7,4 @@ function reverse(str) {
     return ans.join(' ')
 }
 let str = 'Welcome to this Javascript Guide!'
-console.log(reverse(str))
+console.log(reverseStr(str))
