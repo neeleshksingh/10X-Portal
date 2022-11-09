@@ -14,7 +14,7 @@ let map = new Map()
 for (let i = 0; i < arr.length; i++) {
     map.set(String.fromCharCode(97 + i), arr[i])
 }
-function MorsalCode(str) {
+function codeWord(str) {
     let c = 0
     for (let i = 0; i < str.length; i++) {
         let empty = ' '
@@ -34,5 +34,5 @@ function MorsalCode(str) {
 let testCases = parseInt(readLine())
 while (testCases--) {
     let str = readLine().split(' ')
-    console.log(MorsalCode(str))
+    console.log(codeWord(str))
 }
