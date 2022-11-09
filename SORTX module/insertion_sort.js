@@ -58,3 +58,53 @@ for(let steps=0;steps < n-1;steps++) {
 }
 
 console.log(A);*/
+
+/*
+
+//indx   0 1 2 3 4 5
+let A = [9,5,1,4,3,2];
+        // [5,9,1,4,3,2]
+        // [1,4,5,9,3,2]
+
+// let's assume a sorted array is given , we have to insert an element in that sorted array
+// i 0 1  2 3  4
+// A = [2,3,5,10,15]
+   
+
+// i = 4
+console.log(A);
+let n = A.length;
+for(i=1;i<n;i++) {
+    key = A[i];
+    j = i - 1;
+    // T.C  = O(n) { n -> no of integers in the array }
+    while ( j>=0 && A[j] > key) {
+        A[j+1] = A[j];
+        j--;
+    }
+    A[j+1] = key;
+}
+
+console.log(A);
+
+// Time complexity for Insertion Sort
+
+// Best Case A = [10,12,15,20,25] ans = [10,12,15,20,25]
+// Give array is already sorted in Ascending Order
+// Que it's asking us to sort it in Ascending Order 
+    // T.C =  O(n) { n -> no of elements present in the array }
+
+// Worst Case A = [25, 20, 15, 12, 10] ans = [10,12,15,20,25]
+// Give array is already sorted in Descending Order
+// Que it's asking us to sort it in Ascending Order 
+// T.C =  O(n*n) { n -> no of elements present in the array }
+
+// Average Case A = [25, 10, 35, 12, 90] ans = [10,12,25,35,90]
+// Given array is a random array 
+// T.C =  O(n*n) { n -> no of elements present in the array }
+
+
+
+
+This paste expires in <1 day. Public IP access. Share whatever you see with others in seconds with Context.Terms of ServiceReport this
+*/
