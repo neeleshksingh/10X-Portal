@@ -41,7 +41,7 @@ board[i][j] is a digit 1-9 or '.'.
 
 // Javascript Program to check whether given sudoku
 // board is valid or not
-	
+
 // Checks whether there is any duplicate
 // in current row or not
 let fs = require("fs");
@@ -55,71 +55,45 @@ function readLine() {
 }
 
 // -------- Do NOT edit anything above this line ----------
-function validateRow(board, row) {
-    let set = new Set();
-    for (let i = 0; i < 9; i++) {
-        if (set.has(board[row][i]))
-            return false;
-        if (board[row][i] != '.')
-            set.add(board[row][i]);
-    }
-    return true;
-}
-/**
- * isValid(board, 7, 5)
- * validateRow(board, 7)
- * set = {4, 1, 9, 5}
- */
-function validateCol(board, col) {
-    let set = new Set();
-    for (let i = 0; i < 9; i++) {
-        if (set.has(board[i][col]))
-            return false;
-        if (board[i][col] != '.')
-            set.add(board[i][col]);
-    }
-    return true;
-}
-function validateBox(board, startRow, startCol) {
-    let set = new Set();
-    for (let i = 0; i < 3; i++) {
-        for (let j = 0; j < 3; j++) {
-            let val = board[i + startRow][j + startCol];
-            if (set.has(val))
-                return false;
-            if (val != '.')
-                set.add(val);
+function validate(board) {
+    for (let row = 0; row < 9; row++) {
+        let map = new Map()
+        for (let col = 0; col < 9; col++) {
+            let ch = board[row][col]
+            if (ch != '.' && map.has(ch)) {
+                return "False"
+            }
+            map.set(ch, true)
         }
     }
-    return true;
-}
-/**
- * [7, 5]
- * startRow -> 7 - 7 % 3 = 7 - 1 = 6
- * startCol -> 5 - 5 % 3 = 5 - 2 = 3
- * [6, 3][6, 4][6, 5]
- * [7, 3][7, 4][7, 5]
- * [8, 3][8, 4][8, 5]
- * set = {4, 1, 9, 8}
- */
-function isValid(board, row, col) {
-    return validateRow(board, row) && validateCol(board, col)
-        && validateBox(board, row - row % 3, col - col % 3);
-}
-function isValidSudoku(board) {
-    for (let i = 0; i < 9; i++) {
-        for (let j = 0; j < 9; j++) {
-            if (!isValid(board, i, j))
-                return "False";
+    for (let row = 0; row < 9; row++) {
+        let map = new Map()
+        for (let col = 0; col < 9; col++) {
+            let ch = board[col][row]
+            if (ch != '.' && map.has(ch)) {
+                return "False"
+            }
+            map.set(ch, true)
         }
     }
-    return "True";
+    for (let i = 0; i < 9; i += 3) {
+        for (let j = 0; j < 9; j += 3) {
+            let map = new Map()
+            for (let row = i; row < 3; row++) {
+                for (let col = j; col < 3; col++) {
+                    let ch = board[row][col]
+                    if (ch != '.' && map.has(ch)) {
+                        return "False"
+                    }
+                    map.set(ch, true)
+                }
+            }
+        }
+    }
+    return "True"
 }
-let board1 = []
-for(let i=0;i<9;i++)
-{
-    
-    board1[i]=readLine().split('')
-};
- 
-console.log(isValidSudoku(board1));
+let sudoku = []
+for (let i = 0; i < 9; i++) {
+    sudoku[i] = readLine().split(" ")
+}
+console.log(validate(sudoku))
