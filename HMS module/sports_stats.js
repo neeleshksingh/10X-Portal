@@ -16,7 +16,6 @@ for (let i = 0; i < n; i++) {
     if (!map.has(name)) {
         map.set(name, sports)
     }
-
 }
 let count = new Map()
 for (let [key, value] of map.entries()) {
