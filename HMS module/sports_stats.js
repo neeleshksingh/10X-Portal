@@ -9,27 +9,41 @@ function readLine() {
 }
 // -------- Do NOT edit anything above this line ----------
 
-let n = parseInt(readLine())
 let map = new Map()
-let alreadyMet = new Map()
-for(let i=0;i<n;i++){
-    let [name,game] = readLine().trim().split(' ')
-    if(!alreadyMet.has(name)){
-    if(map.has(game)){
-        map.set(game, 1 + map.get(game))
+let n = parseInt(readLine())
+for (let i = 0; i < n; i++) {
+    let [name, sports] = readLine().split(" ")
+    if (!map.has(name)) {
+        map.set(name, sports)
     }
-    else{
-        map.set(game, 1+0)
+
+}
+let count = new Map()
+for (let [key, value] of map.entries()) {
+    if (count.has(value)) {
+        count.set(value, count.get(value) + 1)
     }
-    alreadyMet.set(name, true)
+    else {
+        count.set(value, 1)
     }
 }
-let maxLikes = Math.max(...map.values())
-let favSports = []
-for(let m of map){
-    if(m[1] === maxLikes)
-    favSports.push(m[0])
+let max = 0, ans
+for (let [key, value] of count.entries()) {
+    if (value == max) {
+        let v = key.localeCompare(ans)
+        if (v == -1) {
+            ans = key
+        }
+    }
+    else if (value > max) {
+        max = value
+        ans = key
+    }
 }
-favSports.sort()
-console.log(favSports[0])
-console.log(map.has("football") ? map.get("football") : 0)
+console.log(ans)
+if (count.has('football')) {
+    console.log(count.get('football'))
+}
+else {
+    console.log(0)
+}
