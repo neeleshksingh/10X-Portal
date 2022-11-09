@@ -9,39 +9,30 @@ function readLine() {
 }
 
 // -------- Do NOT edit anything above this line ----------
-let arr=[".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."]
-let map=new Map()
-for(let i=0;i<arr.length;i++)
-{
-    map.set(String.fromCharCode(97+i),arr[i])
+let arr = [".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."]
+let map = new Map()
+for (let i = 0; i < arr.length; i++) {
+    map.set(String.fromCharCode(97 + i), arr[i])
 }
+function MorsalCode(str) {
+    let c = 0
+    for (let i = 0; i < str.length; i++) {
+        let empty = ' '
+        for (let j = 0; j < str[i].length; j++) {
 
-function MorsalCode(str){
-let c=0
-
-for(let i=0;i<str.length;i++)
-{
- let empty=' '
-    for(let j=0;j<str[i].length;j++)
-    {
-       
-         empty+= map.get(str[i][j])
+            empty += map.get(str[i][j])
+        }
+        str[c] = empty
+        c++
     }
-    str[c]=empty
-    c++
+    let count = new Set()
+    for (let i = 0; i < str.length; i++) {
+        count.add(str[i])
+    }
+    return count.size
 }
-
-let count=new Set()
-for(let i=0;i<str.length;i++)
-{
-    count.add(str[i])
-}
-
-return count.size
-}
-let testCases=parseInt(readLine())
-while(testCases--)
-{
-    let str=readLine().split(' ')
+let testCases = parseInt(readLine())
+while (testCases--) {
+    let str = readLine().split(' ')
     console.log(MorsalCode(str))
 }
