@@ -14,9 +14,10 @@ let n = parseInt(readLine())
 for (let i = 0; i < n; i++) {
     let [name, sports] = readLine().split(" ")
     if (!map.has(name)) {
-        map.set(name, sports)
+        map.set(name, sports)  
     }
 }
+//console.log(map)
 let count = new Map()
 for (let [key, value] of map.entries()) {
     if (count.has(value)) {
@@ -26,6 +27,7 @@ for (let [key, value] of map.entries()) {
         count.set(value, 1)
     }
 }
+//console.log(count)
 let max = 0, ans
 for (let [key, value] of count.entries()) {
     if (value == max) {
