@@ -19,7 +19,6 @@ for (let i = 0; i < t; i++) {
     let arr1 = readLine().split(' ')
     for (let j = 0; j < n; j++) {
         arr1[j] = parseInt(arr1[j])
-        
     }
     console.log(arr1)
 }
