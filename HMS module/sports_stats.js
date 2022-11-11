@@ -17,7 +17,7 @@ for (let i = 0; i < n; i++) {
         map.set(name, sports)  
     }
 }
-//console.log(map)
+console.log(map)
 let count = new Map()
 for (let [key, value] of map.entries()) {
     if (count.has(value)) {
@@ -27,7 +27,7 @@ for (let [key, value] of map.entries()) {
         count.set(value, 1)
     }
 }
-//console.log(count)
+console.log(count)
 let max = 0, ans
 for (let [key, value] of count.entries()) {
     if (value == max) {

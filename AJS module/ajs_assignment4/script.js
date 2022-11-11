@@ -2,7 +2,7 @@ let sum = document.getElementById("total").value;
 let bt = document.getElementById("but").addEventListener("click", function () {
     let b = document.getElementById("Item-name").value;
     let a = document.getElementById("price").value;
-    if (b == "" && a == "") {
+    if (b == "" || a == "") {
         alert("enter details");
         return;
     }
