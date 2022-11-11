@@ -1,78 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="c1">
-      <form action="">
-        <label for="Item-Name"></label>
-        <input
-          type="text"
-          name="Item-Name"
-          id="Item-name"
-          class="inp"
-          placeholder="Item-Name"
-          required
-        />
-        <br />
-        <label for="price"></label>
-        <input
-          type="number"
-          name="price"
-          class="inp"
-          id="price"
-          placeholder="Price"
-          required
-        />
-      </form>
-      <button type="reset" class="but">ADD</button>
+        <form action="">
+            <label for="Item-Name"></label>
+            <input type="text" name="Item-Name" id="Item-name" placeholder="Item-Name" required />
+            <br />
+            <label for="price"></label>
+            <input type="number" name="price" id="price" placeholder="Price" required />
+        </form>
+        <button type="reset" id="but">ADD</button>
     </div>
     <div class="c2">
-      <table>
-        <thead>
-          <tr>
-            <th>Item Name</th>
-            <th>Item Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Grand Total</td>
-            <td id="total">0</td>
-          </tr>
-        </tbody>
-      </table>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Item Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Grand Total</td>
+                    <td id="total">0</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <script>
-      let sum = document.getElementById("total").value;
-      let bt = document
-        .getElementById(".but")
-        .addEventListener("click", function () {
-          let b = document.getElementById("Item-name").value;
-          let a = document.getElementById("price").value;
-          if (b == "" && a == "") {
-            alert("enter details");
-            return;
-          }
-          let table = document.getElementsByTagName("table")[0];
-          let newRow = table.insertRow(table.rows.length - 1);
-          let cell1 = newRow.insertCell(0);
-          let cell2 = newRow.insertCell(1);
-
-          cell1.innerHTML = b;
-          cell2.innerHTML = a;
-
-          if (sum == undefined) {
-            sum = a;
-          } else sum = parseInt(sum) + parseInt(a);
-          document.getElementById("total").innerHTML = sum;
-        });
-      console.log(sum);
-    </script>
-  </body>
+    <script src="./script.js"></script>
+</body>
 </html>
