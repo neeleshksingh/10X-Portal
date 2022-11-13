@@ -8,7 +8,7 @@ function readLine() {
     return data[idx - 1].trim();
 }
 // -------- Do NOT edit anything above this line ----------
-function median(arr)
+function Matrixmedian(arr)
 {
     arr=arr.sort((a,b)=>a-b)
     
@@ -34,5 +34,5 @@ while (t--)
         }
     }
     arr.splice(0,n)
-    console.log(median(arr))
+    console.log(Matrixmedian(arr))
 }
