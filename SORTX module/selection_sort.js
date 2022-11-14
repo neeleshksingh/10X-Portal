@@ -1,25 +1,32 @@
-//indx   0 1 2 3 4 5
-let A = [9, 5, 1, 4, 3, 2];
-        // [2, 5, 1, 4, 3, 9], [2, 1, 5, 4, 3, 9], [2, 1, 3, 4, 5, 9]
-let n = A.length;
-console.log(A);
-for (let i = 0; i < n - 1; i++) {
-    let min_idx = i;
-    for (j = i + 1; j < n; j++) {
-        if(A[j] < A[min_idx]) {
-            min_idx = j;
+let fs = require("fs");
+let data = fs.readFileSync('./in.txt', 'utf-8');
+let idx = 0;
+data = data.split('\n');
+function readLine() {
+    idx++;
+    return data[idx - 1].trim();
+}
+// -------- Do NOT edit anything above this line ----------
+function selectionSort(inputArr) {
+    let n = inputArr.length;
+    for(let i = 0; i < n; i++) {
+        let min = i;
+        for(let j = i+1; j < n; j++){
+            if(inputArr[j] < inputArr[min]) {
+                min=j;
+            }
+         }
+         if (min != i) {
+             let tmp = inputArr[i];
+             inputArr[i] = inputArr[min];
+             inputArr[min] = tmp;
         }
     }
-    // swap
-    let temp = A[i];
-    A[i] = A[min_idx];
-    A[min_idx] = temp;
-
+    return inputArr.join(" ");
 }
-
-console.log(A);
-
-
-// Memory Write 
-
-A = [1,3,2,5,1,3,4,5,3]
+let NoOfTestcases = parseInt(readLine());
+for(let i=0 ; i<NoOfTestcases ;i++){
+let n = parseInt(readLine());
+let inputArr = readLine().split(" ").map(Number);
+console.log(selectionSort(inputArr));
+}
