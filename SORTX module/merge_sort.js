@@ -38,7 +38,6 @@ function merge(A, start, mid, end) {
         j++; k++;
     }
 }
-
 let A = [9,1,10,5,2,3];
 console.log(...A);
 let n = A.length;
