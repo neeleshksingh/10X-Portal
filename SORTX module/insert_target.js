@@ -13,13 +13,14 @@ function readLine() {
 // -2 4 5 10 15
 
 let t = parseInt(readLine())
-let arr = []
+let n, q
 for (let i = 0; i < t; i++) {
-    arr = readLine().split(' ').map(Number)
+    [n, q] = readLine().split(" ").map((n) => parseInt(n))
 }
-console.log(arr[0])
-let arr1 = readLine().split(' ')
-for (let i = 0; i < arr[0]; i++) {
-    arr1 = parseInt(arr1)
+let arr = readLine().split(' ').map(Number)
+let arr2 = []
+for (let i = 0; i < n; i++) {
+    arr2.push(arr[i])
 }
-console.log(arr1)
+console.log(...arr2.concat(q).sort((a, b) => a - b))
+
