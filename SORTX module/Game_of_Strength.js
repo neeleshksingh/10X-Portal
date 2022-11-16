@@ -7,6 +7,11 @@ function readLine() {
     return data[idx - 1].trim();
 }
 // -------- Do NOT edit anything above this line ----------
+// 2
+// 2
+// 1 2
+// 5
+// 4 5 3 1 2
 
 let n = parseInt(readLine())
 let arr = []
