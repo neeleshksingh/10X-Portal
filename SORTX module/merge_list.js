@@ -17,7 +17,12 @@ let t = parseInt(readLine())
 let n = parseInt(readLine())
 let arr = []
 for (let i = 0; i < t; i++) {
-   arr[i] = readLine().split(' ').map(Number)
+    arr[i] = readLine().split(' ').map(Number)
 }
-console.log(arr)
+let arr2 = []
+for (let i = 0; i < arr.length; i++) {
+    arr2.push(...arr[i]);
+}
+//console.log(arr)
+console.log(...arr2.sort((a, b) => a - b))
 
