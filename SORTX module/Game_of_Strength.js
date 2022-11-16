@@ -15,6 +15,7 @@ function readLine() {
 
 let n = parseInt(readLine())
 let arr = []
+le
 for (let i = 0; i < n; i++) {
     arr.push(parseInt(readLine()))
     let arr1 = readLine().split(' ')
@@ -29,5 +30,5 @@ for (let i = 0; i < n; i++) {
             count = Math.abs(arr1[k] - arr1[l]) + count
         }
     }
-    console.log(max + count)
+    console.log(max * count)
 }
