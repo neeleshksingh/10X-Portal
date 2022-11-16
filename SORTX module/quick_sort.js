@@ -13,13 +13,39 @@ function readLine() {
 // 4
 // 2 89 90 7
 
-let n = parseInt(readLine())
-let arr = []
-for (let i = 0; i < n; i++) {
-    arr.push(parseInt(readLine()))
-    let arr1 = readLine().split(' ')
-    for (let j = 0; j < arr[i]; j++) {
-        arr1[j] = parseInt(arr1[j])
+function quickSort(arr,start,end)
+{
+    if(start<end)
+    {
+    let pos=part(arr,start,end)
+    quickSort(arr,start,pos-1)
+    quickSort(arr,pos+1,end)
     }
-    console.log(...arr1.sort((a, b) => a - b))
+}
+function part(arr,start,end)
+{
+    let pivot=arr[end]
+    let q=start-1
+    for(let i=start;i<end;i++)
+    {
+        if(arr[i]<=pivot)
+        {
+            q++
+            let temp=arr[i]
+            arr[i]=arr[q]
+            arr[q]=temp
+        }
+    }
+    let temp=arr[q+1]
+    arr[q+1]=arr[end]
+    arr[end]=temp
+    return q+1
+}
+let testCases=parseInt(readLine())
+while(testCases--){
+let size=parseInt(readLine())
+let arr=readLine().split(' ').map(Number)
+let start=0,end=size-1
+quickSort(arr,start,end)
+console.log(...arr)
 }
