@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Test Assignment 7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="firstUser()">
+    <h1>Get Your Like 10x-Liker</h1>
+    <header>
+        <h1>User Profile</h1>
+    </header>
+    <section class="display">
+        <img id="user-img" src="" alt="user-image" width="350px" height="350px">
+        <span id="fullName"></span>
+        <span id="detail"></span>
+    <div class="userButton">
+       <button onclick="getUserAge()" data-attr="age">Get Age</button>
+       <button onclick="getUserEmail()" data-attr="email">Get Email</button>
+       <button onclick="getUserPhone()" data-attr="phone">Get Phone</button>
+    </div>
+    </section>
+    <button id="getUser" onclick="getNewUser()">Dont Like It - Get New Person</button>
+    <script src="./script.js"></script>
+</body>
+</html>

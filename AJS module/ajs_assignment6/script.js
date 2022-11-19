@@ -1,62 +1,143 @@
-const selectionButtons = document.querySelectorAll('[data-selection]')
-const finalColumn = document.querySelector('[data-final-column]')
-const computerScoreSpan = document.querySelector('[data-computer-score]')
-const yourScoreSpan = document.querySelector('[data-your-score]')
-const SELECTIONS = [
-  {
-    name: 'rock',
-    emoji: '✊',
-    beats: 'scissors'
-  },
-  {
-    name: 'paper',
-    emoji: '✋',
-    beats: 'rock'
-  },
-  {
-    name: 'scissors',
-    emoji: '✌',
-    beats: 'paper'
-  }
-]
+let inp = document.getElementById("inp");
+let play = document.getElementById("play");
+let rock = document.getElementById("rock");
+let tbody = document.getElementById("tbody");
+let paper = document.getElementById("paper");
+let scissors = document.getElementById("scissors");
+let h3 = document.getElementById("h-3");
+let result = document.getElementById("result");
+let final = document.getElementById("final");
+let x;
+let c1 = 0,
+    c2 = 0;
+let arr = ["rock", "paper", "scissors"];
+play.addEventListener("click", function () {
+  x = parseInt(inp.value);
+  x = x - 1;
+  rock.addEventListener("click", function () {
+    let val = "rock";
+    let y = arr[parseInt(3 * Math.random())];
+    if (val == y) {
+      tbody.innerHTML += `<tr><td>Tie</td>
+        <td>${x--}</td>
+        <td>0</td>
+        <td>0</td>
+        </tr>`;
+      h3.innerHTML = `${y}`;
+    } else if (val != arr[parseInt(3 * Math.random())] && y == "paper") {
+      tbody.innerHTML += `<tr><td>computer Win</td>
+        <td>${x--}</td>
+        <td>0</td>
+        <td>1</td>
+        </tr>`;
+      c2 += 1;
+      h3.innerHTML = `${y}`;
+    } else if (val != arr[parseInt(3 * Math.random())] && y == "scissors") {
+      tbody.innerHTML += `<tr><td>User Win</td>
+        <td>${x--}</td>
+        <td>1</td>
+        <td>0</td>
+        </tr>`;
+      h3.innerHTML = `${y}`;
+      c1 += 1;
+    }
+    if (x < 0) {
+      rock.setAttribute("disabled", true);
+      paper.setAttribute("disabled", true);
+      scissors.setAttribute("disabled", true);
+    
+    }
+    if (c1 > c2) {
+        result.innerText = `User Won`;
+      } else if (c1 == c2) {
+        result.innerText = `Tie`;
+      } else if (c1 < c2) {
+        result.innerText = `Computer won`;
+      }
+  });
 
-selectionButtons.forEach(selectionButton => {
-  selectionButton.addEventListener('click', e => {
-    const selectionName = selectionButton.dataset.selection
-    const selection = SELECTIONS.find(selection => selection.name === selectionName)
-    makeSelection(selection)
-  })
-})
+  paper.addEventListener("click", function () {
+    let val = "paper";
+    let y = arr[parseInt(3 * Math.random())];
+    if (val == y) {
+      tbody.innerHTML += `<tr><td>Tie</td>
+        <td>${x--}</td>
+        <td>0</td>
+        <td>0</td>
+        </tr>`;
+      h3.innerHTML = `${y}`;
+    } else if (val != arr[parseInt(3 * Math.random())] && y == "rock") {
+      tbody.innerHTML += `<tr><td>User Win</td>
+        <td>${x--}</td>
+        <td>1</td>
+        <td>0</td>
+        </tr>`;
+      h3.innerHTML = `${y}`;
+      c1 += 1;
+    } else if (val != arr[parseInt(3 * Math.random())] && y == "scissors") {
+      tbody.innerHTML += `<tr><td>computer Win</td>
+        <td>${x--}</td>
+        <td>0</td>
+        <td>1</td>
+        </tr>`;
+      h3.innerHTML = `${y}`;
+      c2 += 1;
+    }
+    if (x < 0) {
+      rock.setAttribute("disabled", true);
+      paper.setAttribute("disabled", true);
+      scissors.setAttribute("disabled", true);
+   
+    }
+    if (c1 > c2) {
+        result.innerText = `User Won`;
+      } else if (c1 == c2) {
+        result.innerText = `Tie`;
+      } else if (c1 < c2) {
+        result.innerText = `Computer won`;
+      }
+  });
 
-function makeSelection(selection) {
-  const computerSelection = randomSelection()
-  const yourWinner = isWinner(selection, computerSelection)
-  const computerWinner = isWinner(computerSelection, selection)
+  scissors.addEventListener("click", function () {
+    let val = "scissors";
 
-  addSelectionResult(computerSelection, computerWinner)
-  addSelectionResult(selection, yourWinner)
-
-  if (yourWinner) incrementScore(yourScoreSpan)
-  if (computerWinner) incrementScore(computerScoreSpan)
-}
-
-function incrementScore(scoreSpan) {
-  scoreSpan.innerText = parseInt(scoreSpan.innerText) + 1
-}
-
-function addSelectionResult(selection, winner) {
-  const div = document.createElement('div')
-  div.innerText = selection.emoji
-  div.classList.add('result-selection')
-  if (winner) div.classList.add('winner')
-  finalColumn.after(div)
-}
-
-function isWinner(selection, opponentSelection) {
-  return selection.beats === opponentSelection.name
-}
-
-function randomSelection() {
-  const randomIndex = Math.floor(Math.random() * SELECTIONS.length)
-  return SELECTIONS[randomIndex]
-}
+    let y = arr[parseInt(3 * Math.random())];
+    if (val == y) {
+      tbody.innerHTML += `<tr><td>Tie</td>
+          <td>${x--}</td>
+          <td>0</td>
+          <td>0</td>
+          </tr>`;
+      h3.innerHTML = `${y}`;
+    } else if (val != arr[parseInt(3 * Math.random())] && y == "paper") {
+      tbody.innerHTML += `<tr><td>User Win</td>
+      <td>${x--}</td>
+      <td>1</td>
+      <td>0</td>
+      </tr>`;
+      h3.innerHTML = `${y}`;
+      c1 += 1;
+    } else if (val != arr[parseInt(3 * Math.random())] && y == "rock") {
+      tbody.innerHTML += `<tr><td>computer Win</td>
+    <td>${x--}</td>
+    <td>0</td>
+    <td>1</td>
+    </tr>`;
+      h3.innerHTML = `${y}`;
+      c2 += 1;
+    }
+    if (x < 0) {
+      rock.setAttribute("disabled", true);
+      paper.setAttribute("disabled", true);
+      scissors.setAttribute("disabled", true);
+     
+    }
+    if (c1 > c2) {
+        result.innerText = `User Won`;
+      } else if (c1 == c2) {
+        result.innerText = `Tie`;
+      } else if (c1 < c2) {
+        result.innerText = `Computer won`;
+      }
+  });
+});

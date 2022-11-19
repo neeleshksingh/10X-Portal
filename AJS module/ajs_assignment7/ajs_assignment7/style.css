@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: lightcoral;
+    display: flex;
+    flex-direction: column;
+}
+body>h1{
+    margin-top: 2rem;
+    text-align: center;
+    color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+}
+header{
+    margin-top: 2rem;
+    width: 50%;
+    background-color: yellow;
+    align-self: center;
+    text-align: center;
+    border-radius: 25px;
+    color: black;
+}
+.display{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 2rem;
+}
+.display>img{
+    align-self: center;
+    border-radius: 20%;
+    border: 5px solid black;
+}
+#fullName{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+}
+#detail{
+    color: yellow;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+}
+.display>span{
+    align-self: center;
+    margin-top: 1rem;
+}
+#detail{
+    height: 1.5rem;
+    color: black;
+}
+.userButton{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+.userButton button{
+    border: 0;
+    margin-right: 0.2rem;
+    margin-bottom: 2rem;
+    border-radius: 25px;
+    width: 40%;
+    padding: 1rem 0;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    background-color:c;
+    cursor: pointer;
+    background-color:  yellow;
+}
+#getUser{
+    width: 70%;
+    margin-left: 15%;
+    padding: 1rem 0;
+    background-color: yellow;
+    border: 5px solid #EEF1FF;
+    border-radius: 15px;
+    color: black;
+    font-size: 1.8rem;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+#getUser:hover{
+    background-color: #AAC4FF;
+    color: black;
+}

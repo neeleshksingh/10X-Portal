@@ -1,45 +1,94 @@
-body {
-    background-color: #CCC;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-  
-  .selections {
-    display: flex;
-    justify-content: center;
+  body {
+    background-color: lightgrey;
   }
-  
-  .selection {
-    background: none;
-    border: none;
-    outline: none;
+  .container {
+    text-align: center;
+  }
+  #inp {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 100px;
+    border-radius: 10px;
+    border-color: rgb(160, 200, 200);
+  }
+  .btn {
+    display: block;
+  }
+  #play {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 50px;
+    border-radius: 30px;
+    border: 0;
+    font-size: 22px;
     cursor: pointer;
-    font-size: 2rem;
-    transition: 100ms;
+    background-color: red;
   }
-  
-  .selection:hover {
-    transform: scale(1.2);
+  #play:hover{
+    background-color: greenyellow;
   }
-  
-  .results {
-    margin-top: 1rem;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    align-items: center;
+  table,
+  th,
+  td {
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
   }
-  
-  .result-score {
-    margin-left: .1rem;
-    font-size: .5rem;
-    color: #333;
+  th,
+  td {
+    font-size: 25px;
+    padding: 15px;
   }
-  
-  .result-selection {
-    opacity: .5;
+  table {
+    border-spacing: 20px;
   }
-  
-  .result-selection.winner {
-    opacity: 1;
-    font-size: 1.5rem;
+  #rock,
+  #paper,
+  #scissors {
+    padding: 20px 40px;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 18px;
+    margin-left: 280px;
+    cursor: pointer;
+  }
+  #scissors {
+    margin-bottom: 40px;
+  }
+  .head {
+    display: flex;
+    justify-content: right;
+    margin-right: 300px;
+    position: relative;
+  }
+  .h-1 {
+    position: absolute;
+    top: 50px;
+  }
+  #h-3 {
+    position: absolute;
+    top: 180px;
+    right: 250px;
+  }
+  #final {
+    cursor: pointer;
+  }
+  #res {
+    padding: 20px 40px;
+    margin-top: 40px;
+    border-radius: 10px;
+    border-color: blueviolet;
+    cursor: pointer;
+  }
+  #res:hover {
+    background-color: beige;
   }
