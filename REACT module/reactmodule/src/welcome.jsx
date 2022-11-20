@@ -1,6 +1,7 @@
+import "./welcome.css"
 const Welcome = () =>{
     return(
-        <div>Welcome</div>
+        <div className="text-color">Welcome</div>
     )
 }
 export default Welcome;
