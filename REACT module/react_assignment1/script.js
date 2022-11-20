@@ -1,9 +1,7 @@
 let hr = min = sec = "0" + 0, startTimer;
-
 const startBtn = document.querySelector(".start")
 const pauseBtn = document.querySelector(".pause")
 const stopBtn = document.querySelector(".stop");
-
 startBtn.addEventListener("click", start);
 pauseBtn.addEventListener("click", pause);
 stopBtn.addEventListener("click", stop);
@@ -27,6 +25,7 @@ function start() {
         putValue();
     }, 600);
 }
+
 function pause() {
     startBtn.classList.remove("active");
     pauseBtn.classList.add("pauseActive");

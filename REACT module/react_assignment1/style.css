@@ -10,7 +10,6 @@ body{
 .stopwatch{
     display: flex;
     flex-direction: column;
-    /* border: 1px solid black; */
     justify-content: center;
     align-items: center;
     width: 100%;
