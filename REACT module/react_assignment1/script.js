@@ -1,12 +1,17 @@
 let hr = min = sec = "0" + 0, startTimer;
 const startBtn = document.querySelector(".start")
+console.log(startBtn);
 const pauseBtn = document.querySelector(".pause")
 const stopBtn = document.querySelector(".stop");
 startBtn.addEventListener("click", start);
 pauseBtn.addEventListener("click", pause);
 stopBtn.addEventListener("click", stop);
 
+
 function start() {
+    startBtn.disabled = true
+    pauseBtn.disabled = false
+    stopBtn.disabled = false
     startBtn.classList.add("active");
     pauseBtn.classList.remove("pauseActive");
     startTimer = setInterval(() => {
@@ -27,14 +32,28 @@ function start() {
 }
 
 function pause() {
+    if (pauseBtn.innerHTML == 'Pause') {
+        pauseBtn.innerHTML = 'Continue'
+        clearInterval(startTimer);
+
+    }
+    else {
+        pauseBtn.innerHTML = 'Pause'
+        setInterval(start, 1000)
+    }
     startBtn.classList.remove("active");
     pauseBtn.classList.add("pauseActive");
-    clearInterval(startTimer);
+
 }
 function stop() {
+
+    pauseBtn.disabled = true
+    stopBtn.disabled = true
+    startBtn.disabled = false
     startBtn.classList.remove("active");
     pauseBtn.classList.remove("pauseActive");
     clearInterval(startTimer);
+    startTimer = null
     hr = min = sec = "0" + 0;
     putValue();
 }
