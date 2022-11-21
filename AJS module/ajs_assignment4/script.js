@@ -1,8 +1,8 @@
 let sum = document.getElementById("total").value;
 let bt = document.getElementById("but").addEventListener("click", function () {
-    let b = document.getElementById("Item-name").value;
-    let a = document.getElementById("price").value;
-    if (b == "" || a == "") {
+    let a = document.getElementById("Item-name").value;
+    let b = document.getElementById("price").value;
+    if (a == "" || b == "") {
         alert("enter details");
         return;
     }
@@ -11,12 +11,12 @@ let bt = document.getElementById("but").addEventListener("click", function () {
     let cell1 = newRow.insertCell(0);
     let cell2 = newRow.insertCell(1);
 
-    cell1.innerHTML = b;
-    cell2.innerHTML = a;
+    cell1.innerHTML = a;
+    cell2.innerHTML = b;
 
     if (sum == undefined) {
-        sum = a;
-    } else sum = parseFloat(sum) + parseFloat(a);
+        sum = b;
+    } else sum = parseFloat(sum) + parseFloat(b);
     document.getElementById("total").innerHTML = sum;
 });
 console.log(sum);
