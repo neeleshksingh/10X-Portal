@@ -2,11 +2,11 @@ const Item = (props)=>{
     console.log(props)
     return (
         <div>
-            <header>Item Text</header>
+            <header>{props.itemText}</header>
             <main>
                 <img src="" alt="" />
             </main>
-            <a href="">Item Link</a>
+            <a href="#">{props.itemLink}</a>
         </div>
     )
 }
