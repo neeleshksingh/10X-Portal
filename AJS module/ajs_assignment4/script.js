@@ -15,8 +15,8 @@ let bt = document.getElementById("but").addEventListener("click", function () {
     cell2.innerHTML = a;
 
     if (sum == undefined) {
-        sum = a;    
-    } else sum = parseInt(sum) + parseInt(a);
+        sum = a;
+    } else sum = parseFloat(sum) + parseFloat(a);
     document.getElementById("total").innerHTML = sum;
 });
 console.log(sum);

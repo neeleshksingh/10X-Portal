@@ -15,8 +15,15 @@ function readLine() {
 // 5 4
 // 7 3
 
-function noorPond(arr){
-    
+function noorPond(arr) {
+    let count = 0
+    let ans = 1
+    let arr1 = []
+    for (let i = 0; i < arr.length; i++) {
+        arr1.push(arr[i])
+        arr1.sort((a, b) => a - b)
+    }
+    return arr1
 }
 let t = parseInt(readLine())
 for (let i = 0; i < t; i++) {
