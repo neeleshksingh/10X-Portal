@@ -12,8 +12,8 @@ function start() {
     startBtn.disabled = true
     pauseBtn.disabled = false
     stopBtn.disabled = false
-    startBtn.classList.add("active");
-    pauseBtn.classList.remove("pauseActive");
+    // startBtn.classList.add("active");
+    // pauseBtn.classList.remove("pauseActive");
     startTimer = setInterval(() => {
         sec++
         sec = sec < 10 ? "0" + sec : sec;
@@ -41,8 +41,8 @@ function pause() {
         pauseBtn.innerHTML = 'Pause'
         setInterval(start, 1000)
     }
-    startBtn.classList.remove("active");
-    pauseBtn.classList.add("pauseActive");
+    // startBtn.classList.remove("active");
+    // pauseBtn.classList.add("pauseActive");
 
 }
 function stop() {
@@ -50,8 +50,8 @@ function stop() {
     pauseBtn.disabled = true
     stopBtn.disabled = true
     startBtn.disabled = false
-    startBtn.classList.remove("active");
-    pauseBtn.classList.remove("pauseActive");
+    // startBtn.classList.remove("active");
+    // pauseBtn.classList.remove("pauseActive");
     clearInterval(startTimer);
     startTimer = null
     hr = min = sec = "0" + 0;
