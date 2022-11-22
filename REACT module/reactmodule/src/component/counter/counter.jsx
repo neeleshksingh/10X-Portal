@@ -16,7 +16,7 @@ const Counter = () =>{
             <button onClick={handleIncrement}>+</button>
                 <div>{count}</div>
             <button onClick={handleDecrement}>-</button>
-            <button onClick={updateCount}>Multiply by 2</button>
+            <button onClick={() => {updateCount(count*2)}}>Multiply by 2</button>
         </div>
     )
 }
