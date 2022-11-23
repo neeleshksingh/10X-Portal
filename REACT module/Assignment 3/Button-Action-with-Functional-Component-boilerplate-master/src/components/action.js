@@ -1,14 +1,14 @@
 import React from "react";
-import Para from "./para";
 import {useState} from "react"
-const Action = () =>{
-    const [count, updateCount] = useState(0)
+const Action = (props) =>{
+    const [info, setinfo] = useState('')
     const renderbut = () =>{
-        
+        setinfo(props.info)
     }
     return (
         <div>
-            <button id="click" onClick={renderbut}></button>
+            <p id="para">{info}</p>
+            <button id="click" onClick={renderbut}>Click Me</button>
         </div>
     )
 }
