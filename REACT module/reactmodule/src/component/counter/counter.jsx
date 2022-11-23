@@ -4,6 +4,7 @@ const Counter = () =>{
     const handleIncrement = () =>{
         //update the count value
         updateCount((prevCount) =>{
+            console.log(count, prevCount)
             return prevCount + 1
         })
         updateCount((prevCount) =>{
