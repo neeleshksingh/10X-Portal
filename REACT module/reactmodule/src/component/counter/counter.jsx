@@ -3,7 +3,12 @@ const Counter = () =>{
     const [count, updateCount] = useState(0)
     const handleIncrement = () =>{
         //update the count value
-        updateCount(count+1)
+        updateCount((prevCount) =>{
+            return prevCount + 1
+        })
+        updateCount((prevCount) =>{
+            return prevCount + 1
+        })
         console.log(count)
     }
     const handleDecrement = () =>{
