@@ -40,13 +40,13 @@ class LinkedList {
     // ------------ DO NOT MANE ANY CHANGE ABOVE THIS LINE ---------
     search(key) {
         // WRITE YOUR IMPLEMENTATION OF SEARCH HERE
-        let current = head;
+        let current = this.head;
         while (current != null) {
             if (current.key == x)
-                return true;
+                return 'True';
             current = current.next;
         }
-        return false;
+        return 'False';
     }
 }
 // ----------- DO NOT MAKE ANY CHANGES BELOW THIS LINE ---------
