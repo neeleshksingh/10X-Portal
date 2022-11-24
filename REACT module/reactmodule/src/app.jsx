@@ -3,6 +3,7 @@ import Hello from "./hello"
 import Home from "./home/home"
 import Counter from "./component/counter/counter"
 import Event from "./component/Event/event"
+import Form from "./component/forms/form"
 const App = () => {
     return (
         <div>
@@ -11,6 +12,7 @@ const App = () => {
             {/* <Home/> */}
             {/* <Counter/> */}
             <Event/>
+            <Form/>
         </div>
     )
 }
