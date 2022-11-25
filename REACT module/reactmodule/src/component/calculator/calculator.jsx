@@ -10,7 +10,7 @@ const Calculator = () =>{
             <input type="number" onChange={(event) => {setInput1(event.target.value)}}/>
             <input type="number" onChange={(event) => {setInput2(event.target.value)}}/>
             <div>{calculated}</div>
-            <Operation value1={input1} value2={input2}/>
+            <Operation value1={input1} value2={input2} updateCalculated={setCalculated}/>
         </div>
     )
 }
