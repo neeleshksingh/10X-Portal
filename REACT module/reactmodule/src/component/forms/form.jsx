@@ -5,17 +5,6 @@ const Form = () =>{
     const handleSubmit = () =>{
         console.log(form)
         debugger
-
-        /*
-        fetch({
-            url: "",
-            method: "Post",
-            data: ""
-        }).then(()=>{
-
-        }).catch(() =>{
-
-        })*/
     }
     return(
         <div>
