@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import "./practice.css"
 const Practice = () =>{
     const [item, setItem] = useState("")
     const [userList, setUserList] = useState([])
@@ -30,7 +30,7 @@ const Practice = () =>{
                         <div key={index}>
                         <li>{user.name}</li>
                         <li>{user.age}</li>
-                        <li>{user.category}</li>
+                        <li className={(user.category === "veg" ? "veg" : "non-veg")}>{user.category}</li>
                         </div>
                     )
                 })}
