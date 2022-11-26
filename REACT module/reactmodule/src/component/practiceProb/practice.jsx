@@ -15,7 +15,7 @@ const Practice = () =>{
         <div>
             <div>You are minor</div>
             <input onChange={(event)=>{setItem(event.target.value)}} value={item}/>
-            <input type="number" onChange={(event)=>{setAge(parseInt(event.target.value))}} value={item}/>
+            <input type="number" onChange={(event)=>{setAge(parseInt(event.target.value))}} value={age}/>
             <button onClick={handleItemAdd}>Add Item</button>
             <ul>
                 {userList.map((user, index) =>{
