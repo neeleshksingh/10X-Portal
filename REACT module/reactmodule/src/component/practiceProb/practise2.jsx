@@ -5,7 +5,7 @@ const Practise2 = () =>{
     const [marks, setMarks] = useState(0)
     const [tableData, setTableData] = useState([])
     const handleAdd = () =>{
-        setTableData([...tableData,{name:name, marks:marks}])
+        setTableData([...tableData,{name:name, marks:marks, id:""}])
     }
     const handleDelete = (deleteValue) =>{
         const newTableData = tableData.filter((data)=>{
@@ -30,8 +30,8 @@ const Practise2 = () =>{
                     {tableData.map((tableVal, index)=>{
                         return(
                             <tr key={index}>
-                                <td>{name}</td>
-                                <td>{marks}</td>
+                                <td>{tableVal.name}</td>
+                                <td>{tableVal.marks}</td>
                                 <button onClick={()=>{handleDelete(tableVal)}}>delete</button>
                             </tr>
                         )
