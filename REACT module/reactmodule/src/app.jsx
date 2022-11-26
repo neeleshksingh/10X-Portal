@@ -5,6 +5,8 @@ import Counter from "./component/counter/counter"
 import Event from "./component/Event/event"
 import Form from "./component/forms/form"
 import Calculator from "./component/calculator/calculator"
+//import Iteration from "./component/iterations/iteration"
+import Practice from "./component/practiceProb/practice"
 const App = () => {
     return (
         <div>
@@ -14,7 +16,9 @@ const App = () => {
             {/* <Counter/> */}
             {/* <Event/>
             <Form/> */}
-            <Calculator/>
+            {/* <Calculator/> */}
+            {/* <Iteration/> */}
+            <Practice/>
         </div>
     )
 }
