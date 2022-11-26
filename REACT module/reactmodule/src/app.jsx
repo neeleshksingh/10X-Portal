@@ -17,7 +17,7 @@ const App = () => {
             {/* <Event/>
             <Form/> */}
             {/* <Calculator/> */}
-            <Iteration/>
+            {/* <Iteration/> */}
             <Practice/>
         </div>
     )
