@@ -1,12 +1,11 @@
 // write code for Welcome component here
 import React from "react"
-import { useState } from "react"
 
-const Welcome = (props)=>{
-    
-    return (
+const Welcome = (props) =>{
+    return(
         <div>
-            <h1>{props.name}</h1>
+            <h1>Hey {props.name} !</h1>
+            <h2>Welcome to 10x Academy</h2>
         </div>
     )
 }

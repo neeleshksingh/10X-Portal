@@ -15,7 +15,7 @@ const Practise2 = () =>{
     }
     return (
         <div>
-            <input type="text" value={name} onChange={(e) =>{setName(e.target.value)}}/>
+            <input type="text" placeholder="Name" value={name} onChange={(e) =>{setName(e.target.value)}}/>
             <input type="number" value={marks} onChange={(e) =>{setMarks(e.target.value)}}/>
             <button onClick={handleAdd}>Add Row</button>
             <table>
