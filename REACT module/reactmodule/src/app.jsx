@@ -7,6 +7,7 @@ import Form from "./component/forms/form"
 import Calculator from "./component/calculator/calculator"
 import Iteration from "./component/iterations/iteration"
 import Practice from "./component/practiceProb/practice"
+import Practise2 from "./component/practiceProb/practise2"
 const App = () => {
     return (
         <div>
@@ -18,7 +19,8 @@ const App = () => {
             <Form/> */}
             {/* <Calculator/> */}
             {/* <Iteration/> */}
-            <Practice/>
+            {/* <Practice/> */}
+            <Practise2/>
         </div>
     )
 }
