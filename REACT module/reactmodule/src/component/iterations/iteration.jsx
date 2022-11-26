@@ -6,9 +6,9 @@ const Iteration = () =>{
                 {arr.map((user, index)=>{
                     return(
                         <div key = {index}>
-                        <li>{`${user.firstName} ${user.lastName}`}</li>
-                        <li>{user.age}</li>
-                        <div/>
+                            <li>{`${user.firstName} ${user.lastName}`}</li>
+                            <li>{user.age}</li>
+                        </div>
                     )
                 })} 
             </ul>
