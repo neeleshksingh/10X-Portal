@@ -12,7 +12,6 @@ const Form = () =>{
                 <input type="email" name="email" data-testid="email" id="email" required/><br/>
                 <label for="gender">Gender</label>
                 <select data-testid ="gender" required>
-                    <option value="">Select Option</option>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                 </select><br/>
