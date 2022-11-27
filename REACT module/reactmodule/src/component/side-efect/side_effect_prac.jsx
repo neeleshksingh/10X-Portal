@@ -1,7 +1,8 @@
 import axios from "axios"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 const SideEffectPractise = () =>{
     const [bitcoinQuantity, setBitcoinQuantity] = useState(0)
+    useEffect(()=>{}, [])
     const getPriceData = () =>{
         axios.get("https://api.coindesk.com/v1/bpi/currentprice.json").then((bitcoinData)=>{
             console.log(bitcoinData)

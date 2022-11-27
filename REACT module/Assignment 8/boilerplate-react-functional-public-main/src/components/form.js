@@ -1,5 +1,5 @@
 import React from "react";
-import '/form.css'
+import './form.css'
 const Form = () =>{
     return(
         <div>
@@ -19,9 +19,10 @@ const Form = () =>{
                 <label for="phoneNumber">Phone Number</label>
                 <input type="number" name="phoneNumber" data-testid='phoneNumber' id="phoneNumber" required/><br/>
                 <label for="password">Password</label>
-                <input type="password" name="password" data-testid="password" id="password" required/>
-                </div>
+                <input type="password" name="password" data-testid="password" id="password" required/> <br/>
                 <button type="submit" data-testid= 'submit' id="submit">Submit</button>
+                </div>
+                
             </form>
         </div>
     )
