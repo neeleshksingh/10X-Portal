@@ -9,6 +9,7 @@ import Iteration from "./component/iterations/iteration"
 import Practice from "./component/practiceProb/practice"
 import Practise2 from "./component/practiceProb/practise2"
 import SideEffect from "./component/side-efect/side_efect"
+import SideEffectPractise from "./component/side-efect/side_effect_prac"
 const App = () => {
     return (
         <div>
@@ -22,7 +23,8 @@ const App = () => {
             {/* <Iteration/> */}
             {/* <Practice/> */}
             {/* <Practise2/> */}
-            <SideEffect/>
+            {/* <SideEffect/> */}
+            <SideEffectPractise/>
         </div>
     )
 }
