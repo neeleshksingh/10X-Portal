@@ -33,7 +33,7 @@ const SideEffectPractise = () =>{
                 </thead>
                 <tbody>
                     {!cryptoData.length && <img src="{loader}" alt="loading"/>}
-                    {cryptoData.map((value, index) =>{
+                    {cryptoData.length && cryptoData.map((value, index) =>{
                         return(
                             <tr key="index">
                                 <td>{value.code}</td>
