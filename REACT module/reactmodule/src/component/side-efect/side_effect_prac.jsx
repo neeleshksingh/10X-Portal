@@ -3,7 +3,7 @@ import { useState } from "react"
 const SideEffectPractise = () =>{
     const [bitcoinQuantity, setBitcoinQuantity] = useState(0)
     const getPriceData = () =>{
-        axios.get("").then((bitcoinData)=>{
+        axios.get("https://api.coindesk.com/v1/bpi/currentprice.json").then((bitcoinData)=>{
             console.log(bitcoinData)
         }).catch(()=>{
 
@@ -11,6 +11,7 @@ const SideEffectPractise = () =>{
 
         })
     }
+    getPriceData()
     return(
         <div>
             <h2>Application for Side Effect</h2>
