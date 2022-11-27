@@ -8,7 +8,7 @@ const PredictAge = () =>{
             return res.json()
         }).then((data) =>{
             setAge(data.age)
-        }).catch(()=>{
+        }).catch((err)=>{
             console.log(err)
         })
     }
