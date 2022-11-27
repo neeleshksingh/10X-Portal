@@ -7,7 +7,7 @@ const Form = () =>{
             <form>
                 <div className="form1">
                 <label for="name">Name</label>
-                <input type="text" name="name" data-testid ='name' id="name" required pattern="[a-zA-Z0-9]+"/> <br/>
+                <input type="text" name="name" data-testid ='name' id="name" required pattern="[a-zA-Z0-9\s]+" /> <br/>
                 <label for="email">Email Address</label>
                 <input type="email" name="email" data-testid="email" id="email" required/><br/>
                 <label for="gender">Gender</label>
