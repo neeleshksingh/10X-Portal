@@ -11,7 +11,7 @@ const Form = () =>{
                 <label for="email">Email Address</label>
                 <input type="email" name="email" data-testid="email" id="email" required/><br/>
                 <label for="gender">Gender</label>
-                <select data-testid ="gender" required>
+                <select data-testid ="gender" id="gender" required>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                 </select><br/>

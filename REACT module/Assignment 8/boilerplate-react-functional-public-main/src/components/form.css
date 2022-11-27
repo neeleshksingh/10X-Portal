@@ -4,12 +4,13 @@
     box-sizing: border-box;
 }
 .container{
-    background-color: lightgray;
+    background-color: #22303C;
     height: 100vh;
 }
 .form1{
-    border: 3px solid black;
+    border: 3px solid aliceblue;
     width: 30%;
+    height:70vh;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -21,19 +22,25 @@
     padding: 10px;
     font-style: italic;
     font-weight: bold;
-    background-color: aliceblue;
+    background-color: #404040;
+    color: white;
+    border-radius: 10px;
+    font-size: x-large;
 }
 input{
     border: 1px solid black;
-    height: 1.5rem;
+    height: 2rem;
     border-radius: 5px;
 }
 #submit{
     border: 1px solid black;
-    height: 1.5rem;
+    height: 2rem;
     border-radius: 5px;
 }
 #submit:hover{
     background-color: greenyellow;
     color: black;
+}
+#gender{
+    height: 2rem;
 }
