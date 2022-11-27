@@ -9,14 +9,14 @@ const PredictAge = () =>{
         }).then((data) =>{
             setAge(data.age)
         }).catch(()=>{
-
+            console.log(err)
         })
     }
     return(
         <div>
-            <input type="text" onChange={(e)=>{setName(e.target.value)}}/>
+            <input type="text" onChange={(e)=>{setAge(0);setName(e.target.value)}}/>
             <button onClick = {handlePredictAge}>Predict Age</button>
-            {age && <div>Hey {name} your predict age is {age}</div>}
+            {age ? <div>Hey {name} your predict age is {age}</div>: null}
         </div>
     )
 }
