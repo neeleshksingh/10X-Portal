@@ -10,6 +10,7 @@ import Practice from "./component/practiceProb/practice"
 import Practise2 from "./component/practiceProb/practise2"
 import SideEffect from "./component/side-efect/side_efect"
 import SideEffectPractise from "./component/side-efect/side_effect_prac"
+import PredictAge from "./component/side-efect/pridict-age"
 const App = () => {
     return (
         <div>
@@ -24,7 +25,8 @@ const App = () => {
             {/* <Practice/> */}
             {/* <Practise2/> */}
             {/* <SideEffect/> */}
-            <SideEffectPractise/>
+            {/* <SideEffectPractise/> */}
+            <PredictAge/>
         </div>
     )
 }
