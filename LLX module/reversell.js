@@ -44,16 +44,17 @@ class LinkedList {
 }
 function reverse_llist(llist) {
     // Implement this
-    if (!llist || !llist.next) return llist;
-    let curr = llist;
-    let prev = null;
-    while (curr) {
-        let next = curr.next;
-        curr.next = prev;
-        prev = curr;
-        curr = next;
+    let cur = llist.head, prev = null, future = null
+    while (cur != null) {
+
+        future = cur.next
+        cur.next = prev
+        prev = cur
+        cur = future
     }
-    return prev;
+
+    llist.head = prev
+    return llist
 }
 let a_llist = new LinkedList()
 let n = parseInt(readLine())
