@@ -45,17 +45,15 @@ class LinkedList {
 function reverse_llist(llist) {
     // Implement this
     if (!llist || !llist.next) return llist;
-
-    let cur = llist;
-    let pre = null;
-
-    while(cur) {
-        const next = cur.next;
-        cur.next = pre;
-        pre = cur;
-        cur = next;
+    let curr = llist;
+    let prev = null;
+    while (curr) {
+        const next = curr.next;
+        curr.next = prev;
+        prev = curr;
+        curr = next;
     }
-    return pre;
+    return prev;
 }
 let a_llist = new LinkedList()
 let n = parseInt(readLine())
