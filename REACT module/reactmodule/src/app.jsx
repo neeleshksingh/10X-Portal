@@ -11,6 +11,7 @@ import Practise2 from "./component/practiceProb/practise2"
 import SideEffect from "./component/side-efect/side_efect"
 import SideEffectPractise from "./component/side-efect/side_effect_prac"
 import PredictAge from "./component/side-efect/pridict-age"
+import Validation from "./component/form-validation/validation"
 const App = () => {
     return (
         <div>
@@ -26,7 +27,8 @@ const App = () => {
             {/* <Practise2/> */}
             {/* <SideEffect/> */}
             {/* <SideEffectPractise/> */}
-            <PredictAge/>
+            {/* <PredictAge/> */}
+            <Validation/>
         </div>
     )
 }
