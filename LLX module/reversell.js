@@ -48,7 +48,7 @@ function reverse_llist(llist) {
     let curr = llist;
     let prev = null;
     while (curr) {
-        const next = curr.next;
+        let next = curr.next;
         curr.next = prev;
         prev = curr;
         curr = next;
