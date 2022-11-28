@@ -53,6 +53,7 @@ const Form = () =>{
                 <select data-testid ="gender" id="gender" required>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
+                    <option value="other">Other</option>
                 </select><br/>
                 <label for="phoneNumber">Phone Number</label>
                 <input type="number" name="phoneNumber" data-testid='phoneNumber' id="phoneNumber" required/><br/>
