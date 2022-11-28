@@ -11,7 +11,12 @@ const Validation = () =>{
     const checkErrors = (type) =>{
         switch(type) {
             case "username":
-                if(form.username.length > 8 || form.username.length < 6)
+                if(form.username.length > 8 || form.username.length < 6){
+                    setError({...error, username:{isValid: false, message: "username should have min length of 6 and max length of 8"}})
+                }
+                else{
+                    setError({...error, username:{isValid: false, message: ""}})
+                }
                 break
             case "email":
                 break
