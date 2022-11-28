@@ -11,7 +11,7 @@ const Validation = () =>{
                     <input type="email" name="email" id="email" />
                 </div>
                 <div>
-                    <label htmlFor="password">Password</label>
+                    <label htmlFor="password">Password <span style={{color:"red"}}>*</span> </label>
                     <input type="password" id="password" />
                 </div>
                 <div>
