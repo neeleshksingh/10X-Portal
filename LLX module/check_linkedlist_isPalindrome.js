@@ -33,23 +33,25 @@ class LinkedList {
         this.tail = new_node;
     }
 
-    isPalin(head) {
+    isPalin() {
         //WRITE CODE HERE
-        let sol = [];
-        // console.log(head.val)
-        while (head.next !== null) {
-            sol.push(head.val);
-            head = head.next;
+        let temp = linkedList.head
+        let arr = []
+        while (temp != null) {
+            arr.unshift(Number(temp.data))
+            temp = temp.next
         }
-        sol.push(head.val);
-        // console.log(sol)
-        for (let i = 0, j = sol.length - 1; i < j; i++, j--) {
-            if (sol[i] !== sol[j]) {
-                return false;
+        temp = linkedList.head
+        while (temp != null) {
+            if (temp.data == arr[0]) {
+                temp = temp.next
+                arr.shift()
+            }
+            else {
+                return 'False'
             }
         }
-        return true;
-
+        return 'True'
     }
 }
 
