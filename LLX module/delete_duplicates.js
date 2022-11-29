@@ -32,17 +32,38 @@ class LinkedList {
         this.tail.next = new_node;
         this.tail = new_node;
     }
-    deleteDuplicates(head) {
-        let cur = head
-
-        while (cur && cur.next) {
-            while (cur.next && cur.val == cur.next.val) {
-                cur.next = cur.next.next
-            }
-            cur = cur.next
+    deleteDuplicates() {
+        let cur = this.head,prev=this.head
+      if(cur == null)
+        {
+            return this.head
         }
-        return head
-    }
+        let set=new Set()
+        while(cur!=null)
+        {
+            set.add(cur.data)
+            cur=cur.next
+        }
+      
+       cur=this.head
+       let count=0
+       for(let values of set.values())
+       {
+        cur.data=values
+        count++
+        cur=cur.next
+       }
+       
+       cur=this.head
+        
+          while(count>1)
+          {
+            cur=cur.next
+            count--
+          }
+        cur.next=null
+        return this.head
+	}
 }
 function readListInput() {
     let vals = readLine().split(" ");

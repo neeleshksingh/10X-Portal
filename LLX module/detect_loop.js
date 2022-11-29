@@ -17,15 +17,20 @@ class LinkedList {
     constructor() {
         this.head = null;
     }
-    detectLoop(head) {
-        let s = new Set();
-        while (head != null) {
-            if (s.has(head))
-                return 1;
-            s.add(head);
-            head = head.next;
-        }
-        return 0;
+    detectLoop() {
+        let slow=this.head,fast=this.head
+
+		while(fast!=null && fast.next!=null)
+		{
+			slow=slow.next
+			fast=fast.next.next
+			if(slow==fast)
+			{
+				return 1
+			}
+			
+		}
+		return 0
     }
 }
 let n = parseInt(readLine());
