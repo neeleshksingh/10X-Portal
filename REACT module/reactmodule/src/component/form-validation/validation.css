@@ -36,9 +36,9 @@ input{
 }
 button{
     height: 2.5em;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     border-radius: 10px;
-    background-color: red;
+    /* background-color: red; */
     color: black;
     font-size: large;
     font-weight: bold;
