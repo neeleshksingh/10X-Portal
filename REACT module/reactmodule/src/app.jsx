@@ -28,7 +28,7 @@ const App = () => {
             {/* <SideEffect/> */}
             {/* <SideEffectPractise/> */}
             {/* <PredictAge/> */}
-            <Validation/>
+            {/* <Validation/> */}
         </div>
     )
 }
