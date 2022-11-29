@@ -13,12 +13,12 @@
     gap: 40px;
 }
 #form{
-    border: 3px solid #212124;
+    border: 3px solid #3D3D3D;
     border-radius: 8px;
-    background-color: #212124;
+    background-color: #3D3D3D;
     color: white;
-    height: 50vh;
-    width: 50%;
+    height: 55vh;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -30,12 +30,12 @@
 }
 input{
     width: 100%;
-    height: 2em;
+    height: 3em;
     border: 1px solid white;
     border-radius: 10px;
 }
 button{
-    height: 2em;
+    height: 2.5em;
     border: 1px solid red;
     border-radius: 10px;
     background-color: red;
