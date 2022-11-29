@@ -36,7 +36,7 @@ const Validation = () =>{
                 <div>
                     <label htmlFor="username">Username<span style={{color:"red"}}>*</span></label><br />
                     <input type="text" id="username" onChange={(event)=>{setForm({...form, username: event.target.value})}} onBlur={(event)=>{checkErrors("username")}} value={form.username}/>
-                    {!error.username.isValid? <div>{error.message}</div> : null}
+                    {!error.username.isValid? <div style={{color: "red"}}>{error.message}</div> : null}
                 </div>
                 <div>
                     <label htmlFor="email">Email<span style={{color:"red"}}>*</span></label><br />
