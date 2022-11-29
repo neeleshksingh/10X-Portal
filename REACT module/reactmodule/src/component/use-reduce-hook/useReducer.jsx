@@ -4,11 +4,13 @@ const UseReducer = () =>{
     const reducer = (currentValue, action) =>{
         switch(action.type){
             case "IncrementByValue" :
-                return currentValue + action.value
+                return {...currentValue, counter: currentValue.counter + action.value}
             case "Decrement" :
-                return currentValue - 1
+                return {...currentValue, counter: currentValue.counter - 1}
             case "Increment" :
-                return currentValue + 1
+                return {...currentValue, counter: currentValue.counter + 1}
+            case "changeValue" :
+                return {...currentValue, updateBy: action.value}
             default:
                 return currentValue
         }
@@ -22,8 +24,8 @@ const UseReducer = () =>{
             <button onClick={()=>{dispatch({type: "Increment"})}}>+</button>
             <div>{counter}</div>
             <button onClick={()=>{dispatch({type: "Decrement"})}}>-</button>
-            <input type="text" onChange={(e) => {}} />
-            <button>Increment By</button>
+            <input type="text" onChange={(e) => {setInputValue(e.target.value)}} />
+            <button onClick={() => {dispatch({type: "IncrementByValue", value: parseInt(counterApp.update)})}}>Increment By</button>
         </div>
     )
 }
