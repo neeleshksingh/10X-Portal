@@ -1,12 +1,12 @@
-import { useState } from "react"
+import { useReducer, useState } from "react"
 
 const UseReducer = () =>{
-    const reducer = () =>{
+    const reducer = (state, action) =>{
 
     }
     const initialState = 0
     //const [counter, setCounter] = useState(0)
-    const [value, dispatch] = useState
+    const [value, dispatch] = useReducer(reducer, initialState)
     return(
         <div>
             <button>+</button>
