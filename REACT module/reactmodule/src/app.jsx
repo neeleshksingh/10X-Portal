@@ -12,6 +12,7 @@ import SideEffect from "./component/side-efect/side_efect"
 import SideEffectPractise from "./component/side-efect/side_effect_prac"
 import PredictAge from "./component/side-efect/pridict-age"
 import Validation from "./component/form-validation/validation"
+import UseReducer from "./component/use-reduce-hook/useReducer"
 const App = () => {
     return (
         <div>
@@ -29,6 +30,7 @@ const App = () => {
             {/* <SideEffectPractise/> */}
             {/* <PredictAge/> */}
             {/* <Validation/> */}
+            <UseReducer/>
         </div>
     )
 }

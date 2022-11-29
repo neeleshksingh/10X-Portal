@@ -50,7 +50,7 @@ const Validation = () =>{
                     <label htmlFor="confirm-password">Confirm Password<span style={{color:"red"}}>*</span></label><br />
                     <input type="password" name="confirm-password" id="confirm-password" onChange={(event)=>{setForm({...form, confirmPassword: event.target.value})}} onBlur={(event)=>{checkErrors("confirPassword")}} value={form.confirmPassword}/>
                 </div>
-                <button type="submit" disabled={isSubmitValid === 0 ? true : false} onClick={handleSubmit}>Submit</button>
+                <button type="submit" id="button" disabled={isSubmitValid === 0 ? true : false} onClick={handleSubmit}>Submit</button>
             </form>
         </div>
     )

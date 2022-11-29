@@ -34,7 +34,7 @@ input{
     border: 1px solid white;
     border-radius: 10px;
 }
-button{
+#button{
     height: 2.5em;
     /* border: 1px solid red; */
     border-radius: 10px;
@@ -43,7 +43,7 @@ button{
     font-size: large;
     font-weight: bold;
 }
-button:hover{
+#button:hover{
     background-color: greenyellow;
     border: 1px solid greenyellow;
     font-weight: bolder;
