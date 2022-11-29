@@ -35,20 +35,20 @@ const Validation = () =>{
             <form action="" id="form">
                 <div>
                     <label htmlFor="username">Username<span style={{color:"red"}}>*</span></label><br />
-                    <input type="text" id="username" onChange={(event)=>{setForm({...form, username: event.target.value})}} onBlur={(event)=>{checkErrors("username")}} value={form.username}/>
+                    <input type="text" className="input" id="username" onChange={(event)=>{setForm({...form, username: event.target.value})}} onBlur={(event)=>{checkErrors("username")}} value={form.username}/>
                     {!error.username.isValid? <div style={{color: "red"}}>{error.message}</div> : null}
                 </div>
                 <div>
                     <label htmlFor="email">Email<span style={{color:"red"}}>*</span></label><br />
-                    <input type="email" name="email" id="email" onChange={(event)=>{setForm({...form, email: event.target.value})}} onBlur={(event)=>{checkErrors("email")}} value={form.email} />
+                    <input type="email" className="input" name="email" id="email" onChange={(event)=>{setForm({...form, email: event.target.value})}} onBlur={(event)=>{checkErrors("email")}} value={form.email} />
                 </div>
                 <div>
                     <label htmlFor="password">Password <span style={{color:"red"}}>*</span> </label><br />
-                    <input type="password" id="password" onChange={(event)=>{setForm({...form, password: event.target.value})}} onBlur={(event)=>{checkErrors("password")}} value={form.password}/>
+                    <input type="password" className="input" id="password" onChange={(event)=>{setForm({...form, password: event.target.value})}} onBlur={(event)=>{checkErrors("password")}} value={form.password}/>
                 </div>
                 <div>
                     <label htmlFor="confirm-password">Confirm Password<span style={{color:"red"}}>*</span></label><br />
-                    <input type="password" name="confirm-password" id="confirm-password" onChange={(event)=>{setForm({...form, confirmPassword: event.target.value})}} onBlur={(event)=>{checkErrors("confirPassword")}} value={form.confirmPassword}/>
+                    <input type="password" className="input" name="confirm-password" id="confirm-password" onChange={(event)=>{setForm({...form, confirmPassword: event.target.value})}} onBlur={(event)=>{checkErrors("confirPassword")}} value={form.confirmPassword}/>
                 </div>
                 <button type="submit" id="button" disabled={isSubmitValid === 0 ? true : false} onClick={handleSubmit}>Submit</button>
             </form>

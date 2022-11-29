@@ -28,7 +28,7 @@
     font-weight: bold;
     font-style: italic;
 }
-input{
+.input{
     width: 100%;
     height: 3em;
     border: 1px solid white;
