@@ -1,6 +1,10 @@
+import ItemInfo from "./item-info"
+
 const Item = () =>{
     return(
-        <div>Footer Works!</div>
+        <div>
+            <ItemInfo/>
+        </div>
     )
 }
 export default Item
