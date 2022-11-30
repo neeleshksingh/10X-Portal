@@ -17,8 +17,6 @@ import Header from "./component/context/subcomponent/header"
 import Footer from "./component/context/subcomponent/footer"
 import Sidebar from "./component/context/subcomponent/sidebar"
 import ItemInfo from "./component/context/subcomponent/item-info"
-import { ThemeContext } from "./component/context/themeContext"
-
 const App = () => {
     return (
         <div>
