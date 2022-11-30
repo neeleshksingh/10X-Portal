@@ -18,20 +18,14 @@ class LinkedList {
         this.head = null;
     }
     detectLoop() {
-        var slow_p = llist, fast_p = llist;
+        var slow_p = this.val, fast_p = this.val;
 
         while (slow_p != null && fast_p != null && fast_p.next != null) {
             slow_p = slow_p.next;
             fast_p = fast_p.next.next;
-
-            /*
-             * If slow_p and fast_p meet at some point then there is a loop
-             */
             if (slow_p == fast_p)
                 return countNodes(slow_p);
         }
-
-        /* Return 0 to indicate that there is no loop */
         return 0;
     }
 }
