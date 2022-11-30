@@ -17,29 +17,32 @@ import Header from "./component/context/subcomponent/header"
 import Footer from "./component/context/subcomponent/footer"
 import Sidebar from "./component/context/subcomponent/sidebar"
 import ItemInfo from "./component/context/subcomponent/item-info"
+import ThemeProvider from "./component/context/themeProvider"
 const App = () => {
     return (
-        <div>
-            {/* <Welcome/>
-            <Hello/> */}
-            {/* <Home/> */}
-            {/* <Counter/> */}
-            {/* <Event/>
-            <Form/> */}
-            {/* <Calculator/> */}
-            {/* <Iteration/> */}
-            {/* <Practice/> */}
-            {/* <Practise2/> */}
-            {/* <SideEffect/> */}
-            {/* <SideEffectPractise/> */}
-            {/* <PredictAge/> */}
-            {/* <Validation/> */}
-            {/* <UseReducer/> */}
+        // <div>
+        //     {/* <Welcome/>
+        //     <Hello/> */}
+        //     {/* <Home/> */}
+        //     {/* <Counter/> */}
+        //     {/* <Event/>
+        //     <Form/> */}
+        //     {/* <Calculator/> */}
+        //     {/* <Iteration/> */}
+        //     {/* <Practice/> */}
+        //     {/* <Practise2/> */}
+        //     {/* <SideEffect/> */}
+        //     {/* <SideEffectPractise/> */}
+        //     {/* <PredictAge/> */}
+        //     {/* <Validation/> */}
+        //     {/* <UseReducer/> */}
+        // </div>
+        <ThemeProvider>
             <Header/>
             <Footer/>
             <Sidebar/>
             <ItemInfo/>
-        </div>
+        </ThemeProvider>
     )
 }
 export default App
