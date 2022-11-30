@@ -1,9 +1,9 @@
 import { ThemeContext } from "./themeContext"
 
-const ThemeProvider = () =>{
+const ThemeProvider = (props) =>{
     return(
         <ThemeContext.Provider>
-
+            {props.children}
         </ThemeContext.Provider>
     )
 }

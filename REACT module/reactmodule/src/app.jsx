@@ -16,7 +16,8 @@ import UseReducer from "./component/use-reduce-hook/useReducer"
 import Header from "./component/context/subcomponent/header"
 import Footer from "./component/context/subcomponent/footer"
 import Sidebar from "./component/context/subcomponent/sidebar"
-import ItemInfo from "./component/context/subcomponent/item-info"
+import Item from "./component/context/subcomponent/items"
+//import ItemInfo from "./component/context/subcomponent/item-info"
 import ThemeProvider from "./component/context/themeProvider"
 const App = () => {
     return (
@@ -41,7 +42,7 @@ const App = () => {
             <Header/>
             <Footer/>
             <Sidebar/>
-            <ItemInfo/>
+            <Item/>
         </ThemeProvider>
     )
 }
