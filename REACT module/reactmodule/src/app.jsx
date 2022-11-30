@@ -13,6 +13,12 @@ import SideEffectPractise from "./component/side-efect/side_effect_prac"
 import PredictAge from "./component/side-efect/pridict-age"
 import Validation from "./component/form-validation/validation"
 import UseReducer from "./component/use-reduce-hook/useReducer"
+import Header from "./component/context/subcomponent/header"
+import Footer from "./component/context/subcomponent/footer"
+import Sidebar from "./component/context/subcomponent/sidebar"
+import ItemInfo from "./component/context/subcomponent/item-info"
+import { ThemeContext } from "./component/context/themeContext"
+
 const App = () => {
     return (
         <div>
@@ -30,7 +36,11 @@ const App = () => {
             {/* <SideEffectPractise/> */}
             {/* <PredictAge/> */}
             {/* <Validation/> */}
-            <UseReducer/>
+            {/* <UseReducer/> */}
+            <Header/>
+            <Footer/>
+            <Sidebar/>
+            <ItemInfo/>
         </div>
     )
 }
