@@ -18,16 +18,32 @@ class LinkedList {
         this.head = null;
     }
     detectLoop() {
-        var slow_p = this.val, fast_p = this.val;
+        let fast=this.head,slow=this.head
+		while(fast!=null && fast.next!=null)
+		{
+			fast=fast.next.next
+			slow=slow.next
+			if(fast==slow)
+			{
+               return llist.countNodes(slow)
+			}
+		}
+		return 0
 
-        while (slow_p != null && fast_p != null && fast_p.next != null) {
-            slow_p = slow_p.next;
-            fast_p = fast_p.next.next;
-            if (slow_p == fast_p)
-                return countNodes(slow_p);
-        }
-        return 0;
     }
+    countNodes(slow)
+    {
+        let temp=slow
+        let c=1
+        while(temp.next!=slow)
+        {
+            c++
+            temp=temp.next
+        }
+        return c
+    }
+
+
 }
 let n = parseInt(readLine());
 let arr = readLine().split(" ");
