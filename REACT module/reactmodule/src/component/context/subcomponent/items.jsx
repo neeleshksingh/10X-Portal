@@ -1,10 +1,10 @@
-import ItemInfo from "./item-info"
+import ItemInfo from "./item-info";
 
-const Item = () =>{
-    return(
+const Item = ()=> {
+    return (
         <div>
             <ItemInfo/>
         </div>
     )
 }
-export default Item
+export default Item;

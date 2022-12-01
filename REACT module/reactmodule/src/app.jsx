@@ -38,12 +38,7 @@ const App = () => {
         //     {/* <Validation/> */}
         //     {/* <UseReducer/> */}
         // </div>
-        <ThemeProvider>
-            <Header/>
-            <Footer/>
-            <Sidebar/>
-            <Item/>
-        </ThemeProvider>
+        <ThemeProvider/>
     )
 }
 export default App
