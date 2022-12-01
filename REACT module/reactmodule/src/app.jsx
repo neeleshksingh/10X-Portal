@@ -19,26 +19,29 @@ import Sidebar from "./component/context/subcomponent/sidebar"
 import Item from "./component/context/subcomponent/items"
 //import ItemInfo from "./component/context/subcomponent/item-info"
 import ThemeProvider from "./component/context/themeProvider"
+import CartProvider from "./component/context/card-context/cartProvider"
 const App = () => {
     return (
-        // <div>
-        //     {/* <Welcome/>
-        //     <Hello/> */}
-        //     {/* <Home/> */}
-        //     {/* <Counter/> */}
-        //     {/* <Event/>
-        //     <Form/> */}
-        //     {/* <Calculator/> */}
-        //     {/* <Iteration/> */}
-        //     {/* <Practice/> */}
-        //     {/* <Practise2/> */}
-        //     {/* <SideEffect/> */}
-        //     {/* <SideEffectPractise/> */}
-        //     {/* <PredictAge/> */}
-        //     {/* <Validation/> */}
-        //     {/* <UseReducer/> */}
-        // </div>
-        <ThemeProvider/>
+        <div>
+             {/* <Welcome/>
+             <Hello/> */}
+             {/* <Home/> */}
+             {/* <Counter/> */}
+             {/* <Event/>
+             <Form/> */}
+             {/* <Calculator/> */}
+             {/* <Iteration/> */}
+             {/* <Practice/> */}
+             {/* <Practise2/> */}
+            {/* <SideEffect/> */}
+             {/* <SideEffectPractise/> */}
+            {/* <PredictAge/> */}
+             {/* <Validation/> */}
+             {/* <UseReducer/> */}
+             {/* <ThemeProvider/> */}
+             <CartProvider/>
+        </div>
+        
     )
 }
 export default App
