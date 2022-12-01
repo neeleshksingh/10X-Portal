@@ -20,7 +20,7 @@ const deleteData= (deletevalue) =>{
 }
     return(
         <section className="container">
-        <h1 className="heading">Website Todo</h1>
+        <h1 className="heading">Todo List</h1>
         <div className="box">
         <input id="task" placeholder="Enter items here" className='inp' onChange={(e)=>{setInp(e.target.value)}} value={inp}/>
         
