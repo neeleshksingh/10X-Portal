@@ -2,8 +2,6 @@ import React from "react";
 import "./../styles/App.css";
 import ToDoList from "./toDoList";
 
-
-
 function App() 
 {
 	return (
@@ -12,6 +10,4 @@ function App()
 	</div>
 	);
 }
-
-
 export default App;
