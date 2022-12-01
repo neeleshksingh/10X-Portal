@@ -54,6 +54,13 @@ li{
     font-weight: bold;
     border-radius: 5px;
 }
+.btn:hover{
+    border: 1px solid rgb(81, 219, 56);
+    background-color: rgb(81, 219, 56);
+    color: black;
+    box-shadow: 0 5px plum;
+    transform: translateY(4px);
+}
 .del{
     border: 1px solid red;
     background-color: red;
