@@ -33,9 +33,9 @@ const App = () => {
              {/* <Iteration/> */}
              {/* <Practice/> */}
              {/* <Practise2/> */}
-            {/* <SideEffect/> */}
+             {/* <SideEffect/> */}
              {/* <SideEffectPractise/> */}
-            {/* <PredictAge/> */}
+             {/* <PredictAge/> */}
              {/* <Validation/> */}
              {/* <UseReducer/> */}
              {/* <ThemeProvider/> */}
