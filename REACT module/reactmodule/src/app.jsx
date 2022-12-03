@@ -20,6 +20,7 @@ import Item from "./component/context/subcomponent/items"
 //import ItemInfo from "./component/context/subcomponent/item-info"
 import ThemeProvider from "./component/context/themeProvider"
 import CartProvider from "./component/context/card-context/cartProvider"
+import Fragment from "./component/fragment/fragment"
 const App = () => {
     return (
         <div>
@@ -39,7 +40,8 @@ const App = () => {
              {/* <Validation/> */}
              {/* <UseReducer/> */}
              {/* <ThemeProvider/> */}
-             <CartProvider/>
+             {/* <CartProvider/> */}
+             <Fragment/>
         </div>
         
     )
