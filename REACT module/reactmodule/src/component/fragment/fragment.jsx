@@ -1,9 +1,13 @@
 const Fragment = () =>{
     return(
         <>
-            <span>1</span>
-            <span>2</span>
-            <span>3</span>
+            {['span1', 'span2', 'span3'].map((value,i)=>{
+                return(
+                    <span key={'${value}---${i}'}>
+                        {value}
+                    </span>
+                )
+            })}
         </>
     )
 }
