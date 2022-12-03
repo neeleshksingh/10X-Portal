@@ -22,6 +22,7 @@ import ThemeProvider from "./component/context/themeProvider"
 import CartProvider from "./component/context/card-context/cartProvider"
 import Fragment from "./component/fragment/fragment"
 import Ref from "./component/Ref/ref"
+import RefComplex from "./component/Ref/refComplex"
 const App = () => {
     return (
         <div>
@@ -42,8 +43,9 @@ const App = () => {
              {/* <UseReducer/> */}
              {/* <ThemeProvider/> */}
              {/* <CartProvider/> */}
-             <Fragment/>
-             <Ref/>
+             {/* <Fragment/> */}
+             {/* <Ref/> */}
+             <RefComplex/>
         </div>
         
     )
