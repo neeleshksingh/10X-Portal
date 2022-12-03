@@ -6,12 +6,8 @@ const Ref = () => {
     }
     return(
         <>
-            <div>
-                I am virtual Div
-            </div>
-            <div ref={actualReferrence}>
-                I am actual Div
-            </div>
+            <div>I am virtual Div</div>
+            <div ref={actualReferrence}>I am actual Div</div>
             <button onClick={handleChangeText}>Change Text</button>
         </>
     )
