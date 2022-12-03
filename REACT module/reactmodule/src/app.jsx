@@ -21,6 +21,7 @@ import Item from "./component/context/subcomponent/items"
 import ThemeProvider from "./component/context/themeProvider"
 import CartProvider from "./component/context/card-context/cartProvider"
 import Fragment from "./component/fragment/fragment"
+import Ref from "./component/Ref/ref"
 const App = () => {
     return (
         <div>
@@ -42,6 +43,7 @@ const App = () => {
              {/* <ThemeProvider/> */}
              {/* <CartProvider/> */}
              <Fragment/>
+             <Ref/>
         </div>
         
     )
