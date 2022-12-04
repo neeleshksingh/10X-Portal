@@ -12,11 +12,14 @@ import React from "react";
 class CounterClass extends React.Component {
     constructor() {
         super()
+        this.state = {
+            count : 0
+        }
     }
     render(){
         return(
             <>
-                Counter Class    
+                Counter Class    <br />
                 <button onClick={()=> {}}>+</button>
                 <button onClick={()=> {}}>-</button>
                 <div>{}</div>        
