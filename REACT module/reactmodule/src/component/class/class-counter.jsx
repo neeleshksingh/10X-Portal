@@ -25,6 +25,9 @@ class CounterClass extends React.Component {
     componentWillUpdate(){
         console.log("Update")
     }
+    componentWillUnmount(){
+        
+    }
     render(){
         return(
             <>
