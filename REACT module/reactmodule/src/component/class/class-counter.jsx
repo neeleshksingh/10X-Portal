@@ -20,9 +20,9 @@ class CounterClass extends React.Component {
         return(
             <>
                 Counter Class    <br />
-                <button onClick={()=> {}}>+</button>
-                <button onClick={()=> {}}>-</button>
-                <div>{}</div>        
+                <button onClick={()=> {this.setState({...this.state, count: this.state.count + 1})}}>Increment</button>
+                <button onClick={()=> {this.setState({...this.state, count: this.state.count - 1})}}>Decrement</button>
+                <div>{this.state.count}</div>        
             </>
         )
     }
