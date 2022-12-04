@@ -16,6 +16,15 @@ class CounterClass extends React.Component {
             count : 0
         }
     }
+    componentWillMount(){
+        console.log("Inside will mount")
+    }
+    componentDidMount(){
+        console.log("Inside did mount")
+    }
+    componentWillUpdate(){
+        console.log("Update")
+    }
     render(){
         return(
             <>
