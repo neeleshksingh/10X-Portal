@@ -22,6 +22,8 @@ import CartProvider from "./component/context/card-context/cartProvider"
 import Fragment from "./component/fragment/fragment"
 import Ref from "./component/Ref/ref"
 import RefComplex from "./component/Ref/refComplex"
+import CounterClass from "./component/class/class-counter"
+
 const App = () => {
     return (
         <div>
@@ -44,7 +46,8 @@ const App = () => {
              {/* <CartProvider/> */}
              {/* <Fragment/> */}
              {/* <Ref/> */}
-             <RefComplex/>
+             {/* <RefComplex/> */}
+             <CounterClass/>
         </div>
         
     )
