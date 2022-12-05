@@ -23,6 +23,7 @@ import Fragment from "./component/fragment/fragment"
 import Ref from "./component/Ref/ref"
 import RefComplex from "./component/Ref/refComplex"
 import CounterClass from "./component/class/class-counter"
+import Performance from "./component/performance-optimisation/performance"
 
 const App = () => {
     return (
@@ -47,7 +48,8 @@ const App = () => {
              {/* <Fragment/> */}
              {/* <Ref/> */}
              {/* <RefComplex/> */}
-             <CounterClass/>
+             {/* <CounterClass/> */}
+             <Performance/>
         </div>
         
     )
