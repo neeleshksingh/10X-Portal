@@ -7,7 +7,6 @@ const Selection=(props)=>{
     const {earlier,data,applyColor} = props
     const [color,changeColor]= useState(earlier.background)
     const handle=()=>{
-        
         changeColor(earlier.background)
     }
     return(<div className="fix-box" onClick={handle} style={{background:color}}>
