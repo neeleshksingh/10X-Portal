@@ -24,6 +24,7 @@ import Ref from "./component/Ref/ref"
 import RefComplex from "./component/Ref/refComplex"
 import CounterClass from "./component/class/class-counter"
 import Performance from "./component/performance-optimisation/performance"
+import MemoValue from "./component/memo-example/memo-value"
 
 const App = () => {
     return (
@@ -49,7 +50,8 @@ const App = () => {
              {/* <Ref/> */}
              {/* <RefComplex/> */}
              {/* <CounterClass/> */}
-             <Performance/>
+             {/* <Performance/> */}
+             <MemoValue/>
         </div>
         
     )
