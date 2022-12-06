@@ -50,8 +50,8 @@ const App = () => {
              {/* <Ref/> */}
              {/* <RefComplex/> */}
              {/* <CounterClass/> */}
-             {/* <Performance/> */}
-             <MemoValue/>
+             <Performance/>
+             {/* <MemoValue/> */}
         </div>
         
     )

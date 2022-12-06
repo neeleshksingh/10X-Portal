@@ -1,3 +1,4 @@
+import { useCallback } from "react"
 import { useState } from "react"
 import PerformanceChild from "./performance-child"
 
@@ -5,6 +6,9 @@ const Performance = () =>{
     const [list, setList] = useState([])
     const [listItem, setListItem] = useState('')
     const [heading, setHeading] = useState("I am old Heading")
+    const handleHeading = useCallback(()=>{
+        return heading
+    }, [heading])
     return(
         <>
             <input onChange={(e)=>{setListItem(e.target.value)}} value={listItem} type="text" />
@@ -15,7 +19,7 @@ const Performance = () =>{
                     <div key={key}>{value}</div>
                 )
             })}
-            <PerformanceChild heading = {heading}/>
+            <PerformanceChild heading = {handleHeading}/>
         </>
     )
 }
