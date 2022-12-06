@@ -2,7 +2,7 @@ import React from "react"
 const PerformanceChild = (props) =>{
     return(
         <>
-            {props.heading}
+            {props.heading()}
         </>
     )
 }
