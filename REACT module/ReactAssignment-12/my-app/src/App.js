@@ -1,8 +1,7 @@
 import Postview from "./PostView/postview";
-
 function App() {
   return (
-    <div className="App">
+    <div>
       <Postview/>
     </div>
   );
