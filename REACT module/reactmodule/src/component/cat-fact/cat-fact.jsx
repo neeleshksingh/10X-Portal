@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { useFetch } from "../cat-fact"
+import useFetch from "../custom-hooks/fetch-hook"
 const CatFact = () =>{
     const data = useFetch("https://catfact.ninja/fact")
     console.log(data)

@@ -11,3 +11,4 @@ function useFetch(url){
     },[url])
     return data
 }
+export default useFetch
