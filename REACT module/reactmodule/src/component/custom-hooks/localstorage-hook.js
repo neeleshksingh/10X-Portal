@@ -5,5 +5,8 @@ export const useLocalStorage = (key) =>{
     // useEffect(()=>{
     //     setState(window.localStorage.getItem())
     // },[])
+    useEffect(()=>{
+        window.localStorage.setItem(key, state)
+    },[state])
     return [state, setState]
 }
