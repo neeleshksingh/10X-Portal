@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Outlet} from "react-router-dom"
+import { BrowserRouter, Routes, Route, Outlet, useNavigate} from "react-router-dom"
 import Welcome from "./welcome"
 import Hello from "./hello"
 import Home from "./home/home"
@@ -31,6 +31,7 @@ import Navigation from "./component/navigation/navigation"
 import IndexComponent from "./component/index/index-comp"
 
 const App = () => {
+    const navigate = useNavigate()
     return (
         <div>
              {/* <Welcome/>
@@ -67,8 +68,8 @@ const App = () => {
                     <Route path="*" element={<div>
                         Page Not Found 404!
                     </div>}/>
-                    <Route path="Age" element={<><button onClick={()=>{}}>PredictAge</button><Outlet/></>}>
-                        <Route path="predictAge" element={<PredictAge/>}></Route>
+                    <Route path="age" element={<><div><Link to="/age/predictage">Predict</Link></div><Outlet/></>}>
+                        <Route path="predictage" element={<PredictAge/>}></Route>
                     </Route>
                 </Routes>
              </BrowserRouter>
