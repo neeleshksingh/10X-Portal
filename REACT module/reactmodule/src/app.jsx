@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route} from "react-router-dom"
+import { BrowserRouter, Routes, Route, Outlet} from "react-router-dom"
 import Welcome from "./welcome"
 import Hello from "./hello"
 import Home from "./home/home"
@@ -67,7 +67,7 @@ const App = () => {
                     <Route path="*" element={<div>
                         Page Not Found 404!
                     </div>}/>
-                    <Route path="Age" element={<button onClick={()=>{}}>PredictAge</button>}>
+                    <Route path="Age" element={<><button onClick={()=>{}}>PredictAge</button><Outlet/></>}>
                         <Route path="predictAge" element={<PredictAge/>}></Route>
                     </Route>
                 </Routes>
