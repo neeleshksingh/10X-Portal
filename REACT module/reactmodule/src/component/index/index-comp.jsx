@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 const IndexComponent = () =>{
     return(
@@ -11,6 +11,9 @@ const IndexComponent = () =>{
             </li>
             <li>
                 <Link to="/form">Form</Link>
+            </li>
+            <li>
+                <Link to="/age">Age</Link>
             </li>
         </ul>
     )

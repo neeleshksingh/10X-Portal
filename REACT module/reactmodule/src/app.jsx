@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Outlet, useNavigate} from "react-router-dom"
+import { BrowserRouter, Routes, Route, Outlet, useNavigate, Link} from "react-router-dom"
 import Welcome from "./welcome"
 import Hello from "./hello"
 import Home from "./home/home"
@@ -68,9 +68,9 @@ const App = () => {
                     <Route path="*" element={<div>
                         Page Not Found 404!
                     </div>}/>
-                    <Route path="age" element={<><div><Link to="/age/predictage">Predict</Link></div><Outlet/></>}>
-                        <Route path="predictage" element={<PredictAge/>}></Route>
-                    </Route>
+                    <Route path="age" element={<><div ><Link to="/age/1">Predict</Link></div><Outlet/></>}>
+                    <Route path=":id" element={<PredictAge/>}></Route>
+                </Route>
                 </Routes>
              </BrowserRouter>
         </div>
