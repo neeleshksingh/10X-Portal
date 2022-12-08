@@ -64,6 +64,9 @@ const App = () => {
                     <Route path="home" element={<Home/>}/>
                     <Route path="Calculator" element={<Calculator/>}/>
                     <Route path="form" element={<Form/>}/>
+                    <Route path="*" element={<div>
+                        Page Not Found 404!
+                    </div>}/>
                 </Routes>
              </BrowserRouter>
         </div>
