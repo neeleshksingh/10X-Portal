@@ -28,6 +28,7 @@ import Performance from "./component/performance-optimisation/performance"
 import MemoValue from "./component/memo-example/memo-value"
 import CatFact from "./component/cat-fact/cat-fact"
 import Navigation from "./component/navigation/navigation"
+import IndexComponent from "./component/index/index-comp"
 
 const App = () => {
     return (
@@ -59,6 +60,7 @@ const App = () => {
              {/* <Navigation/> */}
              <BrowserRouter>
                 <Routes>
+                    <Route path="/" element={<IndexComponent/>}/>
                     <Route path="home" element={<Home/>}/>
                     <Route path="Calculator" element={<Calculator/>}/>
                     <Route path="form" element={<Form/>}/>
