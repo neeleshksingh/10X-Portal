@@ -1,3 +1,4 @@
+import { BrowserRouter, Routes, Route} from "react-router-dom"
 import Welcome from "./welcome"
 import Hello from "./hello"
 import Home from "./home/home"
@@ -55,7 +56,14 @@ const App = () => {
              {/* <Performance/> */}
              {/* <MemoValue/> */}
              {/* <CatFact/> */}
-             <Navigation/>
+             {/* <Navigation/> */}
+             <BrowserRouter>
+                <Routes>
+                    <Route path="home" element={<Home/>}/>
+                    <Route path="Calculator" element={<Calculator/>}/>
+                    <Route path="form" element={<Form/>}/>
+                </Routes>
+             </BrowserRouter>
         </div>
         
     )
