@@ -67,6 +67,9 @@ const App = () => {
                     <Route path="*" element={<div>
                         Page Not Found 404!
                     </div>}/>
+                    <Route path="Age" element={<button onClick={()=>{}}>PredictAge</button>}>
+                        <Route path="predictAge" element={<PredictAge/>}></Route>
+                    </Route>
                 </Routes>
              </BrowserRouter>
         </div>
