@@ -35,6 +35,7 @@ import IndexComponent from "./component/index/index-comp"
 import Registration from "./component/auth/registration"
 import Login from "./component/auth/login"
 import { store } from "./redux/store"
+import CounterRedux from "./redux/reducer/counter-redux/counter-redux"
 
 const App = () => {
     const LaziNavigation = React.lazy(()=>{
@@ -75,6 +76,7 @@ const App = () => {
              <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Login/>}/>
+                    <Route path="/redux" element={<CounterRedux/>}/>
                     <Route path="index" element={<IndexComponent/>}/>
                     <Route path="home" element={<Home/>}/>
                     <Route path="Calculator" element={<Calculator/>}/>
