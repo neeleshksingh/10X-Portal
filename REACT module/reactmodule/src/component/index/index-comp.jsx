@@ -15,6 +15,9 @@ const IndexComponent = () =>{
             <li>
                 <Link to="/age">Age</Link>
             </li>
+            <li>
+                <Link to="/login">Login</Link>
+            </li>
         </ul>
     )
 }

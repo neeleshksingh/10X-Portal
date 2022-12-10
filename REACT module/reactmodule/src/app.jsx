@@ -30,6 +30,7 @@ import CatFact from "./component/cat-fact/cat-fact"
 import Navigation from "./component/navigation/navigation"
 import IndexComponent from "./component/index/index-comp"
 import Registration from "./component/auth/registration"
+import Login from "./component/auth/login"
 
 const App = () => {
     const navigate = useNavigate()
@@ -62,7 +63,8 @@ const App = () => {
              {/* <Navigation/> */}
              <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<IndexComponent/>}/>
+                    <Route path="/" element={<Login/>}/>
+                    <Route path="index" element={<IndexComponent/>}/>
                     <Route path="home" element={<Home/>}/>
                     <Route path="Calculator" element={<Calculator/>}/>
                     <Route path="form" element={<Form/>}/>
@@ -72,7 +74,7 @@ const App = () => {
                     </div>}/>
                     <Route path="age" element={<><div ><Link to="/age/1">Predict</Link></div><Outlet/></>}>
                     <Route path=":id" element={<PredictAge/>}></Route>
-                </Route>
+                </Route> 
                 </Routes>
              </BrowserRouter>
         </div>
