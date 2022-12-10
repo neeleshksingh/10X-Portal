@@ -1,3 +1,5 @@
+import React from "react"
+import { Suspense } from "react"
 import { BrowserRouter, Routes, Route, Outlet, useNavigate, Link} from "react-router-dom"
 import Welcome from "./welcome"
 import Hello from "./hello"
@@ -27,13 +29,15 @@ import CounterClass from "./component/class/class-counter"
 import Performance from "./component/performance-optimisation/performance"
 import MemoValue from "./component/memo-example/memo-value"
 import CatFact from "./component/cat-fact/cat-fact"
-import Navigation from "./component/navigation/navigation"
+
 import IndexComponent from "./component/index/index-comp"
 import Registration from "./component/auth/registration"
 import Login from "./component/auth/login"
 
 const App = () => {
-    const navigate = useNavigate()
+    const LaziNavigation = React.lazy(()=>{
+        import ("./component/navigation/navigation")
+    })
     return (
         <div>
              {/* <Welcome/>
@@ -61,7 +65,9 @@ const App = () => {
              {/* <MemoValue/> */}
              {/* <CatFact/> */}
              {/* <Navigation/> */}
-             
+             <Suspense>
+                <LaziNavigation/>
+             </Suspense>
              <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Login/>}/>
