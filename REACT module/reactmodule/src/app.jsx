@@ -61,6 +61,7 @@ const App = () => {
              {/* <MemoValue/> */}
              {/* <CatFact/> */}
              {/* <Navigation/> */}
+             
              <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Login/>}/>
@@ -73,8 +74,8 @@ const App = () => {
                         Page Not Found 404!
                     </div>}/>
                     <Route path="age" element={<><div ><Link to="/age/1">Predict</Link></div><Outlet/></>}>
-                    <Route path=":id" element={<PredictAge/>}></Route>
-                </Route> 
+                        <Route path=":id" element={<PredictAge/>}></Route>
+                    </Route> 
                 </Routes>
              </BrowserRouter>
         </div>
