@@ -1,6 +1,7 @@
 import React from "react"
 import { Suspense } from "react"
 import { BrowserRouter, Routes, Route, Outlet, useNavigate, Link} from "react-router-dom"
+import { Provider } from "react-redux"
 import Welcome from "./welcome"
 import Hello from "./hello"
 import Home from "./home/home"
@@ -33,13 +34,14 @@ import CatFact from "./component/cat-fact/cat-fact"
 import IndexComponent from "./component/index/index-comp"
 import Registration from "./component/auth/registration"
 import Login from "./component/auth/login"
+import { store } from "./redux/store"
 
 const App = () => {
     const LaziNavigation = React.lazy(()=>{
         import ("./component/navigation/navigation")
     })
     return (
-        <div>
+        <>
              {/* <Welcome/>
              <Hello/> */}
              {/* <Home/> */}
@@ -68,6 +70,8 @@ const App = () => {
              <Suspense>
                 <LaziNavigation/>
              </Suspense>
+             <>
+             <Provider store={store}>
              <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Login/>}/>
@@ -84,7 +88,10 @@ const App = () => {
                     </Route> 
                 </Routes>
              </BrowserRouter>
-        </div>
+             </Provider>
+             </>
+             
+        </>
         
     )
 }
