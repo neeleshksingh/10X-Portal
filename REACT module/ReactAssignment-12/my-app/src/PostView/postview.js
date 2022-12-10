@@ -8,10 +8,9 @@ import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import '../PostView/app.css'
 
 export default function Postview() {
-  console.log(data)
+  // console.log(data)
   return (
       <>
-      
         <div className='nav'>
           <span className='sp1'><InstagramIcon className='logo'/>
           <h1>Instaclone</h1></span>
