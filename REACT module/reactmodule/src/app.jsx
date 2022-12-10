@@ -29,6 +29,7 @@ import MemoValue from "./component/memo-example/memo-value"
 import CatFact from "./component/cat-fact/cat-fact"
 import Navigation from "./component/navigation/navigation"
 import IndexComponent from "./component/index/index-comp"
+import Registration from "./component/auth/registration"
 
 const App = () => {
     const navigate = useNavigate()
@@ -65,6 +66,7 @@ const App = () => {
                     <Route path="home" element={<Home/>}/>
                     <Route path="Calculator" element={<Calculator/>}/>
                     <Route path="form" element={<Form/>}/>
+                    <Route path="registration" element={<Registration/>}/>
                     <Route path="*" element={<div>
                         Page Not Found 404!
                     </div>}/>
