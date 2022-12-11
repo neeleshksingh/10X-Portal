@@ -68,14 +68,14 @@ const App = () => {
              {/* <MemoValue/> */}
              {/* <CatFact/> */}
              {/* <Navigation/> */}
-             <Suspense>
+             {/* <Suspense>
                 <LaziNavigation/>
-             </Suspense>
+             </Suspense> */}
              <>
-             <Provider store={store}>
+             {/* <Provider store={store}> */}
              <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Login/>}/>
+                    <Route path="login" element={<Login/>}/>
                     <Route path="/redux" element={<CounterRedux/>}/>
                     <Route path="index" element={<IndexComponent/>}/>
                     <Route path="home" element={<Home/>}/>
@@ -90,7 +90,7 @@ const App = () => {
                     </Route> 
                 </Routes>
              </BrowserRouter>
-             </Provider>
+             {/* </Provider> */}
              </>
              
         </>
