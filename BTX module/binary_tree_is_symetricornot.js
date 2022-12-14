@@ -1,11 +1,11 @@
 let fs = require("fs");
-let data = fs.readFileSync(0, 'utf-8');
+let data = fs.readFileSync('./in.txt', 'utf-8');
 let idx = 0;
 data = data.split('\n');
 
 function readLine() {
-    idx++;
-    return data[idx - 1].trim();
+  idx++;
+  return data[idx - 1].trim();
 }
 
 // -------- Do NOT edit anything above this line ----------
@@ -38,18 +38,16 @@ class BinaryTree {
   }
 }
 
-function isSymmetric(left,right) {
-    //write code here
-    if (node1 == null && node2 == null)
-    return true;
-    if (node1 != null && node2 != null
-    && node1.key == node2.key)
-    return (isMirror(node1.left, node2.right)
-            && isMirror(node1.right, node2.left));
-    return false;
-
-
-	
+function isSymmetric(left, right) {
+  //write code here
+  if (!left && !right) return true;
+  if (left && right) return (isSymmetric(left.left, right.right) && isSymmetric(left.right, right.left));
+  return false;
+}
+function convertToNumber(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] = arr[i] === "N" ? null : parseInt(arr[i])
+  }
 }
 
 let T = parseInt(readLine());
@@ -58,7 +56,7 @@ while (T--) {
   convertToNumber(arr);
   let tree = new BinaryTree();
   tree.root = tree.insertLevelOrder(arr, 0, arr.length);
-  if (isSymmetric(tree.root,tree.root)) {
+  if (isSymmetric(tree.root, tree.root)) {
     console.log("Yes");
   } else {
     console.log("No");
