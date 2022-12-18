@@ -73,4 +73,10 @@ fs.unlink("textfile.txt", (err)=>{      //commented because its annoying
 
 //read a file using path
 
-fs.readFile(path.join(__dirname, "fs", "home.html"),)
+fs.readFile(path.join(__dirname, "fs", "home.html"),"utf-8", (err, data)=>{
+    console.log(data);
+})
+
+fs.readFile(path.join(__dirname, "..", "LEC3", "home.html"),"utf-8", (err, data)=>{
+    console.log(data);
+})
