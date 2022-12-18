@@ -70,3 +70,7 @@ fs.unlink("textfile.txt", (err)=>{      //commented because its annoying
     console.log(err);
 })
 */
+
+//read a file using path
+
+fs.readFile(path.join(__dirname, "fs", "home.html"),)
