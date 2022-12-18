@@ -80,3 +80,31 @@ fs.readFile(path.join(__dirname, "fs", "home.html"),"utf-8", (err, data)=>{
 fs.readFile(path.join(__dirname, "..", "LEC3", "home.html"),"utf-8", (err, data)=>{
     console.log(data);
 })
+
+//Rename a file
+
+fs.rename("testfile.txt", "textfile.txt", (err)=>{
+    console.log(err);
+})
+
+//Make a folder
+
+fs.mkdir("test", (err)=>{
+    console.log(err);
+})
+
+//delete a folder
+/*
+//commented because it'll delete all the files
+//WARNING! don't run this command until or unless you want to delete it intentially 
+
+fs.readdir(path.join(__dirname, "fs"),(err,files)=>{
+    // console.log(err);
+    // console.log(files);
+    for(let i=0;i<files.length;i++){
+        fs.unlink(path.join(__dirname, "fs", files[i], (err)=>{
+            console.log(err);
+        }))
+    }
+})
+*/
