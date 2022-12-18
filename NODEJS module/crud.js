@@ -2,10 +2,12 @@
 
 const fs = require("fs")
 const os = require("os")
+const path = require("path")
 
 console.log(os.arch());
 console.log(os.freemem());
 console.log(os.hostname());
+console.log(os.platform());
 
 //create a file
 
@@ -30,14 +32,27 @@ fs.readFile("home.html", "utf-8", (err, data)=>{
 
 //read a file by giving full path
 
-fs.readFile("D:\\D Drive\\E Drive\\Codes\\10X Portal\\NODEJS module\\home.html", "utf-8", (err, data)=>{
-    if(err){
-        console.log(err)
-    }
-    else{
-        console.log(data);
-    }
-})
+if(os.platform() == "win32"){
+    fs.readFile("D:\\D Drive\\E Drive\\Codes\\10X Portal\\NODEJS module\\home.html", "utf-8", (err, data)=>{
+        if(err){
+            console.log(err)
+        }
+        else{
+            console.log(data);
+        }
+    })
+}
+else{
+    fs.readFile("D://D Drive//E Drive//Codes//10X Portal//NODEJS module//home.html", "utf-8", (err, data)=>{
+        if(err){
+            console.log(err)
+        }
+        else{
+            console.log(data);
+        }
+    })
+}
+
 
 // const data = fs.readFileSync("home.html", {encoding:"utf-8"})
 // console.log(data);
@@ -50,7 +65,8 @@ fs.appendFile("testfile.txt", "\n Some additional data", (err)=>{
 })
 
 //Delete a file
-
-fs.unlink("textfile.txt", (err)=>{
+/*
+fs.unlink("textfile.txt", (err)=>{      //commented because its annoying
     console.log(err);
 })
+*/
