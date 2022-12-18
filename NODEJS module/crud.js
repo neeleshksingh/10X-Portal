@@ -23,6 +23,17 @@ fs.readFile("home.html", "utf-8", (err, data)=>{
     }
 })
 
+//read a file by giving full path
+
+fs.readFile("D:\\D Drive\\E Drive\\Codes\\10X Portal\\NODEJS module\\home.html", "utf-8", (err, data)=>{
+    if(err){
+        console.log(err)
+    }
+    else{
+        console.log(data);
+    }
+})
+
 // const data = fs.readFileSync("home.html", {encoding:"utf-8"})
 // console.log(data);
 // console.log("test");
