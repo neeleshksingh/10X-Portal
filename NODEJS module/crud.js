@@ -12,3 +12,13 @@ fs.writeFile("home.html", "<h1>This is our first file in node js</h1>", (err)=>{
     console.log(err)
 })
 
+// read a file
+
+fs.readFile("home.html", {encoding: "utf-8"}, (err, data)=>{
+    if(err){
+        console.log(err)
+    }
+    else{
+        console.log(data);
+    }
+})
