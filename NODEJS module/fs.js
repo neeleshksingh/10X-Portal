@@ -96,7 +96,7 @@ fs.mkdir("test", (err)=>{
 //delete a folder
 /*
 //commented because it'll delete all the files
-//WARNING! don't run this command until or unless you want to delete it intentially 
+//WARNING! don't run this command until or unless you wanted to delete it intentionally.
 
 fs.readdir(path.join(__dirname, "fs"),(err,files)=>{
     // console.log(err);
