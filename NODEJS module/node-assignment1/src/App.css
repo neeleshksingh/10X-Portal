@@ -1,0 +1,41 @@
+body{
+    margin: 5%;
+    overflow-y: scroll;
+    font-family: 'Open Sans', sans-serif;
+}
+.App{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    padding: 0 20%;
+}
+.massage{
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+#buttons{
+    text-align: center;
+}
+.button{
+    padding: 10px;
+    border: 0;
+    background-color: lightgray;
+    width: 100px;
+    margin: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+#reset{
+    background-color: red;
+    color: white;
+}
+#btn{
+    background-color: green;
+    color: white;
+}
