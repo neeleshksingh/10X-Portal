@@ -1,6 +1,11 @@
 // CRUD - CREATE READ UPDATE and DELETE
 
 const fs = require("fs")
+const os = require("os")
+
+console.log(os.arch());
+console.log(os.freemem());
+console.log(os.hostname());
 
 //create a file
 
