@@ -2,7 +2,7 @@ const http = require("http")
 const qstr = require("querystring")
 
 const server = http.createServer((req, res) => {
-    console.log(req.url, req.method, req.headers);
+    console.log(req.url, req.method, req.headers)
     const url = req.url.split("?")[0]
     const qparams = qstr.parse(req.url.split("?")[1])
     if (url == "/") {
