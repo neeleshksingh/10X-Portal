@@ -32,3 +32,9 @@ fs.readFile("home.html", "utf-8", (err, data)=>{
 fs.appendFile("testfile.txt", "\n Some additional data", (err)=>{
     console.log(err);
 })
+
+//Delete a file
+
+fs.unlink("textfile.txt", (err)=>{
+    console.log(err);
+})
