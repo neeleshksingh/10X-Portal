@@ -27,4 +27,5 @@ const myFileDeleter = async (fileName) => {
   // dont chnage function name
   fs.unlink(fileName);
 };
+myFileReader("neelesh.txt")
 module.exports = { myFileWriter, myFileUpdater, myFileReader, myFileDeleter };
