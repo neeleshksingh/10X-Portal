@@ -6,4 +6,7 @@ event.addListener("SayHello", () => {
     console.log("Hello");
 })
 
-event.emit("SayHello")
+event.addListener("SayHello", (name, question) => {
+    console.log(`Hello ${name} ${question}`);
+})
+event.emit("SayHello", "Neelesh", "How are you ?")
