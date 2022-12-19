@@ -9,13 +9,13 @@ const myFileReader = async (fileName) => {
   // write code here
   // dont chnage function name
   fs.readFile(fileName)
-  .then(function(result) {
-    console.log(""+result);
-  })
-  .catch(function(error) {
-     console.log(error);
-  })
-  
+    .then(function (result) {
+      console.log("" + result);
+    })
+    .catch(function (error) {
+      console.log(error);
+    })
+
 };
 
 const myFileUpdater = async (fileName, fileContent) => {
@@ -27,5 +27,8 @@ const myFileDeleter = async (fileName) => {
   // dont chnage function name
   fs.unlink(fileName);
 };
-myFileReader("neelesh.txt")
-module.exports = { myFileWriter, myFileUpdater, myFileReader, myFileDeleter };
+myFileWriter("neel.txt", "Hello there")
+myFileReader("neel.txt")
+//myFileUpdater("neel.txt", "Hemlo")
+//myFileDeleter("neelesh.txt")
+module.exports = { myFileWriter, myFileUpdater, myFileReader, myFileDeleter };
