@@ -1,3 +1,6 @@
+/*
+//for fun
+
 var cowsay = require("cowsay");
 
 console.log(cowsay.say({
@@ -5,3 +8,22 @@ console.log(cowsay.say({
     e: "oO",
     T: "U "
 }));
+*/
+
+const express = require('express')
+const app = express()
+
+app.get("/", (req, res)=>{
+    res.send("Kya baat hai !")
+})
+
+app.get("/user", (req, res)=>{
+    console.log(req.query);
+    res.json({
+        name : req.query.name,
+        email : req.query.email,
+        age: req.query.age
+    })
+})
+
+app.listen(3000, ()=>console.log("Our server is up at 3000"))
