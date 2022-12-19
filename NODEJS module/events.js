@@ -1,6 +1,11 @@
-const events = require("events")
+// const events = require("events")
+// const event = new events.EventEmitter()
 
-const event = new events.EventEmitter()
+//Another method
+
+const { EventEmitter } = require("events")
+const event = new EventEmitter()
+
 
 event.addListener("SayHello", () => {
     console.log("Hello");
