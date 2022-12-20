@@ -25,5 +25,8 @@ app.get("/user", (req, res)=>{
         age: req.query.age
     })
 })
+app.get("*", (req, res)=>{
+    res.status(404).send("Page is not Found")
+})
 
 app.listen(3000, ()=>console.log("Our server is up at 3000"))
