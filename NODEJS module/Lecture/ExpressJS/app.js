@@ -24,7 +24,7 @@ for(let i=0;i<10;i++){
     userArr.push({
         name : faker.name.findName(),
         email : faker.internet.email(),
-        age: faker.image.image()
+        image: faker.image.image()
     })
 }
 
