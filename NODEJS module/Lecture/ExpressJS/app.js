@@ -11,10 +11,25 @@ console.log(cowsay.say({
 */
 
 const express = require('express')
+const faker = require('faker')
 const app = express()
 
+app.set('views', './views')
+app.set('view engine', 'ejs')
+
+const userArr = []
+
+for(let i=0;i<10;i++){
+    userArr.push({
+        name : faker.name.findName(),
+        email : faker.internet.email(),
+        age: faker.image.image()
+    })
+}
+
+
 app.get("/", (req, res)=>{
-    res.send("Kya baat hai !")
+    res.render("user.ejs", {user: userArr[0]})
 })
 
 app.get("/user", (req, res)=>{
