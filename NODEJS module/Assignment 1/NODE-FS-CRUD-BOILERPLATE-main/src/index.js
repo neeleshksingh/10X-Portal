@@ -4,7 +4,7 @@ const myFileWriter = async (fileName, fileContent) => {
   // write code here
   fs.writeFile(fileName, fileContent);
 };
-
+myFileWriter("neelesh.txt", "Hello there")
 const myFileReader = async (fileName) => {
   // write code here
   // dont chnage function name
@@ -17,18 +17,15 @@ const myFileReader = async (fileName) => {
     })
 
 };
-
+myFileReader("neelesh.txt")
 const myFileUpdater = async (fileName, fileContent) => {
-  fs.writeFile(fileName, fileContent);
+  fs.appendFile(fileName, fileContent);
 };
-
+myFileUpdater("neelesh.txt", " world")
 const myFileDeleter = async (fileName) => {
   // write code here
   // dont chnage function name
   fs.unlink(fileName);
 };
-myFileWriter("neel.txt", "Hello there")
-myFileReader("neel.txt")
-//myFileUpdater("neel.txt", "Hemlo")
-//myFileDeleter("neelesh.txt")
+myFileDeleter("neelesh.txt")
 module.exports = { myFileWriter, myFileUpdater, myFileReader, myFileDeleter };
