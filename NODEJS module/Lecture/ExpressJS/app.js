@@ -11,7 +11,7 @@ console.log(cowsay.say({
 */
 
 const express = require('express')
-const faker = require('faker')
+// const faker = require('faker')
 const app = express()
 
 app.set('views', './views')
@@ -20,13 +20,13 @@ app.use(express.static("public"))
 
 const userArr = []
 
-for(let i=0;i<10;i++){
-    userArr.push({
-        name : faker.name.findName(),
-        email : faker.internet.email(),
-        image: faker.image.image()
-    })
-}
+// for(let i=0;i<10;i++){
+//     userArr.push({
+//         name : faker.name.findName(),
+//         email : faker.internet.email(),
+//         image: faker.image.image()
+//     })
+// }
 
 
 app.get("/", (req, res)=>{
