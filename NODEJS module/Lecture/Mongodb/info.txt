@@ -1,2 +1,13 @@
 database -- to keep our data in an organized manner
-DBMS -- Database Management System
+DBMS -- Database Management System, its a software to store data, query 
+        data, manipulate data ....
+
+Realtional DBMS (SQL)   /   Non Realtional DBMS (No SQL)
+1)  Oracle              |   1)  MongoDB (JSON/BSON format)
+2)  MySQL               |   2)  MariaDB
+3)  MSSQL               |   3)  REdish  (Key-value pair)
+4)  DB2                 |   4)  DynamoDB
+5)  POSTGRE SQL...      |
+
+Datas will be kept in proper table format
+data is in form of rows and columns
