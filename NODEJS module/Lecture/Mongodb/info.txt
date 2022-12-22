@@ -1,0 +1,2 @@
+database -- to keep our data in an organized manner
+DBMS -- Database Management System
