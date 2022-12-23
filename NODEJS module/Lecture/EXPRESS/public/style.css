@@ -1,0 +1,13 @@
+body {
+    background-color: steelblue;
+}
+
+.user {
+    height: 300px;
+    width: 200px;
+    border: 2px solid white;
+    display: inline-block;
+}
+img{
+    width: 100%
+}
