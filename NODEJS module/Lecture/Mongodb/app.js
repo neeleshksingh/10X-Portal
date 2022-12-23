@@ -1,4 +1,5 @@
 const { MongoClient } = require('mongodb');
+const faker = require('faker')
 // or as an es module:
 // import { MongoClient } from 'mongodb'
 
@@ -14,13 +15,38 @@ async function main() {
     await client.connect();
     console.log('Connected successfully to server');
     const db = client.db(dbName);
-    const collection = db.collection('documents');
+    const collection = db.collection('employee');
 
+
+    // const empArr = []
+    // for (let i = 0; i < 50; i++) {
+    //     empArr.push({
+    //         name: faker.name.findName(),
+    //         email: faker.internet.email(),
+    //         card: faker.helpers.createCard(),
+    //         salary: Math.ceil((Math.random() + 1) * 10000),
+    //         company: faker.company.companyName()
+    //     })
+    // }
     // the following code examples can be pasted here...
 
-    const data = 
+    // const data = await collection.insertOne({name: "Neelesh", email: "neelesh1517@gmail.com"})
+    // console.log(data)
 
-    return 'done.';
+    // const emp = await employee.insertOne({ name: "Neelesh", email: "neelesh1517@gmail.com" })
+    // console.log(emp)
+    // const emp = await collection.insertMany(empArr)
+    // console.log(emp)
+
+    // for find all the minor users
+    // const data = await collection.find({salary: {$gt : 10000}}).toArray()
+    // console.log(data);
+    // return 'done.';
+
+    //sorting data
+
+    const data = await collection.find({}).sort({salary : -1}).skip(1).limit(1).toArray()
+    console.log(data);
 }
 
 main()
