@@ -18,6 +18,8 @@ async function main() {
 
     // the following code examples can be pasted here...
 
+    const data = 
+
     return 'done.';
 }
 
