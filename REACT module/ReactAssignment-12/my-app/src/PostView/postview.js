@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import data from '../Mock-data/data.json' 
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import CameraAltIcon from '@mui/icons-material/CameraAlt';
@@ -9,6 +9,10 @@ import '../PostView/app.css'
 
 export default function Postview() {
   // console.log(data)
+  const [like, setLike] = useState(`rgb(255,255,255)`)
+  const handleLike = () =>{
+      setLike('red')
+  }
   return (
       <>
         <div className='nav'>
@@ -20,6 +24,7 @@ export default function Postview() {
         <div className='main'>
           {data.user.map((data)=>{
             return (
+              
               <>
               <section className='container'>
                 <div className='min-nav'><h4>{data.name}</h4>
@@ -27,7 +32,7 @@ export default function Postview() {
                   </div>
                   <p>{data.location}</p>
                   <img className='img' src={data.PostImage} alt=""/>
-                  <div className='sp2'><span><FavoriteBorderIcon/><SendIcon/></span> 
+                  <div className='sp2'><span><button style={{ backgroundColor: like }} onDoubleClick={handleLike}><FavoriteBorderIcon/></button><SendIcon/></span> 
                   <p>{data.date}</p></div>
                   <p>{data.likes} Likes</p>
                   <h4>{data.description}</h4>
