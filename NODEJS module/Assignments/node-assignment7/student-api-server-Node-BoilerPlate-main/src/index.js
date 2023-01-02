@@ -11,7 +11,9 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 // your code goes here
 app.get('/api/student', (req, res)=>{
-    res.json()
+    res.json({
+        status : "Sucess"
+    })
 })
 app.get('/api/student', (req, res)=>{
     res.json()
