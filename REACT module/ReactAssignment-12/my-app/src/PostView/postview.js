@@ -9,7 +9,7 @@ import '../PostView/app.css'
 
 export default function Postview() {
   // console.log(data)
-  const [like, setLike] = useState(`rgb(255,255,255)`)
+  const [like, setLike] = useState(`white`)
   const handleLike = () =>{
       setLike('red')
   }
@@ -32,7 +32,7 @@ export default function Postview() {
                   </div>
                   <p>{data.location}</p>
                   <img className='img' src={data.PostImage} alt=""/>
-                  <div className='sp2'><span><button style={{ backgroundColor: like }} onDoubleClick={handleLike}><FavoriteBorderIcon/></button><SendIcon/></span> 
+                  <div className='sp2'><span><button style={{backgroundColor : like}} onDoubleClick={handleLike}><FavoriteBorderIcon/></button><SendIcon/></span> 
                   <p>{data.date}</p></div>
                   <p>{data.likes} Likes</p>
                   <h4>{data.description}</h4>
