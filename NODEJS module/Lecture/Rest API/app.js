@@ -9,7 +9,6 @@ const app = express()
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
-
 // parse application/json
 app.use(bodyParser.json())
 
@@ -17,10 +16,41 @@ app.use(bodyParser.json())
 app.get('/', (req, res) => {
     res.send("welcome to API")
 })
+
+//Read all the users
+app.get('/api/v1/users', async (req, res) => {
+    try {
+        const users = await User.find()
+        res.status(200).json({
+            status: "Success",
+            users
+        })
+    } catch (e) {
+        res.status(400).json({
+            status: "Failed",
+            message: e.message
+        })
+    }
+})
+app.get('/api/v1/users:id', async (req, res) => {
+    try {
+        const users = await User.find()
+        res.status(200).json({
+            status: "Success",
+            users
+        })
+    } catch (e) {
+        res.status(400).json({
+            status: "Failed",
+            message: e.message
+        })
+    }
+})
+
 app.post('/api/v1/users', async (req, res) => {
     //Write the code to create data
     try {
-        const user = user.create(req.body)
+        const user = await User.create(req.body)
         res.status(200).json({
             status: "Success",
             user
