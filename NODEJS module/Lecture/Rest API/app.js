@@ -1,4 +1,7 @@
 const express = require('express')
+const mongoose = require('mongoose')
+await mongoose.connect('mongodb://localhost/restapi')
+
 const app = express()
 
 app.get('/', (req, res)=>{
