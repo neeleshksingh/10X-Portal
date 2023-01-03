@@ -29,7 +29,7 @@ function handleServer(req, res) {
             "Content-type": "text/html",
             "Keep-Alive": 100
         })
-        res.write(`<h1>Page is not found !</h1>`)
+        res.write(`<p>Page is not found !</p>`)
         res.end()
     }
 }
