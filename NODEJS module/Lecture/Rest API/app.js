@@ -4,6 +4,7 @@ const connection = require('./connection/connection')
 connection()
 const User = require('./models/user')
 const bodyParser = require('body-parser')
+const loginRoutes = require('./routes/login')
 
 const app = express()
 app.use(express.json())
@@ -13,6 +14,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 
+app.use("/api/v1", loginRoutes)
 
 app.get('/', (req, res) => {
     res.send("welcome to API")
