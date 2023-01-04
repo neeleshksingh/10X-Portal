@@ -5,7 +5,7 @@ const ObjectId = Schema.ObjectId
 const userSchema = new Schema({
     name: { type: String, required: true },
     email: { type: String, unique: true },
-    gender: { type: String, enum: ["Male", "Female"], default: "Male" },
+    password: { type: String, min: 6, max: 16 },
     age: Number
 }, { timestamps: true })
 

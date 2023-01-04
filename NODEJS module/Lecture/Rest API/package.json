@@ -12,6 +12,7 @@
   "dependencies": {
     "body-parser": "^1.20.1",
     "express": "^4.18.2",
+    "express-validator": "^6.14.2",
     "mogoose": "^0.0.1-security",
     "mongoose": "^6.8.2",
     "nodemon": "^2.0.20"
