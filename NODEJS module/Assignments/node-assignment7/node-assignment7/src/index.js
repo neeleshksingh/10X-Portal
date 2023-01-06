@@ -54,7 +54,10 @@ app.put("/student/:id", (req, res) => {
     if (data.id == req.params.id) {
       bool = false;
       data.name = req.body.name;
-      res.json({ name: req.body.name });
+      data.currentClass = req.body.currentClass;
+      data.division = req.body.division;
+      res.json({ name: req.body.name, currentClass: req.body.currentClass, division: req.body.division}
+      );
     }
   });
   if (bool) {

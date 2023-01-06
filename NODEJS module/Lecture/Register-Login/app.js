@@ -6,15 +6,10 @@ const User = require('./models/user')
 const bodyParser = require('body-parser')
 const loginRoutes = require('./routes/login')
 const userRoutes = require('./routes/user')
-
 const app = express()
 
 app.use("/api/v1", loginRoutes)
-app.use("/api/v1", userRoutes)
-
-app.get('/', (req, res) => {
-    res.send("welcome to API")
-})
+app.use("/api/v1/users", userRoutes)
 
 app.get("*", (req, res) => {
     res.status(404).send("API IS NOT FOUND");
