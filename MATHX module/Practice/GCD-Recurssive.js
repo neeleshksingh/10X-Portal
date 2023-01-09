@@ -40,22 +40,27 @@ function getGCD(a, b) {
     if (a == 0 && b == 0) {
         console.log("Infy");
         return -1;
-    } else if (a == 0) {
+    }
+    else if (a == 0) {
         return b;
-    } else if (b == 0) {
+    }
+    else if (b == 0) {
         return a;
-    } else if (b % a == 0) {
+    }
+    else if (b % a == 0) {
         return a;
-    } else if (a <= b) {
+    }
+    else if (a <= b) {
         return getGCD(a, b % a);
-    } else {
+    }
+    else {
         return getGCD(b, a % b);
     }
 }
 
 let n = parseInt(readLine())
-for(let i=0;i<n;i++){
-    let [a,b] =  readLine().split(' ').map(Number)
-    let num = [a,b]
-    console.log(getGCD(a,b));
+for (let i = 0; i < n; i++) {
+    let [a, b] = readLine().split(' ').map(Number)
+    let num = [a, b]
+    console.log(getGCD(a, b));
 }
