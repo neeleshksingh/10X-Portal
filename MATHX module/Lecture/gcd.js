@@ -27,4 +27,4 @@ console.log(a * b / getGCD(a, b));
 //GCD of three numbers
 GCD(a, b, c) = GCD(a, GCD(b, c))
 
-LCM(a, b, c) = LCM
+LCM(a, b, c) = LCM(a, LCM(b, c))
