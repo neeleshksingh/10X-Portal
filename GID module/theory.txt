@@ -1,2 +1,2 @@
 Git - Git is a command line interface which is used to comunicate with the cloud.
-Github - It is a 
+Github - It is the grapical user interface which helps to host our source code to the cloud
